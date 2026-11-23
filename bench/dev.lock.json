@@ -1,0 +1,65 @@
+{
+  "text_pride_and_prejudice.txt": {
+    "category": "English text",
+    "source": "Project Gutenberg #1342 (pglaf.org mirror)",
+    "bytes": 738046,
+    "truncated_from": null,
+    "sha256": "81300b79e8a8d65ac530a97578417d06137e3bbc90622a10a65e5036183d2500"
+  },
+  "code_lua.c": {
+    "category": "Code",
+    "source": "lua 5.4.6, *.c concatenated in name order",
+    "bytes": 753664,
+    "truncated_from": null,
+    "sha256": "fc0b48d943f1be912ced4cac2077fb28b7355fe9e0b10fbded8e03fd8d2f3bab"
+  },
+  "json_gsoc.json": {
+    "category": "JSON",
+    "source": "simdjson-data jsonexamples/gsoc-2018.json",
+    "bytes": 3327831,
+    "truncated_from": null,
+    "sha256": "72f1ef4898d88049da856c2ab8f4ec3e2c968ce209b2bbfd16cef842eb2e185f"
+  },
+  "json_github_events.json": {
+    "category": "JSON",
+    "source": "simdjson-data jsonexamples/github_events.json",
+    "bytes": 65132,
+    "truncated_from": null,
+    "sha256": "c9eebb2cf2d46649059e9d48700919bacb3e8e0fb58452065a1a9de7778fd22e"
+  },
+  "logs_nginx.log": {
+    "category": "Logs",
+    "source": "elastic/examples nginx_logs",
+    "bytes": 4194304,
+    "truncated_from": 6991577,
+    "sha256": "829a7487acd9447e77eaf573b06aa1ed0a00930b316e4400195871788786557a"
+  },
+  "logs_apache.log": {
+    "category": "Logs",
+    "source": "elastic/examples apache_logs",
+    "bytes": 2370789,
+    "truncated_from": null,
+    "sha256": "f15c31e905f86c7b4b6ab44aee74d0a2086dce89f010187d983edea7ef0364ef"
+  },
+  "exe_fd_linux_x64": {
+    "category": "Executables",
+    "source": "fd 9.0.0 Linux x86-64 musl binary",
+    "bytes": 4123640,
+    "truncated_from": null,
+    "sha256": "2b78bcac90f6a98bd00855446e1e420954470007607e0640dbb423529649a3a7"
+  },
+  "compressed_lua.tar.gz": {
+    "category": "Compressed",
+    "source": "lua 5.4.6 source tarball (gzip)",
+    "bytes": 460682,
+    "truncated_from": null,
+    "sha256": "11c228cf9b9564d880b394f8069ad829d01e39756567f79c347a6b89fed44771"
+  },
+  "random_dev.bin": {
+    "category": "Random",
+    "source": "SHAKE-256 output from a second fixed seed",
+    "bytes": 1048576,
+    "truncated_from": null,
+    "sha256": "95e1e61174d4965f6a1c2eec9169e9fa52f3123a07d90c7f3ae026b4e4feb9ed"
+  }
+}

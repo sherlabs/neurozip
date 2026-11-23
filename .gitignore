@@ -1,0 +1,12 @@
+target/
+*.nz
+fuzz/target/
+fuzz/corpus/
+fuzz/artifacts/
+bench/corpora/
+bench/work/
+__pycache__/
+bench/dev/
+bench/corpora2/
+bench/tools/
+bench/corpora3/

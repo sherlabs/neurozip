@@ -1,0 +1,3286 @@
+{
+ "generated_utc": "2026-11-23T17:48:07Z",
+ "machine": {
+  "cpu": "Apple M5 Pro",
+  "logical_cpus": 18,
+  "memory_bytes": 51539607552,
+  "os": "Darwin 27.2.1",
+  "arch": "arm64"
+ },
+ "tools": {
+  "neurozip": "neurozip 0.1.0",
+  "neurozip_config": "mix model: hash bits 18, match window 2^22, block 256 KiB; ctx model: order 4, hash bits 20, block 256 KiB",
+  "zstd": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***",
+  "brotli": "brotli 1.2.1",
+  "xz": "xz (XZ Utils) 5.8.4",
+  "7zz": "7-Zip (z) 26.06 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-11-06",
+  "zpaq": "zpaq 7.15, method 5",
+  "lpaq1": "lpaq1 (Matt Mahoney, 2007), level 6, built from source with c++ -O2",
+  "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)"
+ },
+ "method": {
+  "repetitions": 3,
+  "timing": "median wall time of whole CLI process, file to file, one run at a time",
+  "memory": "peak resident set size of the process (wait4)",
+  "cpu": "user + system CPU time of the process (wait4)",
+  "power": "not measured (needs root-only powermetrics on macOS)",
+  "size": "size of the output file, all headers and checksums included"
+ },
+ "sets": {
+  "fresh": {
+   "corpora": {
+    "text_great_expectations.txt": {
+     "category": "English text",
+     "source": "Project Gutenberg #1400 (pglaf.org mirror)",
+     "bytes": 1038512,
+     "truncated_from": null,
+     "sha256": "48dd8f292e68ff2856675a60b48bcd80b1ebe6ed58ac3e6f91a2bb2400f1e345"
+    },
+    "text_tale_of_two_cities.txt": {
+     "category": "English text",
+     "source": "Project Gutenberg #98 (pglaf.org mirror)",
+     "bytes": 771600,
+     "truncated_from": null,
+     "sha256": "e3dfeb67feb904ac0f73a35204a175c58248422c2be8556802cb8820d958d67c"
+    },
+    "code_curl.c": {
+     "category": "Code",
+     "source": "curl 8.5.0, lib/*.c concatenated in name order",
+     "bytes": 2825331,
+     "truncated_from": null,
+     "sha256": "5d37331bfdc58aa6e08947cd30263f2b9ee1334de84ed5722d2b63824088dae1"
+    },
+    "code_requests.py": {
+     "category": "Code",
+     "source": "requests 2.31.0, all *.py concatenated in name order",
+     "bytes": 357835,
+     "truncated_from": null,
+     "sha256": "ace32a131486854e0b476212aafe8d52a91a470c21b323ece00bfa67b3678c9c"
+    },
+    "json_marine_ik.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/marine_ik.json",
+     "bytes": 2983466,
+     "truncated_from": null,
+     "sha256": "61590a397542ae274ccd8a47ba9f64e7c9216a223a5e7e702dea5b2375411d62"
+    },
+    "json_update_center.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/update-center.json",
+     "bytes": 533178,
+     "truncated_from": null,
+     "sha256": "e7b6a037bfdb5abdf122fa3445ddfacea78522a23df31c4799884c4ebf4c01fa"
+    },
+    "json_instruments.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/instruments.json",
+     "bytes": 220346,
+     "truncated_from": null,
+     "sha256": "f3069235d4e2695d36c0c7735a435a7abb279fc4d64bbcf4ed9f888b8da1fdb9"
+    },
+    "logs_zeek_conn.log": {
+     "category": "Logs",
+     "source": "brimdata zed-sample-data zeek-default/conn.log",
+     "bytes": 4194304,
+     "truncated_from": 121726587,
+     "sha256": "f9de0604e465411d3ced83777d2aa1d90d018ffea1dffd99a70b4a6e2d5b7283"
+    },
+    "logs_zeek_http.log": {
+     "category": "Logs",
+     "source": "brimdata zed-sample-data zeek-default/http.log",
+     "bytes": 4194304,
+     "truncated_from": 44507875,
+     "sha256": "e21fbff17f61287f4e76b1cefff4b803f73531831f0dbe6faf0130510e8a0cf7"
+    },
+    "exe_jq_linux_x64": {
+     "category": "Executables",
+     "source": "jq 1.7.1 Linux x86-64 binary",
+     "bytes": 2319424,
+     "truncated_from": null,
+     "sha256": "5942c9b0934e510ee61eb3e30273f1b3fe2590df93933a93d7c58b81d19c8ff5"
+    },
+    "exe_jq_windows_x64.exe": {
+     "category": "Executables",
+     "source": "jq 1.7.1 Windows x86-64 binary",
+     "bytes": 985088,
+     "truncated_from": null,
+     "sha256": "7451fbbf37feffb9bf262bd97c54f0da558c63f0748e64152dd87b0a07b6d6ab"
+    },
+    "compressed_jq.tar.gz": {
+     "category": "Compressed",
+     "source": "jq 1.7.1 source tarball (gzip)",
+     "bytes": 1950645,
+     "truncated_from": null,
+     "sha256": "478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2"
+    },
+    "compressed_bat.zip": {
+     "category": "Compressed",
+     "source": "bat 0.24.0 Windows release (zip)",
+     "bytes": 3150280,
+     "truncated_from": null,
+     "sha256": "1aa3733479d5980cb58c2b06aca06cf19ff377e85622f96549f8849f47f9f486"
+    },
+    "random_shake256_b.bin": {
+     "category": "Random",
+     "source": "SHAKE-256 output from a third fixed seed",
+     "bytes": 2097152,
+     "truncated_from": null,
+     "sha256": "4e07e7dec8da388d434be907952c09d2133308e27dc2df054dfd6e6589f1bf03"
+    }
+   },
+   "runs": [
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 1038512,
+     "compressed_bytes": 261751,
+     "bits_per_byte": 2.016354168271527,
+     "encode": {
+      "wall_s": 0.19003179199999998,
+      "wall_s_min": 0.179817042,
+      "wall_s_max": 0.21332395800000004,
+      "cpu_s": 0.18650799999999998,
+      "peak_rss_bytes": 21823488
+     },
+     "decode": {
+      "wall_s": 0.21846454199999998,
+      "wall_s_min": 0.20810533399999998,
+      "wall_s_max": 0.24254958399999982,
+      "cpu_s": 0.214412,
+      "peak_rss_bytes": 20791296
+     },
+     "encode_mb_s": 5.464938203603323,
+     "decode_mb_s": 4.753686756178493,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "lpaq1 6",
+     "original_bytes": 1038512,
+     "compressed_bytes": 241751,
+     "bits_per_byte": 1.8622875806923753,
+     "encode": {
+      "wall_s": 1.276769875,
+      "wall_s_min": 1.2654694590000002,
+      "wall_s_max": 1.3373808750000005,
+      "cpu_s": 1.267894,
+      "peak_rss_bytes": 172638208
+     },
+     "decode": {
+      "wall_s": 1.6721888749999998,
+      "wall_s_min": 1.3994465419999997,
+      "wall_s_max": 1.7500719159999996,
+      "cpu_s": 1.663079,
+      "peak_rss_bytes": 172621824
+     },
+     "encode_mb_s": 0.8133901185599324,
+     "decode_mb_s": 0.6210494612936593,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "zpaq -m5",
+     "original_bytes": 1038512,
+     "compressed_bytes": 240141,
+     "bits_per_byte": 1.8498852203922536,
+     "encode": {
+      "wall_s": 2.672876834,
+      "wall_s_min": 2.5324340000000003,
+      "wall_s_max": 4.506657791,
+      "cpu_s": 2.666916,
+      "peak_rss_bytes": 95584256
+     },
+     "decode": {
+      "wall_s": 3.1164718329999985,
+      "wall_s_min": 2.820924583,
+      "wall_s_max": 3.273159582999998,
+      "cpu_s": 3.10642,
+      "peak_rss_bytes": 95715328
+     },
+     "encode_mb_s": 0.38853716968538776,
+     "decode_mb_s": 0.3332332379851163,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "neurozip",
+     "original_bytes": 1038512,
+     "compressed_bytes": 242364,
+     "bits_per_byte": 1.8670097216016763,
+     "encode": {
+      "wall_s": 2.2518769590000005,
+      "wall_s_min": 1.8649655000000038,
+      "wall_s_max": 3.2423615839999975,
+      "cpu_s": 2.239591,
+      "peak_rss_bytes": 186859520
+     },
+     "decode": {
+      "wall_s": 2.2915855409999963,
+      "wall_s_min": 2.0045831250000035,
+      "wall_s_max": 2.3593712919999987,
+      "cpu_s": 2.284167,
+      "peak_rss_bytes": 186892288
+     },
+     "encode_mb_s": 0.4611761738799335,
+     "decode_mb_s": 0.45318491560512153,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "neurozip ctx",
+     "original_bytes": 1038512,
+     "compressed_bytes": 285232,
+     "bits_per_byte": 2.19723604541883,
+     "encode": {
+      "wall_s": 0.5236817910000013,
+      "wall_s_min": 0.5207475420000023,
+      "wall_s_max": 0.5310444579999967,
+      "cpu_s": 0.520026,
+      "peak_rss_bytes": 103432192
+     },
+     "decode": {
+      "wall_s": 0.6001632909999941,
+      "wall_s_min": 0.5909930830000008,
+      "wall_s_max": 0.6046643749999987,
+      "cpu_s": 0.595596,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 1.983097403514642,
+     "decode_mb_s": 1.7303824068773481,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "zstd -3",
+     "original_bytes": 1038512,
+     "compressed_bytes": 379168,
+     "bits_per_byte": 2.92085599396059,
+     "encode": {
+      "wall_s": 0.01161891699999984,
+      "wall_s_min": 0.011295791999998528,
+      "wall_s_max": 0.011645666999996251,
+      "cpu_s": 0.009866999999999999,
+      "peak_rss_bytes": 6717440
+     },
+     "decode": {
+      "wall_s": 0.007490707999998847,
+      "wall_s_min": 0.007231167000000482,
+      "wall_s_max": 0.0076099579999961975,
+      "cpu_s": 0.005646,
+      "peak_rss_bytes": 5128192
+     },
+     "encode_mb_s": 89.38113595268943,
+     "decode_mb_s": 138.64003242419275,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "zstd -19",
+     "original_bytes": 1038512,
+     "compressed_bytes": 318780,
+     "bits_per_byte": 2.455667339424099,
+     "encode": {
+      "wall_s": 0.31060041599999977,
+      "wall_s_min": 0.28701970899999907,
+      "wall_s_max": 0.34623762500000055,
+      "cpu_s": 0.30771299999999996,
+      "peak_rss_bytes": 23232512
+     },
+     "decode": {
+      "wall_s": 0.007566582999999127,
+      "wall_s_min": 0.007185208999999304,
+      "wall_s_max": 0.00772775000000081,
+      "cpu_s": 0.005586,
+      "peak_rss_bytes": 5046272
+     },
+     "encode_mb_s": 3.3435628109397024,
+     "decode_mb_s": 137.24979954625752,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "brotli -q 11",
+     "original_bytes": 1038512,
+     "compressed_bytes": 311205,
+     "bits_per_byte": 2.3973146193784953,
+     "encode": {
+      "wall_s": 1.3652417079999992,
+      "wall_s_min": 1.303091834,
+      "wall_s_max": 1.4091397910000012,
+      "cpu_s": 1.361985,
+      "peak_rss_bytes": 34865152
+     },
+     "decode": {
+      "wall_s": 0.008269625000004055,
+      "wall_s_min": 0.008165415999997094,
+      "wall_s_max": 0.008374000000003434,
+      "cpu_s": 0.0062169999999999994,
+      "peak_rss_bytes": 4210688
+     },
+     "encode_mb_s": 0.7606799542634547,
+     "decode_mb_s": 125.58151064884936,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_great_expectations.txt",
+     "category": "English text",
+     "compressor": "xz -9",
+     "original_bytes": 1038512,
+     "compressed_bytes": 316068,
+     "bits_per_byte": 2.434775910148366,
+     "encode": {
+      "wall_s": 0.351082875000003,
+      "wall_s_min": 0.3124966250000014,
+      "wall_s_max": 0.36634950000000543,
+      "cpu_s": 0.347027,
+      "peak_rss_bytes": 72220672
+     },
+     "decode": {
+      "wall_s": 0.020816582999998445,
+      "wall_s_min": 0.02066983299999947,
+      "wall_s_max": 0.021787125000003016,
+      "cpu_s": 0.018364,
+      "peak_rss_bytes": 3375104
+     },
+     "encode_mb_s": 2.9580252241012643,
+     "decode_mb_s": 49.88868730281419,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 771600,
+     "compressed_bytes": 200598,
+     "bits_per_byte": 2.0798133748055987,
+     "encode": {
+      "wall_s": 0.09263037499999882,
+      "wall_s_min": 0.09022041699999761,
+      "wall_s_max": 0.110871582999998,
+      "cpu_s": 0.08996799999999999,
+      "peak_rss_bytes": 21463040
+     },
+     "decode": {
+      "wall_s": 0.11406137499999858,
+      "wall_s_min": 0.10271033400000107,
+      "wall_s_max": 0.11875829199999544,
+      "cpu_s": 0.111343,
+      "peak_rss_bytes": 20742144
+     },
+     "encode_mb_s": 8.329880992061295,
+     "decode_mb_s": 6.764779049875645,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "lpaq1 6",
+     "original_bytes": 771600,
+     "compressed_bytes": 186044,
+     "bits_per_byte": 1.9289165370658372,
+     "encode": {
+      "wall_s": 0.44060766700000187,
+      "wall_s_min": 0.4384516250000061,
+      "wall_s_max": 0.4595680420000008,
+      "cpu_s": 0.43568399999999996,
+      "peak_rss_bytes": 172343296
+     },
+     "decode": {
+      "wall_s": 0.6875494999999958,
+      "wall_s_min": 0.6791920419999968,
+      "wall_s_max": 0.800269875000005,
+      "cpu_s": 0.682213,
+      "peak_rss_bytes": 172343296
+     },
+     "encode_mb_s": 1.7512178243598213,
+     "decode_mb_s": 1.1222464709813689,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "zpaq -m5",
+     "original_bytes": 771600,
+     "compressed_bytes": 184726,
+     "bits_per_byte": 1.915251425609124,
+     "encode": {
+      "wall_s": 2.687513291000002,
+      "wall_s_min": 2.057985582999997,
+      "wall_s_max": 3.4563977080000043,
+      "cpu_s": 2.673079,
+      "peak_rss_bytes": 95109120
+     },
+     "decode": {
+      "wall_s": 2.4881944999999916,
+      "wall_s_min": 2.146202833000004,
+      "wall_s_max": 3.5632430830000033,
+      "cpu_s": 2.460969,
+      "peak_rss_bytes": 95223808
+     },
+     "encode_mb_s": 0.2871055568669928,
+     "decode_mb_s": 0.3101043748790549,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "neurozip",
+     "original_bytes": 771600,
+     "compressed_bytes": 186981,
+     "bits_per_byte": 1.9386314152410575,
+     "encode": {
+      "wall_s": 1.3675638750000019,
+      "wall_s_min": 1.3043924159999989,
+      "wall_s_max": 1.600911166000003,
+      "cpu_s": 1.3620430000000001,
+      "peak_rss_bytes": 186515456
+     },
+     "decode": {
+      "wall_s": 1.6942684999999926,
+      "wall_s_min": 1.5571678330000083,
+      "wall_s_max": 1.7078986670000091,
+      "cpu_s": 1.687986,
+      "peak_rss_bytes": 186630144
+     },
+     "encode_mb_s": 0.5642149621713274,
+     "decode_mb_s": 0.45541778059380983,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "neurozip ctx",
+     "original_bytes": 771600,
+     "compressed_bytes": 221233,
+     "bits_per_byte": 2.2937584240539137,
+     "encode": {
+      "wall_s": 0.3896976249999966,
+      "wall_s_min": 0.3712433750000059,
+      "wall_s_max": 0.4066554170000103,
+      "cpu_s": 0.384458,
+      "peak_rss_bytes": 103432192
+     },
+     "decode": {
+      "wall_s": 0.4170282500000013,
+      "wall_s_min": 0.4148775000000029,
+      "wall_s_max": 0.42924324999999897,
+      "cpu_s": 0.413078,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 1.979996670495507,
+     "decode_mb_s": 1.850234366616644,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "zstd -3",
+     "original_bytes": 771600,
+     "compressed_bytes": 285584,
+     "bits_per_byte": 2.9609538621047173,
+     "encode": {
+      "wall_s": 0.012278166000001534,
+      "wall_s_min": 0.012109417000004896,
+      "wall_s_max": 0.013188583000001586,
+      "cpu_s": 0.010189,
+      "peak_rss_bytes": 5996544
+     },
+     "decode": {
+      "wall_s": 0.008562666000003105,
+      "wall_s_min": 0.007966334000002462,
+      "wall_s_max": 0.00907970900000521,
+      "cpu_s": 0.0062569999999999995,
+      "peak_rss_bytes": 4489216
+     },
+     "encode_mb_s": 62.843261770520414,
+     "decode_mb_s": 90.11212162190142,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "zstd -19",
+     "original_bytes": 771600,
+     "compressed_bytes": 244390,
+     "bits_per_byte": 2.5338517366511146,
+     "encode": {
+      "wall_s": 0.21982508300000347,
+      "wall_s_min": 0.21880154199999424,
+      "wall_s_max": 0.22037699999999916,
+      "cpu_s": 0.216345,
+      "peak_rss_bytes": 22528000
+     },
+     "decode": {
+      "wall_s": 0.00864283299999613,
+      "wall_s_min": 0.008599082999992902,
+      "wall_s_max": 0.009876207999994335,
+      "cpu_s": 0.006073,
+      "peak_rss_bytes": 4407296
+     },
+     "encode_mb_s": 3.5100634989865456,
+     "decode_mb_s": 89.27628244122563,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "brotli -q 11",
+     "original_bytes": 771600,
+     "compressed_bytes": 237574,
+     "bits_per_byte": 2.463182996371177,
+     "encode": {
+      "wall_s": 1.1683864999999969,
+      "wall_s_min": 1.0605649169999936,
+      "wall_s_max": 1.224284874999995,
+      "cpu_s": 1.164773,
+      "peak_rss_bytes": 25411584
+     },
+     "decode": {
+      "wall_s": 0.007540165999998294,
+      "wall_s_min": 0.007113541999999029,
+      "wall_s_max": 0.007708042000004411,
+      "cpu_s": 0.005510999999999999,
+      "peak_rss_bytes": 3899392
+     },
+     "encode_mb_s": 0.6603979077129032,
+     "decode_mb_s": 102.33196457480837,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_tale_of_two_cities.txt",
+     "category": "English text",
+     "compressor": "xz -9",
+     "original_bytes": 771600,
+     "compressed_bytes": 241744,
+     "bits_per_byte": 2.506417833074132,
+     "encode": {
+      "wall_s": 0.2306484590000082,
+      "wall_s_min": 0.23033912500000042,
+      "wall_s_max": 0.23494941699999572,
+      "cpu_s": 0.22616399999999998,
+      "peak_rss_bytes": 69058560
+     },
+     "decode": {
+      "wall_s": 0.016818000000000666,
+      "wall_s_min": 0.016813291999994817,
+      "wall_s_max": 0.018058625000008988,
+      "cpu_s": 0.014629,
+      "peak_rss_bytes": 3112960
+     },
+     "encode_mb_s": 3.3453507703685657,
+     "decode_mb_s": 45.879414912591834,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 2825331,
+     "compressed_bytes": 406160,
+     "bits_per_byte": 1.1500528610630047,
+     "encode": {
+      "wall_s": 0.26823237499999664,
+      "wall_s_min": 0.2604968329999906,
+      "wall_s_max": 0.3014012089999909,
+      "cpu_s": 0.26478899999999994,
+      "peak_rss_bytes": 72253440
+     },
+     "decode": {
+      "wall_s": 0.33012966699999424,
+      "wall_s_min": 0.29125320800000054,
+      "wall_s_max": 0.3800690839999987,
+      "cpu_s": 0.326169,
+      "peak_rss_bytes": 71286784
+     },
+     "encode_mb_s": 10.533146865660923,
+     "decode_mb_s": 8.55824629659851,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "lpaq1 6",
+     "original_bytes": 2825331,
+     "compressed_bytes": 357702,
+     "bits_per_byte": 1.012842743027277,
+     "encode": {
+      "wall_s": 1.5612903749999987,
+      "wall_s_min": 1.325677374999998,
+      "wall_s_max": 1.7915407499999958,
+      "cpu_s": 1.5572089999999998,
+      "peak_rss_bytes": 174424064
+     },
+     "decode": {
+      "wall_s": 2.133225459000002,
+      "wall_s_min": 2.0844982920000064,
+      "wall_s_max": 2.2010977500000024,
+      "cpu_s": 2.129983,
+      "peak_rss_bytes": 174440448
+     },
+     "encode_mb_s": 1.8096127698218867,
+     "decode_mb_s": 1.3244408780516046,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "zpaq -m5",
+     "original_bytes": 2825331,
+     "compressed_bytes": 350099,
+     "bits_per_byte": 0.9913146459653753,
+     "encode": {
+      "wall_s": 7.597437833000001,
+      "wall_s_min": 7.565999250000004,
+      "wall_s_max": 7.608507750000001,
+      "cpu_s": 7.587681,
+      "peak_rss_bytes": 143425536
+     },
+     "decode": {
+      "wall_s": 7.823381709000003,
+      "wall_s_min": 7.56420241699999,
+      "wall_s_max": 7.836529417000008,
+      "cpu_s": 7.813481,
+      "peak_rss_bytes": 145784832
+     },
+     "encode_mb_s": 0.37187944963866343,
+     "decode_mb_s": 0.36113935189302404,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "neurozip",
+     "original_bytes": 2825331,
+     "compressed_bytes": 356080,
+     "bits_per_byte": 1.008250006813361,
+     "encode": {
+      "wall_s": 5.033660166000004,
+      "wall_s_min": 4.834208749999988,
+      "wall_s_max": 5.154330125000001,
+      "cpu_s": 5.027045,
+      "peak_rss_bytes": 188530688
+     },
+     "decode": {
+      "wall_s": 5.124308958,
+      "wall_s_min": 5.010763499999996,
+      "wall_s_max": 5.135256207999987,
+      "cpu_s": 5.118669,
+      "peak_rss_bytes": 188645376
+     },
+     "encode_mb_s": 0.5612875932872416,
+     "decode_mb_s": 0.5513584413346373,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "neurozip ctx",
+     "original_bytes": 2825331,
+     "compressed_bytes": 570921,
+     "bits_per_byte": 1.616578022185719,
+     "encode": {
+      "wall_s": 1.6976058340000009,
+      "wall_s_min": 1.4910480000000064,
+      "wall_s_max": 1.840101082999979,
+      "cpu_s": 1.6781030000000001,
+      "peak_rss_bytes": 103383040
+     },
+     "decode": {
+      "wall_s": 1.5561674580000044,
+      "wall_s_min": 1.5253815000000088,
+      "wall_s_max": 1.6315474999999822,
+      "cpu_s": 1.54913,
+      "peak_rss_bytes": 103497728
+     },
+     "encode_mb_s": 1.664303304933151,
+     "decode_mb_s": 1.8155700310242522,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "zstd -3",
+     "original_bytes": 2825331,
+     "compressed_bytes": 635603,
+     "bits_per_byte": 1.799726828467178,
+     "encode": {
+      "wall_s": 0.020960541999983207,
+      "wall_s_min": 0.020592875000005506,
+      "wall_s_max": 0.021056541999996625,
+      "cpu_s": 0.018309,
+      "peak_rss_bytes": 9158656
+     },
+     "decode": {
+      "wall_s": 0.012677042000007077,
+      "wall_s_min": 0.012227125000009664,
+      "wall_s_max": 0.013018041000009362,
+      "cpu_s": 0.010480999999999999,
+      "peak_rss_bytes": 6963200
+     },
+     "encode_mb_s": 134.79284075775632,
+     "decode_mb_s": 222.86989346555944,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "zstd -19",
+     "original_bytes": 2825331,
+     "compressed_bytes": 476366,
+     "bits_per_byte": 1.3488430205168882,
+     "encode": {
+      "wall_s": 1.0051772080000205,
+      "wall_s_min": 0.9308440419999897,
+      "wall_s_max": 1.0290522500000066,
+      "cpu_s": 1.000257,
+      "peak_rss_bytes": 59097088
+     },
+     "decode": {
+      "wall_s": 0.010136791000007861,
+      "wall_s_min": 0.009997124999983953,
+      "wall_s_max": 0.010273208000000977,
+      "cpu_s": 0.008313999999999998,
+      "peak_rss_bytes": 7258112
+     },
+     "encode_mb_s": 2.8107790124106575,
+     "decode_mb_s": 278.72045502346936,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "brotli -q 11",
+     "original_bytes": 2825331,
+     "compressed_bytes": 462791,
+     "bits_per_byte": 1.310405046346782,
+     "encode": {
+      "wall_s": 4.524524584000005,
+      "wall_s_min": 4.470894499999986,
+      "wall_s_max": 4.55805083300001,
+      "cpu_s": 4.5155579999999995,
+      "peak_rss_bytes": 48545792
+     },
+     "decode": {
+      "wall_s": 0.011599665999995068,
+      "wall_s_min": 0.011587500000018736,
+      "wall_s_max": 0.011879666999988103,
+      "cpu_s": 0.009661,
+      "peak_rss_bytes": 6258688
+     },
+     "encode_mb_s": 0.6244481486499525,
+     "decode_mb_s": 243.57003037856444,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_curl.c",
+     "category": "Code",
+     "compressor": "xz -9",
+     "original_bytes": 2825331,
+     "compressed_bytes": 469944,
+     "bits_per_byte": 1.3306589564196194,
+     "encode": {
+      "wall_s": 0.930623708000013,
+      "wall_s_min": 0.9198539170000117,
+      "wall_s_max": 1.0661259590000043,
+      "cpu_s": 0.9261159999999999,
+      "peak_rss_bytes": 95404032
+     },
+     "decode": {
+      "wall_s": 0.03748316599998702,
+      "wall_s_min": 0.03602545800001167,
+      "wall_s_max": 0.03936924999999292,
+      "cpu_s": 0.034413,
+      "peak_rss_bytes": 5160960
+     },
+     "encode_mb_s": 3.035954248438253,
+     "decode_mb_s": 75.37599678749064,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 357835,
+     "compressed_bytes": 64735,
+     "bits_per_byte": 1.4472592116478264,
+     "encode": {
+      "wall_s": 0.044051333999988174,
+      "wall_s_min": 0.04221799999999121,
+      "wall_s_max": 0.045624625000016295,
+      "cpu_s": 0.040431,
+      "peak_rss_bytes": 12517376
+     },
+     "decode": {
+      "wall_s": 0.05150000000000432,
+      "wall_s_min": 0.0454545830000086,
+      "wall_s_max": 0.06455025000002479,
+      "cpu_s": 0.048951999999999996,
+      "peak_rss_bytes": 12222464
+     },
+     "encode_mb_s": 8.123136520680534,
+     "decode_mb_s": 6.948252427183883,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "lpaq1 6",
+     "original_bytes": 357835,
+     "compressed_bytes": 57968,
+     "bits_per_byte": 1.2959716070255844,
+     "encode": {
+      "wall_s": 0.3281540419999942,
+      "wall_s_min": 0.3155716670000004,
+      "wall_s_max": 0.3817152080000028,
+      "cpu_s": 0.31924800000000003,
+      "peak_rss_bytes": 171917312
+     },
+     "decode": {
+      "wall_s": 0.40328741700000137,
+      "wall_s_min": 0.4018186250000042,
+      "wall_s_max": 0.4981505830000117,
+      "cpu_s": 0.394178,
+      "peak_rss_bytes": 171917312
+     },
+     "encode_mb_s": 1.0904482474727717,
+     "decode_mb_s": 0.8872952264711963,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "zpaq -m5",
+     "original_bytes": 357835,
+     "compressed_bytes": 58151,
+     "bits_per_byte": 1.3000628781421606,
+     "encode": {
+      "wall_s": 0.9675925839999877,
+      "wall_s_min": 0.8126069579999751,
+      "wall_s_max": 1.1097801660000073,
+      "cpu_s": 0.9606939999999999,
+      "peak_rss_bytes": 91357184
+     },
+     "decode": {
+      "wall_s": 0.8056974170000046,
+      "wall_s_min": 0.8050682920000156,
+      "wall_s_max": 0.8120198339999831,
+      "cpu_s": 0.801694,
+      "peak_rss_bytes": 91176960
+     },
+     "encode_mb_s": 0.36981990759036715,
+     "decode_mb_s": 0.44413075237648175,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "neurozip",
+     "original_bytes": 357835,
+     "compressed_bytes": 57591,
+     "bits_per_byte": 1.2875431413919824,
+     "encode": {
+      "wall_s": 0.6624867920000099,
+      "wall_s_min": 0.6320717919999765,
+      "wall_s_max": 0.7077675419999991,
+      "cpu_s": 0.656871,
+      "peak_rss_bytes": 186056704
+     },
+     "decode": {
+      "wall_s": 0.7717838339999901,
+      "wall_s_min": 0.7569612499999891,
+      "wall_s_max": 0.8354506670000035,
+      "cpu_s": 0.756061,
+      "peak_rss_bytes": 186171392
+     },
+     "encode_mb_s": 0.5401390704254141,
+     "decode_mb_s": 0.46364666404764915,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "neurozip ctx",
+     "original_bytes": 357835,
+     "compressed_bytes": 82555,
+     "bits_per_byte": 1.84565512037671,
+     "encode": {
+      "wall_s": 0.1918117079999888,
+      "wall_s_min": 0.187400915999973,
+      "wall_s_max": 0.1919323750000217,
+      "cpu_s": 0.185751,
+      "peak_rss_bytes": 103415808
+     },
+     "decode": {
+      "wall_s": 0.19935416600000622,
+      "wall_s_min": 0.1985790830000269,
+      "wall_s_max": 0.21141991700000062,
+      "cpu_s": 0.19463399999999997,
+      "peak_rss_bytes": 103628800
+     },
+     "encode_mb_s": 1.8655534833151106,
+     "decode_mb_s": 1.794971267367389,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "zstd -3",
+     "original_bytes": 357835,
+     "compressed_bytes": 89867,
+     "bits_per_byte": 2.0091271116576075,
+     "encode": {
+      "wall_s": 0.007940667000013946,
+      "wall_s_min": 0.007273249999997233,
+      "wall_s_max": 0.00795583400000055,
+      "cpu_s": 0.005697,
+      "peak_rss_bytes": 4227072
+     },
+     "decode": {
+      "wall_s": 0.006088624999989634,
+      "wall_s_min": 0.006000249999999596,
+      "wall_s_max": 0.006435833000011826,
+      "cpu_s": 0.0043289999999999995,
+      "peak_rss_bytes": 3342336
+     },
+     "encode_mb_s": 45.06359478358324,
+     "decode_mb_s": 58.77106900172194,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "zstd -19",
+     "original_bytes": 357835,
+     "compressed_bytes": 73723,
+     "bits_per_byte": 1.648200986488186,
+     "encode": {
+      "wall_s": 0.10082204199997591,
+      "wall_s_min": 0.10020662499999844,
+      "wall_s_max": 0.10382787500000745,
+      "cpu_s": 0.097787,
+      "peak_rss_bytes": 12484608
+     },
+     "decode": {
+      "wall_s": 0.008089541999993344,
+      "wall_s_min": 0.007792334000015444,
+      "wall_s_max": 0.009971333999999388,
+      "cpu_s": 0.005731,
+      "peak_rss_bytes": 3325952
+     },
+     "encode_mb_s": 3.5491742966293574,
+     "decode_mb_s": 44.234271853745796,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "brotli -q 11",
+     "original_bytes": 357835,
+     "compressed_bytes": 69949,
+     "bits_per_byte": 1.5638269034610923,
+     "encode": {
+      "wall_s": 0.4920387500000061,
+      "wall_s_min": 0.4913026659999957,
+      "wall_s_max": 0.5566265829999963,
+      "cpu_s": 0.48828199999999994,
+      "peak_rss_bytes": 18972672
+     },
+     "decode": {
+      "wall_s": 0.007488874999978634,
+      "wall_s_min": 0.007210208000003604,
+      "wall_s_max": 0.008478249999996024,
+      "cpu_s": 0.005006,
+      "peak_rss_bytes": 3145728
+     },
+     "encode_mb_s": 0.7272496322698072,
+     "decode_mb_s": 47.78221027871622,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_requests.py",
+     "category": "Code",
+     "compressor": "xz -9",
+     "original_bytes": 357835,
+     "compressed_bytes": 72612,
+     "bits_per_byte": 1.6233627230427432,
+     "encode": {
+      "wall_s": 0.0879793750000033,
+      "wall_s_min": 0.08609058400000436,
+      "wall_s_max": 0.09176891699999601,
+      "cpu_s": 0.08412499999999999,
+      "peak_rss_bytes": 70860800
+     },
+     "decode": {
+      "wall_s": 0.010780999999980168,
+      "wall_s_min": 0.010003541000003224,
+      "wall_s_max": 0.011035416999988001,
+      "cpu_s": 0.008213999999999999,
+      "peak_rss_bytes": 2686976
+     },
+     "encode_mb_s": 4.067260082263446,
+     "decode_mb_s": 33.19126240614584,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 2983466,
+     "compressed_bytes": 335856,
+     "bits_per_byte": 0.9005793932292173,
+     "encode": {
+      "wall_s": 0.1341840840000259,
+      "wall_s_min": 0.1311057919999996,
+      "wall_s_max": 0.15231812500002206,
+      "cpu_s": 0.131719,
+      "peak_rss_bytes": 33341440
+     },
+     "decode": {
+      "wall_s": 0.1640513330000033,
+      "wall_s_min": 0.1529855839999925,
+      "wall_s_max": 0.1748442500000067,
+      "cpu_s": 0.160826,
+      "peak_rss_bytes": 32342016
+     },
+     "encode_mb_s": 22.23412726057305,
+     "decode_mb_s": 18.18617347047061,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 2983466,
+     "compressed_bytes": 257068,
+     "bits_per_byte": 0.6893137042620898,
+     "encode": {
+      "wall_s": 1.1648148749999905,
+      "wall_s_min": 1.123538499999995,
+      "wall_s_max": 1.1842965419999985,
+      "cpu_s": 1.162133,
+      "peak_rss_bytes": 174555136
+     },
+     "decode": {
+      "wall_s": 1.8447548749999783,
+      "wall_s_min": 1.44439620899999,
+      "wall_s_max": 2.25893633299998,
+      "cpu_s": 1.8379379999999998,
+      "peak_rss_bytes": 174555136
+     },
+     "encode_mb_s": 2.561322029820425,
+     "decode_mb_s": 1.617269611497861,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 2983466,
+     "compressed_bytes": 236408,
+     "bits_per_byte": 0.633915050481554,
+     "encode": {
+      "wall_s": 8.192508833000005,
+      "wall_s_min": 7.907097832999995,
+      "wall_s_max": 8.799754166000014,
+      "cpu_s": 8.172307,
+      "peak_rss_bytes": 148127744
+     },
+     "decode": {
+      "wall_s": 8.233769042000006,
+      "wall_s_min": 8.12005941700005,
+      "wall_s_max": 9.051655541999992,
+      "cpu_s": 8.223747,
+      "peak_rss_bytes": 149127168
+     },
+     "encode_mb_s": 0.3641700071145957,
+     "decode_mb_s": 0.3623451161650883,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 2983466,
+     "compressed_bytes": 240479,
+     "bits_per_byte": 0.6448312130924234,
+     "encode": {
+      "wall_s": 4.876849457999981,
+      "wall_s_min": 4.816100916999972,
+      "wall_s_max": 5.901036125000019,
+      "cpu_s": 4.865815,
+      "peak_rss_bytes": 188727296
+     },
+     "decode": {
+      "wall_s": 5.978235290999976,
+      "wall_s_min": 5.803375125000002,
+      "wall_s_max": 6.072541749999971,
+      "cpu_s": 5.7988740000000005,
+      "peak_rss_bytes": 189104128
+     },
+     "encode_mb_s": 0.6117609382233286,
+     "decode_mb_s": 0.49905462979878085,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 2983466,
+     "compressed_bytes": 483187,
+     "bits_per_byte": 1.2956393670985358,
+     "encode": {
+      "wall_s": 1.4243914169999812,
+      "wall_s_min": 1.2382825420000358,
+      "wall_s_max": 1.567859833,
+      "cpu_s": 1.414481,
+      "peak_rss_bytes": 103514112
+     },
+     "decode": {
+      "wall_s": 1.2514810839999768,
+      "wall_s_min": 1.1836036669999999,
+      "wall_s_max": 1.3162899999999809,
+      "cpu_s": 1.2464819999999999,
+      "peak_rss_bytes": 103530496
+     },
+     "encode_mb_s": 2.094554884558139,
+     "decode_mb_s": 2.383948138044774,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 2983466,
+     "compressed_bytes": 445890,
+     "bits_per_byte": 1.1956295127881464,
+     "encode": {
+      "wall_s": 0.013130249999960597,
+      "wall_s_min": 0.01257883400000992,
+      "wall_s_max": 0.013556417000017973,
+      "cpu_s": 0.011389,
+      "peak_rss_bytes": 9076736
+     },
+     "decode": {
+      "wall_s": 0.008233916999984103,
+      "wall_s_min": 0.007996707999950559,
+      "wall_s_max": 0.008273416999998062,
+      "cpu_s": 0.0067989999999999995,
+      "peak_rss_bytes": 6750208
+     },
+     "encode_mb_s": 227.22080691601099,
+     "decode_mb_s": 362.3386050655794,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 2983466,
+     "compressed_bytes": 319490,
+     "bits_per_byte": 0.8566948642954202,
+     "encode": {
+      "wall_s": 0.858239000000026,
+      "wall_s_min": 0.847116208999978,
+      "wall_s_max": 0.9739688749999686,
+      "cpu_s": 0.854574,
+      "peak_rss_bytes": 59113472
+     },
+     "decode": {
+      "wall_s": 0.00796820799996567,
+      "wall_s_min": 0.0077832090000242715,
+      "wall_s_max": 0.008031542000026093,
+      "cpu_s": 0.006156,
+      "peak_rss_bytes": 6995968
+     },
+     "encode_mb_s": 3.4762647700697706,
+     "decode_mb_s": 374.42119984980985,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 2983466,
+     "compressed_bytes": 304267,
+     "bits_per_byte": 0.8158752270010786,
+     "encode": {
+      "wall_s": 5.2484215410000274,
+      "wall_s_min": 5.072603333000018,
+      "wall_s_max": 5.752169999999978,
+      "cpu_s": 5.24025,
+      "peak_rss_bytes": 56213504
+     },
+     "decode": {
+      "wall_s": 0.009835708000025534,
+      "wall_s_min": 0.009804541999983485,
+      "wall_s_max": 0.010654750000014701,
+      "cpu_s": 0.007977,
+      "peak_rss_bytes": 6258688
+     },
+     "encode_mb_s": 0.5684501476669753,
+     "decode_mb_s": 303.33007039170485,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_marine_ik.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 2983466,
+     "compressed_bytes": 313700,
+     "bits_per_byte": 0.8411692977228499,
+     "encode": {
+      "wall_s": 0.3903245000000197,
+      "wall_s_min": 0.38915254200003346,
+      "wall_s_max": 0.3932311670000104,
+      "cpu_s": 0.38750199999999996,
+      "peak_rss_bytes": 48906240
+     },
+     "decode": {
+      "wall_s": 0.025956917000030444,
+      "wall_s_min": 0.025318416000004618,
+      "wall_s_max": 0.02893791699995063,
+      "cpu_s": 0.024193,
+      "peak_rss_bytes": 5324800
+     },
+     "encode_mb_s": 7.643552992445643,
+     "decode_mb_s": 114.93915090133781,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 533178,
+     "compressed_bytes": 76095,
+     "bits_per_byte": 1.1417575368826172,
+     "encode": {
+      "wall_s": 0.03262145799999416,
+      "wall_s_min": 0.03223766699994712,
+      "wall_s_max": 0.03307799999998906,
+      "cpu_s": 0.030654,
+      "peak_rss_bytes": 19742720
+     },
+     "decode": {
+      "wall_s": 0.0350027910000108,
+      "wall_s_min": 0.03488341600001377,
+      "wall_s_max": 0.035340208999969036,
+      "cpu_s": 0.033119,
+      "peak_rss_bytes": 19267584
+     },
+     "encode_mb_s": 16.3443951524207,
+     "decode_mb_s": 15.23244246436907,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 533178,
+     "compressed_bytes": 72217,
+     "bits_per_byte": 1.0835705899343184,
+     "encode": {
+      "wall_s": 0.20799745799996572,
+      "wall_s_min": 0.20508320900000854,
+      "wall_s_max": 0.21811454200002345,
+      "cpu_s": 0.20410999999999999,
+      "peak_rss_bytes": 172113920
+     },
+     "decode": {
+      "wall_s": 0.2726079170000162,
+      "wall_s_min": 0.26924195800000916,
+      "wall_s_max": 0.279864874999987,
+      "cpu_s": 0.270538,
+      "peak_rss_bytes": 172113920
+     },
+     "encode_mb_s": 2.5633870967792687,
+     "decode_mb_s": 1.9558419501072979,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 533178,
+     "compressed_bytes": 71944,
+     "bits_per_byte": 1.0794743969181024,
+     "encode": {
+      "wall_s": 0.9678462500000364,
+      "wall_s_min": 0.944334500000025,
+      "wall_s_max": 1.0276274999999941,
+      "cpu_s": 0.964248,
+      "peak_rss_bytes": 91832320
+     },
+     "decode": {
+      "wall_s": 1.075892916999976,
+      "wall_s_min": 1.0728636670000355,
+      "wall_s_max": 1.0767296249999845,
+      "cpu_s": 1.07313,
+      "peak_rss_bytes": 92061696
+     },
+     "encode_mb_s": 0.5508912185173833,
+     "decode_mb_s": 0.4955679060391211,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 533178,
+     "compressed_bytes": 69611,
+     "bits_per_byte": 1.044469201654982,
+     "encode": {
+      "wall_s": 0.8095887079999784,
+      "wall_s_min": 0.7918457920000037,
+      "wall_s_max": 0.8128747910000129,
+      "cpu_s": 0.8049949999999999,
+      "peak_rss_bytes": 186253312
+     },
+     "decode": {
+      "wall_s": 0.819951417000027,
+      "wall_s_min": 0.8122103339999853,
+      "wall_s_max": 0.8665866250000249,
+      "cpu_s": 0.815304,
+      "peak_rss_bytes": 186368000
+     },
+     "encode_mb_s": 0.6585788496447437,
+     "decode_mb_s": 0.6502555992289754,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 533178,
+     "compressed_bytes": 102813,
+     "bits_per_byte": 1.5426442951509627,
+     "encode": {
+      "wall_s": 0.2306325409999772,
+      "wall_s_min": 0.22992891699999518,
+      "wall_s_max": 0.23283412499995393,
+      "cpu_s": 0.22709799999999997,
+      "peak_rss_bytes": 103415808
+     },
+     "decode": {
+      "wall_s": 0.24321249999997008,
+      "wall_s_min": 0.24017645800000764,
+      "wall_s_max": 0.2494093330000169,
+      "cpu_s": 0.24062499999999998,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 2.311807335115181,
+     "decode_mb_s": 2.192231073649856,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 533178,
+     "compressed_bytes": 116648,
+     "bits_per_byte": 1.7502297544159737,
+     "encode": {
+      "wall_s": 0.006958040999961668,
+      "wall_s_min": 0.006662791999985984,
+      "wall_s_max": 0.007748999999989792,
+      "cpu_s": 0.005226,
+      "peak_rss_bytes": 4882432
+     },
+     "decode": {
+      "wall_s": 0.00558608300002561,
+      "wall_s_min": 0.005526625000015883,
+      "wall_s_max": 0.005595041999981731,
+      "cpu_s": 0.003946,
+      "peak_rss_bytes": 3735552
+     },
+     "encode_mb_s": 76.62760251095636,
+     "decode_mb_s": 95.447561376649,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 533178,
+     "compressed_bytes": 97359,
+     "bits_per_byte": 1.4608104610467798,
+     "encode": {
+      "wall_s": 0.13399329200001375,
+      "wall_s_min": 0.13085845800003426,
+      "wall_s_max": 0.13637691600001745,
+      "cpu_s": 0.13125499999999998,
+      "peak_rss_bytes": 21397504
+     },
+     "decode": {
+      "wall_s": 0.005718582999975297,
+      "wall_s_min": 0.005536666000011792,
+      "wall_s_max": 0.006508958000040366,
+      "cpu_s": 0.0038929999999999998,
+      "peak_rss_bytes": 3702784
+     },
+     "encode_mb_s": 3.9791394930422737,
+     "decode_mb_s": 93.23603417180502,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 533178,
+     "compressed_bytes": 91855,
+     "bits_per_byte": 1.3782264084414586,
+     "encode": {
+      "wall_s": 0.9044441249999977,
+      "wall_s_min": 0.7942547499999932,
+      "wall_s_max": 0.9544257499999844,
+      "cpu_s": 0.897846,
+      "peak_rss_bytes": 21282816
+     },
+     "decode": {
+      "wall_s": 0.009633791999988262,
+      "wall_s_min": 0.008194582999976774,
+      "wall_s_max": 0.011091125000007196,
+      "cpu_s": 0.007091999999999999,
+      "peak_rss_bytes": 3538944
+     },
+     "encode_mb_s": 0.5895090534199682,
+     "decode_mb_s": 55.344562141330194,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_update_center.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 533178,
+     "compressed_bytes": 95040,
+     "bits_per_byte": 1.4260153269639784,
+     "encode": {
+      "wall_s": 0.14435866700000588,
+      "wall_s_min": 0.1441077499999892,
+      "wall_s_max": 0.14471162500001356,
+      "cpu_s": 0.140806,
+      "peak_rss_bytes": 74645504
+     },
+     "decode": {
+      "wall_s": 0.013257957999996961,
+      "wall_s_min": 0.013096749999988333,
+      "wall_s_max": 0.013749082999993334,
+      "cpu_s": 0.011120999999999999,
+      "peak_rss_bytes": 2867200
+     },
+     "encode_mb_s": 3.693425625771249,
+     "decode_mb_s": 40.21569535822351,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 220346,
+     "compressed_bytes": 2487,
+     "bits_per_byte": 0.09029435524130232,
+     "encode": {
+      "wall_s": 0.009626207999986036,
+      "wall_s_min": 0.009459875000004558,
+      "wall_s_max": 0.010383708000006209,
+      "cpu_s": 0.007452,
+      "peak_rss_bytes": 5259264
+     },
+     "decode": {
+      "wall_s": 0.00947879099999227,
+      "wall_s_min": 0.009270208000032198,
+      "wall_s_max": 0.009544542000014644,
+      "cpu_s": 0.00747,
+      "peak_rss_bytes": 5079040
+     },
+     "encode_mb_s": 22.89021803812255,
+     "decode_mb_s": 23.246213573036865,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 220346,
+     "compressed_bytes": 2287,
+     "bits_per_byte": 0.0830330480244706,
+     "encode": {
+      "wall_s": 0.11197254200004636,
+      "wall_s_min": 0.11118983299996898,
+      "wall_s_max": 0.11213429200000746,
+      "cpu_s": 0.10750699999999999,
+      "peak_rss_bytes": 141721600
+     },
+     "decode": {
+      "wall_s": 0.1257888340000477,
+      "wall_s_min": 0.11629858300000251,
+      "wall_s_max": 0.1368953749999946,
+      "cpu_s": 0.121345,
+      "peak_rss_bytes": 141721600
+     },
+     "encode_mb_s": 1.9678574413351155,
+     "decode_mb_s": 1.7517135105959916,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 220346,
+     "compressed_bytes": 3468,
+     "bits_per_byte": 0.12591106713986186,
+     "encode": {
+      "wall_s": 0.4807406250000099,
+      "wall_s_min": 0.47333420899997236,
+      "wall_s_max": 0.48562687500003676,
+      "cpu_s": 0.477016,
+      "peak_rss_bytes": 90701824
+     },
+     "decode": {
+      "wall_s": 0.44188674999998057,
+      "wall_s_min": 0.4387701250000191,
+      "wall_s_max": 0.4475760409999907,
+      "cpu_s": 0.43841199999999997,
+      "peak_rss_bytes": 90390528
+     },
+     "encode_mb_s": 0.45834695164361333,
+     "decode_mb_s": 0.4986481264713406,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 220346,
+     "compressed_bytes": 2203,
+     "bits_per_byte": 0.07998329899340129,
+     "encode": {
+      "wall_s": 0.31065245799999275,
+      "wall_s_min": 0.3088559999999916,
+      "wall_s_max": 0.3108218330000341,
+      "cpu_s": 0.30642,
+      "peak_rss_bytes": 185860096
+     },
+     "decode": {
+      "wall_s": 0.3267276660000107,
+      "wall_s_min": 0.3245432919999871,
+      "wall_s_max": 0.3268657080000139,
+      "cpu_s": 0.322199,
+      "peak_rss_bytes": 185876480
+     },
+     "encode_mb_s": 0.7093006809558389,
+     "decode_mb_s": 0.674402638434643,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 220346,
+     "compressed_bytes": 14891,
+     "bits_per_byte": 0.5406406288292049,
+     "encode": {
+      "wall_s": 0.09002787500003251,
+      "wall_s_min": 0.08922633299999916,
+      "wall_s_max": 0.09155970799997704,
+      "cpu_s": 0.08649799999999999,
+      "peak_rss_bytes": 103284736
+     },
+     "decode": {
+      "wall_s": 0.09569850000002589,
+      "wall_s_min": 0.08945612499996969,
+      "wall_s_max": 0.09747904200003177,
+      "cpu_s": 0.092194,
+      "peak_rss_bytes": 103333888
+     },
+     "encode_mb_s": 2.447530834199079,
+     "decode_mb_s": 2.30250212908186,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 220346,
+     "compressed_bytes": 3952,
+     "bits_per_byte": 0.1434834306045946,
+     "encode": {
+      "wall_s": 0.0051985409999701915,
+      "wall_s_min": 0.005131125000048087,
+      "wall_s_max": 0.0056979169999635815,
+      "cpu_s": 0.003464,
+      "peak_rss_bytes": 3489792
+     },
+     "decode": {
+      "wall_s": 0.005664291000016419,
+      "wall_s_min": 0.005069624999975986,
+      "wall_s_max": 0.005731041999979425,
+      "cpu_s": 0.0036509999999999997,
+      "peak_rss_bytes": 2981888
+     },
+     "encode_mb_s": 42.386123337540944,
+     "decode_mb_s": 38.900896864119666,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 220346,
+     "compressed_bytes": 2730,
+     "bits_per_byte": 0.09911684350975285,
+     "encode": {
+      "wall_s": 0.02159937499999387,
+      "wall_s_min": 0.021286250000002838,
+      "wall_s_max": 0.02192600000000766,
+      "cpu_s": 0.019797000000000002,
+      "peak_rss_bytes": 7733248
+     },
+     "decode": {
+      "wall_s": 0.0051738750000254186,
+      "wall_s_min": 0.0051712499999894135,
+      "wall_s_max": 0.005439625000008164,
+      "cpu_s": 0.0034159999999999998,
+      "peak_rss_bytes": 2981888
+     },
+     "encode_mb_s": 10.20149888596603,
+     "decode_mb_s": 42.58819550122828,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 220346,
+     "compressed_bytes": 2474,
+     "bits_per_byte": 0.08982237027220825,
+     "encode": {
+      "wall_s": 0.05413025000001426,
+      "wall_s_min": 0.053098125000019536,
+      "wall_s_max": 0.05896333300000833,
+      "cpu_s": 0.052317,
+      "peak_rss_bytes": 11616256
+     },
+     "decode": {
+      "wall_s": 0.00510474999998678,
+      "wall_s_min": 0.005017124999994849,
+      "wall_s_max": 0.005281999999965592,
+      "cpu_s": 0.003258,
+      "peak_rss_bytes": 2768896
+     },
+     "encode_mb_s": 4.070662891820044,
+     "decode_mb_s": 43.16489544063287,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_instruments.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 220346,
+     "compressed_bytes": 2940,
+     "bits_per_byte": 0.10674121608742614,
+     "encode": {
+      "wall_s": 0.018329958000038005,
+      "wall_s_min": 0.01820129100002532,
+      "wall_s_max": 0.018645457999980408,
+      "cpu_s": 0.01622,
+      "peak_rss_bytes": 19283968
+     },
+     "decode": {
+      "wall_s": 0.005423333000010189,
+      "wall_s_min": 0.005009040999993886,
+      "wall_s_max": 0.006095791999996436,
+      "cpu_s": 0.003647,
+      "peak_rss_bytes": 2555904
+     },
+     "encode_mb_s": 12.021085918447993,
+     "decode_mb_s": 40.629258797050824,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 4194304,
+     "compressed_bytes": 757464,
+     "bits_per_byte": 1.4447479248046875,
+     "encode": {
+      "wall_s": 0.352560541999992,
+      "wall_s_min": 0.3226142080000045,
+      "wall_s_max": 0.37140079100004186,
+      "cpu_s": 0.34954799999999997,
+      "peak_rss_bytes": 72630272
+     },
+     "decode": {
+      "wall_s": 0.3808837909999738,
+      "wall_s_min": 0.3723287500000083,
+      "wall_s_max": 0.38483604200001764,
+      "cpu_s": 0.377224,
+      "peak_rss_bytes": 71614464
+     },
+     "encode_mb_s": 11.896691490791092,
+     "decode_mb_s": 11.012030700986926,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "lpaq1 6",
+     "original_bytes": 4194304,
+     "compressed_bytes": 690823,
+     "bits_per_byte": 1.3176403045654297,
+     "encode": {
+      "wall_s": 3.39912425,
+      "wall_s_min": 2.58556150000004,
+      "wall_s_max": 4.4479917499999715,
+      "cpu_s": 3.394575,
+      "peak_rss_bytes": 175767552
+     },
+     "decode": {
+      "wall_s": 4.217198292000035,
+      "wall_s_min": 4.023737833000041,
+      "wall_s_max": 4.488315,
+      "cpu_s": 4.20061,
+      "peak_rss_bytes": 175767552
+     },
+     "encode_mb_s": 1.2339366529481821,
+     "decode_mb_s": 0.9945712080829908,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "zpaq -m5",
+     "original_bytes": 4194304,
+     "compressed_bytes": 682591,
+     "bits_per_byte": 1.3019390106201172,
+     "encode": {
+      "wall_s": 15.314896792000013,
+      "wall_s_min": 14.749899207999988,
+      "wall_s_max": 18.05893037499999,
+      "cpu_s": 15.303559,
+      "peak_rss_bytes": 187990016
+     },
+     "decode": {
+      "wall_s": 17.848122999999987,
+      "wall_s_min": 16.587820375000035,
+      "wall_s_max": 18.065290375000018,
+      "cpu_s": 17.833861000000002,
+      "peak_rss_bytes": 190054400
+     },
+     "encode_mb_s": 0.27387086292288715,
+     "decode_mb_s": 0.2349997251811859,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "neurozip",
+     "original_bytes": 4194304,
+     "compressed_bytes": 678098,
+     "bits_per_byte": 1.2933692932128906,
+     "encode": {
+      "wall_s": 12.599843917000044,
+      "wall_s_min": 11.273086792000015,
+      "wall_s_max": 12.654004082999904,
+      "cpu_s": 12.55996,
+      "peak_rss_bytes": 189906944
+     },
+     "decode": {
+      "wall_s": 13.659998458000018,
+      "wall_s_min": 13.150440084000024,
+      "wall_s_max": 13.855135792000056,
+      "cpu_s": 13.591242,
+      "peak_rss_bytes": 190038016
+     },
+     "encode_mb_s": 0.33288539347229007,
+     "decode_mb_s": 0.30705010786758863,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "neurozip ctx",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1023348,
+     "bits_per_byte": 1.9518814086914062,
+     "encode": {
+      "wall_s": 2.9964110839999876,
+      "wall_s_min": 2.5406037089999245,
+      "wall_s_max": 3.030905374999975,
+      "cpu_s": 2.988747,
+      "peak_rss_bytes": 103464960
+     },
+     "decode": {
+      "wall_s": 2.8409477080000443,
+      "wall_s_min": 2.5897363750000295,
+      "wall_s_max": 3.1714111659999844,
+      "cpu_s": 2.835646,
+      "peak_rss_bytes": 103759872
+     },
+     "encode_mb_s": 1.3997758926992465,
+     "decode_mb_s": 1.4763749393165297,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "zstd -3",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1023245,
+     "bits_per_byte": 1.9516849517822266,
+     "encode": {
+      "wall_s": 0.026335500000072898,
+      "wall_s_min": 0.025542916999938825,
+      "wall_s_max": 0.02737745799993263,
+      "cpu_s": 0.023444999999999997,
+      "peak_rss_bytes": 11288576
+     },
+     "decode": {
+      "wall_s": 0.014886000000046806,
+      "wall_s_min": 0.014672666000024037,
+      "wall_s_max": 0.015430874999992739,
+      "cpu_s": 0.0133,
+      "peak_rss_bytes": 7421952
+     },
+     "encode_mb_s": 159.26426306652198,
+     "decode_mb_s": 281.7616552456544,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "zstd -19",
+     "original_bytes": 4194304,
+     "compressed_bytes": 867496,
+     "bits_per_byte": 1.6546173095703125,
+     "encode": {
+      "wall_s": 1.6322824589999527,
+      "wall_s_min": 1.5969760830000723,
+      "wall_s_max": 1.6749078750000308,
+      "cpu_s": 1.62726,
+      "peak_rss_bytes": 61095936
+     },
+     "decode": {
+      "wall_s": 0.017836916999954155,
+      "wall_s_min": 0.016850291999958245,
+      "wall_s_max": 0.0180024170000479,
+      "cpu_s": 0.014929,
+      "peak_rss_bytes": 9191424
+     },
+     "encode_mb_s": 2.569594482176642,
+     "decode_mb_s": 235.1473631912275,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "brotli -q 11",
+     "original_bytes": 4194304,
+     "compressed_bytes": 794025,
+     "bits_per_byte": 1.5144824981689453,
+     "encode": {
+      "wall_s": 8.574217542000042,
+      "wall_s_min": 8.503504375000034,
+      "wall_s_max": 8.576972875000024,
+      "cpu_s": 8.570447000000001,
+      "peak_rss_bytes": 72597504
+     },
+     "decode": {
+      "wall_s": 0.02736945799995283,
+      "wall_s_min": 0.02669904200001838,
+      "wall_s_max": 0.02813687499997286,
+      "cpu_s": 0.022254999999999997,
+      "peak_rss_bytes": 7602176
+     },
+     "encode_mb_s": 0.4891762985315657,
+     "decode_mb_s": 153.24760906873746,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_conn.log",
+     "category": "Logs",
+     "compressor": "xz -9",
+     "original_bytes": 4194304,
+     "compressed_bytes": 823812,
+     "bits_per_byte": 1.5712966918945312,
+     "encode": {
+      "wall_s": 1.684556415999964,
+      "wall_s_min": 1.5775319169999875,
+      "wall_s_max": 1.7340895000000955,
+      "cpu_s": 1.681781,
+      "peak_rss_bytes": 107659264
+     },
+     "decode": {
+      "wall_s": 0.1007980829999724,
+      "wall_s_min": 0.10050241700002971,
+      "wall_s_max": 0.10234074999993936,
+      "cpu_s": 0.09697899999999998,
+      "peak_rss_bytes": 6537216
+     },
+     "encode_mb_s": 2.4898566531594803,
+     "decode_mb_s": 41.610950081274346,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 4194304,
+     "compressed_bytes": 431337,
+     "bits_per_byte": 0.8227100372314453,
+     "encode": {
+      "wall_s": 0.40705929199998536,
+      "wall_s_min": 0.3906177909999542,
+      "wall_s_max": 0.438390916000003,
+      "cpu_s": 0.402993,
+      "peak_rss_bytes": 62832640
+     },
+     "decode": {
+      "wall_s": 0.409412166999914,
+      "wall_s_min": 0.38015054200002396,
+      "wall_s_max": 0.4194273340000336,
+      "cpu_s": 0.403579,
+      "peak_rss_bytes": 61833216
+     },
+     "encode_mb_s": 10.303914153125758,
+     "decode_mb_s": 10.244697979385847,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "lpaq1 6",
+     "original_bytes": 4194304,
+     "compressed_bytes": 404043,
+     "bits_per_byte": 0.7706508636474609,
+     "encode": {
+      "wall_s": 3.7844345419999854,
+      "wall_s_min": 3.460701666000091,
+      "wall_s_max": 3.7944937080000045,
+      "cpu_s": 3.7764900000000003,
+      "peak_rss_bytes": 175751168
+     },
+     "decode": {
+      "wall_s": 4.103640291000033,
+      "wall_s_min": 3.867995083999972,
+      "wall_s_max": 4.422922083000003,
+      "cpu_s": 4.090521,
+      "peak_rss_bytes": 175751168
+     },
+     "encode_mb_s": 1.1083040156861605,
+     "decode_mb_s": 1.022093483485579,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "zpaq -m5",
+     "original_bytes": 4194304,
+     "compressed_bytes": 404988,
+     "bits_per_byte": 0.7724533081054688,
+     "encode": {
+      "wall_s": 17.748882542000047,
+      "wall_s_min": 17.41441558300005,
+      "wall_s_max": 17.90414208300001,
+      "cpu_s": 17.731039,
+      "peak_rss_bytes": 187957248
+     },
+     "decode": {
+      "wall_s": 17.847115791999954,
+      "wall_s_min": 17.107590125,
+      "wall_s_max": 18.721629750000034,
+      "cpu_s": 17.809908999999998,
+      "peak_rss_bytes": 188940288
+     },
+     "encode_mb_s": 0.2363136941198869,
+     "decode_mb_s": 0.2350129874699482,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "neurozip",
+     "original_bytes": 4194304,
+     "compressed_bytes": 402562,
+     "bits_per_byte": 0.7678260803222656,
+     "encode": {
+      "wall_s": 13.529208583000013,
+      "wall_s_min": 13.431286999999998,
+      "wall_s_max": 13.550154040999928,
+      "cpu_s": 13.516328999999999,
+      "peak_rss_bytes": 189906944
+     },
+     "decode": {
+      "wall_s": 12.902571541999919,
+      "wall_s_min": 12.860836790999997,
+      "wall_s_max": 13.088135625000064,
+      "cpu_s": 12.89331,
+      "peak_rss_bytes": 190005248
+     },
+     "encode_mb_s": 0.3100184297010772,
+     "decode_mb_s": 0.3250750430909741,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "neurozip ctx",
+     "original_bytes": 4194304,
+     "compressed_bytes": 660288,
+     "bits_per_byte": 1.2593994140625,
+     "encode": {
+      "wall_s": 4.341347541999994,
+      "wall_s_min": 3.279958167000018,
+      "wall_s_max": 4.5341991250001,
+      "cpu_s": 4.336972,
+      "peak_rss_bytes": 103415808
+     },
+     "decode": {
+      "wall_s": 3.3659334170000648,
+      "wall_s_min": 2.851123083999937,
+      "wall_s_max": 3.5444767499999443,
+      "cpu_s": 3.359669,
+      "peak_rss_bytes": 103481344
+     },
+     "encode_mb_s": 0.9661295161059017,
+     "decode_mb_s": 1.2461042689722104,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "zstd -3",
+     "original_bytes": 4194304,
+     "compressed_bytes": 599350,
+     "bits_per_byte": 1.1431694030761719,
+     "encode": {
+      "wall_s": 0.020448750000014115,
+      "wall_s_min": 0.02000920800003314,
+      "wall_s_max": 0.020560832999990453,
+      "cpu_s": 0.017958,
+      "peak_rss_bytes": 10403840
+     },
+     "decode": {
+      "wall_s": 0.013824833000057879,
+      "wall_s_min": 0.013793958999940514,
+      "wall_s_max": 0.014564167000003181,
+      "cpu_s": 0.012104,
+      "peak_rss_bytes": 7208960
+     },
+     "encode_mb_s": 205.1129775657243,
+     "decode_mb_s": 303.3891259288586,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "zstd -19",
+     "original_bytes": 4194304,
+     "compressed_bytes": 489256,
+     "bits_per_byte": 0.9331817626953125,
+     "encode": {
+      "wall_s": 3.111214458000063,
+      "wall_s_min": 2.377254541999946,
+      "wall_s_max": 3.281925499999943,
+      "cpu_s": 3.105768,
+      "peak_rss_bytes": 60424192
+     },
+     "decode": {
+      "wall_s": 0.016407458000003317,
+      "wall_s_min": 0.01626970799998162,
+      "wall_s_max": 0.01887912500001221,
+      "cpu_s": 0.01353,
+      "peak_rss_bytes": 8732672
+     },
+     "encode_mb_s": 1.3481243599954738,
+     "decode_mb_s": 255.63399278542428,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "brotli -q 11",
+     "original_bytes": 4194304,
+     "compressed_bytes": 462026,
+     "bits_per_byte": 0.8812446594238281,
+     "encode": {
+      "wall_s": 12.71767679200002,
+      "wall_s_min": 11.692917957999953,
+      "wall_s_max": 12.885359457999925,
+      "cpu_s": 12.69737,
+      "peak_rss_bytes": 55918592
+     },
+     "decode": {
+      "wall_s": 0.021272875000022395,
+      "wall_s_min": 0.02066754099996615,
+      "wall_s_max": 0.0216085419999672,
+      "cpu_s": 0.017466,
+      "peak_rss_bytes": 7553024
+     },
+     "encode_mb_s": 0.3298011160842208,
+     "decode_mb_s": 197.1667675382657,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_http.log",
+     "category": "Logs",
+     "compressor": "xz -9",
+     "original_bytes": 4194304,
+     "compressed_bytes": 493436,
+     "bits_per_byte": 0.9411544799804688,
+     "encode": {
+      "wall_s": 1.1236478330000637,
+      "wall_s_min": 0.9361106669999799,
+      "wall_s_max": 1.1574287079999976,
+      "cpu_s": 1.116995,
+      "peak_rss_bytes": 107659264
+     },
+     "decode": {
+      "wall_s": 0.0497170000001006,
+      "wall_s_min": 0.049534624999978405,
+      "wall_s_max": 0.05628104200002326,
+      "cpu_s": 0.046849999999999996,
+      "peak_rss_bytes": 6537216
+     },
+     "encode_mb_s": 3.732756720405442,
+     "decode_mb_s": 84.36357785046388,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 2319424,
+     "compressed_bytes": 811039,
+     "bits_per_byte": 2.7973807290085815,
+     "encode": {
+      "wall_s": 0.5941062910000028,
+      "wall_s_min": 0.5301866660000769,
+      "wall_s_max": 0.7375191249999489,
+      "cpu_s": 0.588316,
+      "peak_rss_bytes": 72663040
+     },
+     "decode": {
+      "wall_s": 0.8745825830000058,
+      "wall_s_min": 0.7707047079999256,
+      "wall_s_max": 0.884516000000076,
+      "cpu_s": 0.8667379999999999,
+      "peak_rss_bytes": 71680000
+     },
+     "encode_mb_s": 3.90405561283644,
+     "decode_mb_s": 2.6520354339139462,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "lpaq1 6",
+     "original_bytes": 2319424,
+     "compressed_bytes": 705709,
+     "bits_per_byte": 2.4340836345575454,
+     "encode": {
+      "wall_s": 3.668446000000017,
+      "wall_s_min": 3.6119750000000295,
+      "wall_s_max": 3.7323744999999917,
+      "cpu_s": 3.664173,
+      "peak_rss_bytes": 173899776
+     },
+     "decode": {
+      "wall_s": 3.7077654589999156,
+      "wall_s_min": 3.6251783339999974,
+      "wall_s_max": 3.8314673329999778,
+      "cpu_s": 3.6966490000000003,
+      "peak_rss_bytes": 173916160
+     },
+     "encode_mb_s": 0.6322633616523152,
+     "decode_mb_s": 0.6255584463601997,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "zpaq -m5",
+     "original_bytes": 2319424,
+     "compressed_bytes": 639298,
+     "bits_per_byte": 2.2050233161336608,
+     "encode": {
+      "wall_s": 13.714939707999974,
+      "wall_s_min": 13.173591957999975,
+      "wall_s_max": 14.791429333999986,
+      "cpu_s": 13.675303,
+      "peak_rss_bytes": 133922816
+     },
+     "decode": {
+      "wall_s": 13.087214708999909,
+      "wall_s_min": 11.50966137499995,
+      "wall_s_max": 14.227347082999927,
+      "cpu_s": 13.05737,
+      "peak_rss_bytes": 134873088
+     },
+     "encode_mb_s": 0.16911660199622108,
+     "decode_mb_s": 0.17722823775520105,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip",
+     "original_bytes": 2319424,
+     "compressed_bytes": 618340,
+     "bits_per_byte": 2.132736403520874,
+     "encode": {
+      "wall_s": 10.28139304199999,
+      "wall_s_min": 8.89057062500001,
+      "wall_s_max": 10.599722165999992,
+      "cpu_s": 10.263763,
+      "peak_rss_bytes": 188350464
+     },
+     "decode": {
+      "wall_s": 9.466121625000142,
+      "wall_s_min": 7.737192249999907,
+      "wall_s_max": 11.145596165999905,
+      "cpu_s": 9.447458000000001,
+      "peak_rss_bytes": 188481536
+     },
+     "encode_mb_s": 0.22559433245330085,
+     "decode_mb_s": 0.24502368466029142,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip ctx",
+     "original_bytes": 2319424,
+     "compressed_bytes": 1037787,
+     "bits_per_byte": 3.57946455671753,
+     "encode": {
+      "wall_s": 2.0007392919999347,
+      "wall_s_min": 1.8542535409999346,
+      "wall_s_max": 2.202603624999938,
+      "cpu_s": 1.993823,
+      "peak_rss_bytes": 103645184
+     },
+     "decode": {
+      "wall_s": 2.388643333000118,
+      "wall_s_min": 1.9045212920000267,
+      "wall_s_max": 2.6639676669999517,
+      "cpu_s": 2.384534,
+      "peak_rss_bytes": 103874560
+     },
+     "encode_mb_s": 1.159283475500453,
+     "decode_mb_s": 0.9710214865301053,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -3",
+     "original_bytes": 2319424,
+     "compressed_bytes": 929399,
+     "bits_per_byte": 3.2056200160039734,
+     "encode": {
+      "wall_s": 0.03512087499984773,
+      "wall_s_min": 0.03393975000017235,
+      "wall_s_max": 0.03525958399995943,
+      "cpu_s": 0.031641,
+      "peak_rss_bytes": 9437184
+     },
+     "decode": {
+      "wall_s": 0.020263750000140135,
+      "wall_s_min": 0.020179874999939784,
+      "wall_s_max": 0.021817874999896958,
+      "cpu_s": 0.017104,
+      "peak_rss_bytes": 7323648
+     },
+     "encode_mb_s": 66.04117921350354,
+     "decode_mb_s": 114.46173585757622,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -19",
+     "original_bytes": 2319424,
+     "compressed_bytes": 789243,
+     "bits_per_byte": 2.7222034436135867,
+     "encode": {
+      "wall_s": 0.7471530000000257,
+      "wall_s_min": 0.7261613339999258,
+      "wall_s_max": 0.8426185840000926,
+      "cpu_s": 0.7442529999999999,
+      "peak_rss_bytes": 59539456
+     },
+     "decode": {
+      "wall_s": 0.01859704100002091,
+      "wall_s_min": 0.018407083000056446,
+      "wall_s_max": 0.018784584000059112,
+      "cpu_s": 0.01578,
+      "peak_rss_bytes": 7159808
+     },
+     "encode_mb_s": 3.104349443821975,
+     "decode_mb_s": 124.72005627117736,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "brotli -q 11",
+     "original_bytes": 2319424,
+     "compressed_bytes": 751316,
+     "bits_per_byte": 2.5913882067271876,
+     "encode": {
+      "wall_s": 9.023313457999848,
+      "wall_s_min": 7.83594949999997,
+      "wall_s_max": 9.155063291000033,
+      "cpu_s": 9.012072,
+      "peak_rss_bytes": 51167232
+     },
+     "decode": {
+      "wall_s": 0.02391020799996113,
+      "wall_s_min": 0.023532250000016575,
+      "wall_s_max": 0.02396112499991432,
+      "cpu_s": 0.020062999999999998,
+      "peak_rss_bytes": 6045696
+     },
+     "encode_mb_s": 0.25704792488879524,
+     "decode_mb_s": 97.00559694017596,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_linux_x64",
+     "category": "Executables",
+     "compressor": "xz -9",
+     "original_bytes": 2319424,
+     "compressed_bytes": 728816,
+     "bits_per_byte": 2.5137827322645623,
+     "encode": {
+      "wall_s": 0.7632912500000657,
+      "wall_s_min": 0.7458033329999125,
+      "wall_s_max": 0.7725493339999048,
+      "cpu_s": 0.7599899999999999,
+      "peak_rss_bytes": 90980352
+     },
+     "decode": {
+      "wall_s": 0.07915991699996994,
+      "wall_s_min": 0.07911008300015965,
+      "wall_s_max": 0.08025512500012155,
+      "cpu_s": 0.075628,
+      "peak_rss_bytes": 4653056
+     },
+     "encode_mb_s": 3.038714252259279,
+     "decode_mb_s": 29.300485496983036,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 985088,
+     "compressed_bytes": 303696,
+     "bits_per_byte": 2.4663461538461537,
+     "encode": {
+      "wall_s": 0.19964091699989694,
+      "wall_s_min": 0.1993991660001484,
+      "wall_s_max": 0.20716604099993674,
+      "cpu_s": 0.22216799999999998,
+      "peak_rss_bytes": 27672576
+     },
+     "decode": {
+      "wall_s": 0.2765127500001654,
+      "wall_s_min": 0.26278129100001024,
+      "wall_s_max": 0.27756300000010015,
+      "cpu_s": 0.27663699999999997,
+      "peak_rss_bytes": 21544960
+     },
+     "encode_mb_s": 4.934299114647467,
+     "decode_mb_s": 3.562540967819425,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "lpaq1 6",
+     "original_bytes": 985088,
+     "compressed_bytes": 299828,
+     "bits_per_byte": 2.434933731808732,
+     "encode": {
+      "wall_s": 1.5674236249999467,
+      "wall_s_min": 1.2845312920001106,
+      "wall_s_max": 1.6276795829999173,
+      "cpu_s": 1.5608469999999999,
+      "peak_rss_bytes": 172589056
+     },
+     "decode": {
+      "wall_s": 1.729250041999876,
+      "wall_s_min": 1.6282912080000642,
+      "wall_s_max": 1.739808708999817,
+      "cpu_s": 1.722141,
+      "peak_rss_bytes": 172589056
+     },
+     "encode_mb_s": 0.6284759169685435,
+     "decode_mb_s": 0.569661978357246,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "zpaq -m5",
+     "original_bytes": 985088,
+     "compressed_bytes": 267374,
+     "bits_per_byte": 2.171371491683992,
+     "encode": {
+      "wall_s": 5.08068045899995,
+      "wall_s_min": 5.033756291999907,
+      "wall_s_max": 5.156063417000041,
+      "cpu_s": 5.073795,
+      "peak_rss_bytes": 93159424
+     },
+     "decode": {
+      "wall_s": 5.688647790999994,
+      "wall_s_min": 5.354766124999969,
+      "wall_s_max": 5.75375166699996,
+      "cpu_s": 5.673186,
+      "peak_rss_bytes": 92209152
+     },
+     "encode_mb_s": 0.19388898946695393,
+     "decode_mb_s": 0.1731673389163778,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "neurozip",
+     "original_bytes": 985088,
+     "compressed_bytes": 253829,
+     "bits_per_byte": 2.061371166839917,
+     "encode": {
+      "wall_s": 4.508609125000021,
+      "wall_s_min": 3.288656958000047,
+      "wall_s_max": 4.6792182919998595,
+      "cpu_s": 4.490236,
+      "peak_rss_bytes": 187383808
+     },
+     "decode": {
+      "wall_s": 3.9798727079999026,
+      "wall_s_min": 3.9010580840001694,
+      "wall_s_max": 4.861620041999913,
+      "cpu_s": 3.9710020000000004,
+      "peak_rss_bytes": 186892288
+     },
+     "encode_mb_s": 0.2184904418832261,
+     "decode_mb_s": 0.2475174640686081,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "neurozip ctx",
+     "original_bytes": 985088,
+     "compressed_bytes": 437772,
+     "bits_per_byte": 3.555191008316008,
+     "encode": {
+      "wall_s": 0.8030969159999586,
+      "wall_s_min": 0.7797752910000781,
+      "wall_s_max": 0.9060485830000289,
+      "cpu_s": 0.796971,
+      "peak_rss_bytes": 103645184
+     },
+     "decode": {
+      "wall_s": 1.092665874999966,
+      "wall_s_min": 0.9779646250001406,
+      "wall_s_max": 1.1906823749998239,
+      "cpu_s": 1.0856839999999999,
+      "peak_rss_bytes": 103759872
+     },
+     "encode_mb_s": 1.2266116086044723,
+     "decode_mb_s": 0.9015454976115462,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "zstd -3",
+     "original_bytes": 985088,
+     "compressed_bytes": 401316,
+     "bits_per_byte": 3.2591281185031185,
+     "encode": {
+      "wall_s": 0.020208541999863883,
+      "wall_s_min": 0.01963695800009191,
+      "wall_s_max": 0.020469291999916095,
+      "cpu_s": 0.016717,
+      "peak_rss_bytes": 6733824
+     },
+     "decode": {
+      "wall_s": 0.015221999999994296,
+      "wall_s_min": 0.014551290999861521,
+      "wall_s_max": 0.015754708000031314,
+      "cpu_s": 0.011675,
+      "peak_rss_bytes": 5357568
+     },
+     "encode_mb_s": 48.74611933936823,
+     "decode_mb_s": 64.71475495995067,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "zstd -19",
+     "original_bytes": 985088,
+     "compressed_bytes": 339098,
+     "bits_per_byte": 2.7538494022869022,
+     "encode": {
+      "wall_s": 0.29627620800010845,
+      "wall_s_min": 0.29041224999991755,
+      "wall_s_max": 0.3012263329999314,
+      "cpu_s": 0.29201099999999997,
+      "peak_rss_bytes": 23248896
+     },
+     "decode": {
+      "wall_s": 0.014525457999980063,
+      "wall_s_min": 0.014123375000053784,
+      "wall_s_max": 0.015789457999972,
+      "cpu_s": 0.010889,
+      "peak_rss_bytes": 4964352
+     },
+     "encode_mb_s": 3.3248974213941587,
+     "decode_mb_s": 67.8180336896332,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "brotli -q 11",
+     "original_bytes": 985088,
+     "compressed_bytes": 321604,
+     "bits_per_byte": 2.6117788461538463,
+     "encode": {
+      "wall_s": 3.326451041999917,
+      "wall_s_min": 2.8436123750000206,
+      "wall_s_max": 4.050552667000147,
+      "cpu_s": 3.3213939999999997,
+      "peak_rss_bytes": 29769728
+     },
+     "decode": {
+      "wall_s": 0.014041292000001704,
+      "wall_s_min": 0.013708999999835214,
+      "wall_s_max": 0.014241999999967447,
+      "cpu_s": 0.011158999999999999,
+      "peak_rss_bytes": 4374528
+     },
+     "encode_mb_s": 0.29613783205050537,
+     "decode_mb_s": 70.15650696530493,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_jq_windows_x64.exe",
+     "category": "Executables",
+     "compressor": "xz -9",
+     "original_bytes": 985088,
+     "compressed_bytes": 312188,
+     "bits_per_byte": 2.535310550935551,
+     "encode": {
+      "wall_s": 0.2960945410000022,
+      "wall_s_min": 0.26767454199989515,
+      "wall_s_max": 0.3104598330000954,
+      "cpu_s": 0.291527,
+      "peak_rss_bytes": 78954496
+     },
+     "decode": {
+      "wall_s": 0.040756375000000844,
+      "wall_s_min": 0.03997091599990199,
+      "wall_s_max": 0.04097108400014804,
+      "cpu_s": 0.036906,
+      "peak_rss_bytes": 3342336
+     },
+     "encode_mb_s": 3.3269373919325065,
+     "decode_mb_s": 24.17015742935871,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1972795,
+     "bits_per_byte": 8.090841747216945,
+     "encode": {
+      "wall_s": 1.3516204580000704,
+      "wall_s_min": 1.3455472499999814,
+      "wall_s_max": 1.3684677920000468,
+      "cpu_s": 1.3393819999999999,
+      "peak_rss_bytes": 37142528
+     },
+     "decode": {
+      "wall_s": 1.0499880830000166,
+      "wall_s_min": 0.8732368329999645,
+      "wall_s_max": 1.6751313749998644,
+      "cpu_s": 1.042971,
+      "peak_rss_bytes": 36110336
+     },
+     "encode_mb_s": 1.4431899047209438,
+     "decode_mb_s": 1.8577782277553423,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "lpaq1 6",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1936539,
+     "bits_per_byte": 7.942148366309605,
+     "encode": {
+      "wall_s": 3.262389624999969,
+      "wall_s_min": 3.1330452920001335,
+      "wall_s_max": 3.355441083999949,
+      "cpu_s": 3.2580479999999996,
+      "peak_rss_bytes": 173555712
+     },
+     "decode": {
+      "wall_s": 3.8246817500000816,
+      "wall_s_min": 3.315282084000046,
+      "wall_s_max": 3.9265150000001086,
+      "cpu_s": 3.817578,
+      "peak_rss_bytes": 173555712
+     },
+     "encode_mb_s": 0.5979190790247865,
+     "decode_mb_s": 0.510014983599605,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "zpaq -m5",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1937194,
+     "bits_per_byte": 7.944834657254395,
+     "encode": {
+      "wall_s": 14.74261912499992,
+      "wall_s_min": 14.679829000000154,
+      "wall_s_max": 15.462372334000065,
+      "cpu_s": 14.715231999999999,
+      "peak_rss_bytes": 110264320
+     },
+     "decode": {
+      "wall_s": 14.608587833000001,
+      "wall_s_min": 14.200052666999909,
+      "wall_s_max": 14.860527792000084,
+      "cpu_s": 14.602687999999999,
+      "peak_rss_bytes": 108019712
+     },
+     "encode_mb_s": 0.13231332800914442,
+     "decode_mb_s": 0.13352728013816637,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1933846,
+     "bits_per_byte": 7.931103814379346,
+     "encode": {
+      "wall_s": 11.85377229200003,
+      "wall_s_min": 11.19898658299985,
+      "wall_s_max": 12.110882333000063,
+      "cpu_s": 11.848399,
+      "peak_rss_bytes": 187891712
+     },
+     "decode": {
+      "wall_s": 9.769694250000157,
+      "wall_s_min": 6.684248208999861,
+      "wall_s_max": 11.411505874999875,
+      "cpu_s": 9.758887,
+      "peak_rss_bytes": 188284928
+     },
+     "encode_mb_s": 0.16455900720452232,
+     "decode_mb_s": 0.1996628502473318,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip ctx",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1950809,
+     "bits_per_byte": 8.000672598038085,
+     "encode": {
+      "wall_s": 1.8517784999999094,
+      "wall_s_min": 1.681274415999951,
+      "wall_s_max": 1.9130883749999157,
+      "cpu_s": 1.844962,
+      "peak_rss_bytes": 103677952
+     },
+     "decode": {
+      "wall_s": 0.41197041700002046,
+      "wall_s_min": 0.4111015830001179,
+      "wall_s_max": 0.4272459159999471,
+      "cpu_s": 0.40724399999999994,
+      "peak_rss_bytes": 103481344
+     },
+     "encode_mb_s": 1.053390024778933,
+     "decode_mb_s": 4.734915225720936,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -3",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1950703,
+     "bits_per_byte": 8.000237870037859,
+     "encode": {
+      "wall_s": 0.01218050000011317,
+      "wall_s_min": 0.0117105829999673,
+      "wall_s_max": 0.014021374999856562,
+      "cpu_s": 0.009692,
+      "peak_rss_bytes": 10895360
+     },
+     "decode": {
+      "wall_s": 0.010746417000063957,
+      "wall_s_min": 0.010592833000146129,
+      "wall_s_max": 0.010906791000024896,
+      "cpu_s": 0.00828,
+      "peak_rss_bytes": 7651328
+     },
+     "encode_mb_s": 160.14490373809585,
+     "decode_mb_s": 181.51584849056115,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -19",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1929697,
+     "bits_per_byte": 7.914087904257309,
+     "encode": {
+      "wall_s": 0.1963447499999802,
+      "wall_s_min": 0.19304187500006265,
+      "wall_s_max": 0.20771841600003427,
+      "cpu_s": 0.19282499999999997,
+      "peak_rss_bytes": 43843584
+     },
+     "decode": {
+      "wall_s": 0.011558208999986164,
+      "wall_s_min": 0.010972709000043324,
+      "wall_s_max": 0.012182291000044643,
+      "cpu_s": 0.008927000000000001,
+      "peak_rss_bytes": 7651328
+     },
+     "encode_mb_s": 9.934795811959305,
+     "decode_mb_s": 168.76706417078415,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "brotli -q 11",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1926318,
+     "bits_per_byte": 7.900229923948232,
+     "encode": {
+      "wall_s": 10.46701733299983,
+      "wall_s_min": 9.00797020899995,
+      "wall_s_max": 10.579402500000015,
+      "cpu_s": 10.422562,
+      "peak_rss_bytes": 48037888
+     },
+     "decode": {
+      "wall_s": 0.02723216700019293,
+      "wall_s_min": 0.02710312499993961,
+      "wall_s_max": 0.027687292000109665,
+      "cpu_s": 0.02393,
+      "peak_rss_bytes": 6160384
+     },
+     "encode_mb_s": 0.18636111300304384,
+     "decode_mb_s": 71.63017911817963,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_jq.tar.gz",
+     "category": "Compressed",
+     "compressor": "xz -9",
+     "original_bytes": 1950645,
+     "compressed_bytes": 1933804,
+     "bits_per_byte": 7.930931563662276,
+     "encode": {
+      "wall_s": 0.6483133750000434,
+      "wall_s_min": 0.5466674159999911,
+      "wall_s_max": 0.7815251249999164,
+      "cpu_s": 0.6448619999999999,
+      "peak_rss_bytes": 87490560
+     },
+     "decode": {
+      "wall_s": 0.043053750000126456,
+      "wall_s_min": 0.04207145800000944,
+      "wall_s_max": 0.04309079099994051,
+      "cpu_s": 0.039501999999999995,
+      "peak_rss_bytes": 4292608
+     },
+     "encode_mb_s": 3.008799563945244,
+     "decode_mb_s": 45.30720320516263,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3199110,
+     "bits_per_byte": 8.124001676041495,
+     "encode": {
+      "wall_s": 2.2943044579999423,
+      "wall_s_min": 1.946647917000064,
+      "wall_s_max": 2.563100082999881,
+      "cpu_s": 2.254948,
+      "peak_rss_bytes": 60276736
+     },
+     "decode": {
+      "wall_s": 1.7433620420001716,
+      "wall_s_min": 1.7000504999998611,
+      "wall_s_max": 2.7086784160001116,
+      "cpu_s": 1.737623,
+      "peak_rss_bytes": 59260928
+     },
+     "encode_mb_s": 1.3730871633079829,
+     "decode_mb_s": 1.8070142197117367,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "lpaq1 6",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3139220,
+     "bits_per_byte": 7.971913607679317,
+     "encode": {
+      "wall_s": 6.151537666999957,
+      "wall_s_min": 5.949921415999825,
+      "wall_s_max": 6.541804916000046,
+      "cpu_s": 6.052937,
+      "peak_rss_bytes": 174751744
+     },
+     "decode": {
+      "wall_s": 7.185389750000013,
+      "wall_s_min": 5.813161374999936,
+      "wall_s_max": 7.516371166999988,
+      "cpu_s": 6.9484,
+      "peak_rss_bytes": 174751744
+     },
+     "encode_mb_s": 0.5121126083482733,
+     "decode_mb_s": 0.43842854870885667,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "zpaq -m5",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3131071,
+     "bits_per_byte": 7.951219574133093,
+     "encode": {
+      "wall_s": 26.576781083000014,
+      "wall_s_min": 24.684458749999976,
+      "wall_s_max": 27.92997983300006,
+      "cpu_s": 26.379542,
+      "peak_rss_bytes": 141246464
+     },
+     "decode": {
+      "wall_s": 25.30837049999991,
+      "wall_s_min": 24.3982592079999,
+      "wall_s_max": 26.517762790999996,
+      "cpu_s": 25.102199000000002,
+      "peak_rss_bytes": 137592832
+     },
+     "encode_mb_s": 0.11853504719633237,
+     "decode_mb_s": 0.12447581324921773,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "neurozip",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3132105,
+     "bits_per_byte": 7.953845372474827,
+     "encode": {
+      "wall_s": 19.40670225000008,
+      "wall_s_min": 18.951023082999882,
+      "wall_s_max": 20.01938429200004,
+      "cpu_s": 19.225118000000002,
+      "peak_rss_bytes": 189366272
+     },
+     "decode": {
+      "wall_s": 9.681417041000032,
+      "wall_s_min": 9.642958333000024,
+      "wall_s_max": 10.069775542000116,
+      "cpu_s": 9.670677,
+      "peak_rss_bytes": 189186048
+     },
+     "encode_mb_s": 0.1623294859382916,
+     "decode_mb_s": 0.3253945147346524,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "neurozip ctx",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3149738,
+     "bits_per_byte": 7.998623614408878,
+     "encode": {
+      "wall_s": 1.8662795420000293,
+      "wall_s_min": 1.6229114999998728,
+      "wall_s_max": 2.0453592909998406,
+      "cpu_s": 1.799916,
+      "peak_rss_bytes": 103628800
+     },
+     "decode": {
+      "wall_s": 0.20116945900008432,
+      "wall_s_min": 0.1963711250000415,
+      "wall_s_max": 0.202208624999912,
+      "cpu_s": 0.19822199999999998,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 1.6880000713204788,
+     "decode_mb_s": 15.659832340647094,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "zstd -3",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3149338,
+     "bits_per_byte": 7.997607831684802,
+     "encode": {
+      "wall_s": 0.005434791999959998,
+      "wall_s_min": 0.0053782079999109556,
+      "wall_s_max": 0.005661958000018785,
+      "cpu_s": 0.0045579999999999996,
+      "peak_rss_bytes": 12877824
+     },
+     "decode": {
+      "wall_s": 0.00447766699994645,
+      "wall_s_min": 0.004281665999997131,
+      "wall_s_max": 0.004672249999885025,
+      "cpu_s": 0.0035819999999999997,
+      "peak_rss_bytes": 8175616
+     },
+     "encode_mb_s": 579.6505183681707,
+     "decode_mb_s": 703.5538819741788,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "zstd -19",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3140350,
+     "bits_per_byte": 7.97478319387483,
+     "encode": {
+      "wall_s": 0.11569229200017617,
+      "wall_s_min": 0.11437491699985003,
+      "wall_s_max": 0.11590500000011161,
+      "cpu_s": 0.11388699999999999,
+      "peak_rss_bytes": 63012864
+     },
+     "decode": {
+      "wall_s": 0.004451582999990933,
+      "wall_s_min": 0.004396625000026688,
+      "wall_s_max": 0.005146082999999635,
+      "cpu_s": 0.0036859999999999996,
+      "peak_rss_bytes": 9027584
+     },
+     "encode_mb_s": 27.22981752315187,
+     "decode_mb_s": 707.6763479432859,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "brotli -q 11",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3137987,
+     "bits_per_byte": 7.968782457432355,
+     "encode": {
+      "wall_s": 2.2688537499998347,
+      "wall_s_min": 2.2573762079998687,
+      "wall_s_max": 2.341976417000069,
+      "cpu_s": 2.265218,
+      "peak_rss_bytes": 52330496
+     },
+     "decode": {
+      "wall_s": 0.007022667000001093,
+      "wall_s_min": 0.0069645830001263676,
+      "wall_s_max": 0.0076165830000718415,
+      "cpu_s": 0.005615,
+      "peak_rss_bytes": 7897088
+     },
+     "encode_mb_s": 1.3884896723732103,
+     "decode_mb_s": 448.58740988281374,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_bat.zip",
+     "category": "Compressed",
+     "compressor": "xz -9",
+     "original_bytes": 3150280,
+     "compressed_bytes": 3137364,
+     "bits_per_byte": 7.9672003758396075,
+     "encode": {
+      "wall_s": 0.3120602080000481,
+      "wall_s_min": 0.30909441600010723,
+      "wall_s_max": 0.3152797919999557,
+      "cpu_s": 0.308897,
+      "peak_rss_bytes": 98254848
+     },
+     "decode": {
+      "wall_s": 0.02312025000014728,
+      "wall_s_min": 0.02291624999998021,
+      "wall_s_max": 0.02340491700010716,
+      "cpu_s": 0.021715,
+      "peak_rss_bytes": 5488640
+     },
+     "encode_mb_s": 10.095103185983632,
+     "decode_mb_s": 136.2563121064838,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2141686,
+     "bits_per_byte": 8.169883728027344,
+     "encode": {
+      "wall_s": 0.33599899999990157,
+      "wall_s_min": 0.30416987500007053,
+      "wall_s_max": 0.3439871250000124,
+      "cpu_s": 0.33364099999999997,
+      "peak_rss_bytes": 37240832
+     },
+     "decode": {
+      "wall_s": 0.4082730420000189,
+      "wall_s_min": 0.4075015420000909,
+      "wall_s_max": 0.408568791000107,
+      "cpu_s": 0.406032,
+      "peak_rss_bytes": 36257792
+     },
+     "encode_mb_s": 6.241542385544642,
+     "decode_mb_s": 5.136640885537338,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "lpaq1 6",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2100061,
+     "bits_per_byte": 8.011096954345703,
+     "encode": {
+      "wall_s": 1.11783975000003,
+      "wall_s_min": 1.112735333000046,
+      "wall_s_max": 1.1543909170000006,
+      "cpu_s": 1.114007,
+      "peak_rss_bytes": 173670400
+     },
+     "decode": {
+      "wall_s": 1.463430709000022,
+      "wall_s_min": 1.441421709000224,
+      "wall_s_max": 1.4764302920000318,
+      "cpu_s": 1.458615,
+      "peak_rss_bytes": 173670400
+     },
+     "encode_mb_s": 1.8760757076315666,
+     "decode_mb_s": 1.4330381254832396,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "zpaq -m5",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2099726,
+     "bits_per_byte": 8.009819030761719,
+     "encode": {
+      "wall_s": 4.913104834000023,
+      "wall_s_min": 4.826239792000024,
+      "wall_s_max": 4.962602165999897,
+      "cpu_s": 4.905723999999999,
+      "peak_rss_bytes": 138002432
+     },
+     "decode": {
+      "wall_s": 5.002986250000049,
+      "wall_s_min": 4.877866332999929,
+      "wall_s_max": 5.055967041000031,
+      "cpu_s": 4.997046,
+      "peak_rss_bytes": 135413760
+     },
+     "encode_mb_s": 0.4268486162735908,
+     "decode_mb_s": 0.41918004471828785,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "neurozip",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097316,
+     "bits_per_byte": 8.000625610351562,
+     "encode": {
+      "wall_s": 4.002715041000101,
+      "wall_s_min": 3.8679060419999587,
+      "wall_s_max": 4.253289624999979,
+      "cpu_s": 3.99367,
+      "peak_rss_bytes": 188006400
+     },
+     "decode": {
+      "wall_s": 4.204081041000109,
+      "wall_s_min": 4.112949042000082,
+      "wall_s_max": 4.624572624999928,
+      "cpu_s": 4.194617,
+      "peak_rss_bytes": 187858944
+     },
+     "encode_mb_s": 0.523932375529789,
+     "decode_mb_s": 0.4988371964164393,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "neurozip ctx",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097316,
+     "bits_per_byte": 8.000625610351562,
+     "encode": {
+      "wall_s": 0.8497868330000529,
+      "wall_s_min": 0.8429418749999513,
+      "wall_s_max": 0.8565953750000972,
+      "cpu_s": 0.840913,
+      "peak_rss_bytes": 103890944
+     },
+     "decode": {
+      "wall_s": 0.16132745899994916,
+      "wall_s_min": 0.15877895800008446,
+      "wall_s_max": 0.16396741700009443,
+      "cpu_s": 0.158153,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 2.467856547737154,
+     "decode_mb_s": 12.99934935441251,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "zstd -3",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097213,
+     "bits_per_byte": 8.000232696533203,
+     "encode": {
+      "wall_s": 0.008235125000055632,
+      "wall_s_min": 0.006440750000137996,
+      "wall_s_max": 0.008302875000026688,
+      "cpu_s": 0.0065190000000000005,
+      "peak_rss_bytes": 10747904
+     },
+     "decode": {
+      "wall_s": 0.005558666999831985,
+      "wall_s_min": 0.005242999999836684,
+      "wall_s_max": 0.0056152090000978205,
+      "cpu_s": 0.004142,
+      "peak_rss_bytes": 7651328
+     },
+     "encode_mb_s": 254.65940103955103,
+     "decode_mb_s": 377.2760627796894,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "zstd -19",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097213,
+     "bits_per_byte": 8.000232696533203,
+     "encode": {
+      "wall_s": 0.07429524999997739,
+      "wall_s_min": 0.0677434589999848,
+      "wall_s_max": 0.08116362499981733,
+      "cpu_s": 0.07201099999999999,
+      "peak_rss_bytes": 44105728
+     },
+     "decode": {
+      "wall_s": 0.005048750000014479,
+      "wall_s_min": 0.004805166999858557,
+      "wall_s_max": 0.005524500000092303,
+      "cpu_s": 0.0039889999999999995,
+      "peak_rss_bytes": 7651328
+     },
+     "encode_mb_s": 28.22726890347146,
+     "decode_mb_s": 415.3804407019531,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "brotli -q 11",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097160,
+     "bits_per_byte": 8.000030517578125,
+     "encode": {
+      "wall_s": 0.525992874999929,
+      "wall_s_min": 0.515107541000134,
+      "wall_s_max": 0.6037106250000761,
+      "cpu_s": 0.523549,
+      "peak_rss_bytes": 33980416
+     },
+     "decode": {
+      "wall_s": 0.004501541999843539,
+      "wall_s_min": 0.00441675000001851,
+      "wall_s_max": 0.005209958000023107,
+      "cpu_s": 0.002958,
+      "peak_rss_bytes": 5308416
+     },
+     "encode_mb_s": 3.9870349954840796,
+     "decode_mb_s": 465.8741382559334,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_b.bin",
+     "category": "Random",
+     "compressor": "xz -9",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097320,
+     "bits_per_byte": 8.000640869140625,
+     "encode": {
+      "wall_s": 0.22131004200014104,
+      "wall_s_min": 0.21873737500004609,
+      "wall_s_max": 0.2334328330000517,
+      "cpu_s": 0.21861599999999998,
+      "peak_rss_bytes": 88768512
+     },
+     "decode": {
+      "wall_s": 0.006899208000049839,
+      "wall_s_min": 0.006860375000087515,
+      "wall_s_max": 0.007106832999852486,
+      "cpu_s": 0.005454,
+      "peak_rss_bytes": 4423680
+     },
+     "encode_mb_s": 9.47608152366924,
+     "decode_mb_s": 303.9699629268824,
+     "verified_sha256": true
+    }
+   ]
+  }
+ },
+ "ablations": []
+}

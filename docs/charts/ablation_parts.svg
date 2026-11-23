@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" width="760" height="270" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Mean bits per byte of the mixing model with parts switched off">
+<rect width="760" height="270" fill="#fcfcfb"/>
+<text x="20.0" y="28.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">What each part of the mixing model contributes</text>
+<text x="20.0" y="46.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">Mean bits per byte over the five compressible data types with one part switched off. Final test set. Lower is better.</text>
+<line x1="250.0" y1="66" x2="250.0" y2="226" stroke="#c3c2b7" stroke-width="1"/>
+<text x="250.0" y="242.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">0.0</text>
+<line x1="347.5" y1="66" x2="347.5" y2="226" stroke="#e1e0d9" stroke-width="1"/>
+<text x="347.5" y="242.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">0.5</text>
+<line x1="445.0" y1="66" x2="445.0" y2="226" stroke="#e1e0d9" stroke-width="1"/>
+<text x="445.0" y="242.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">1.0</text>
+<line x1="542.5" y1="66" x2="542.5" y2="226" stroke="#e1e0d9" stroke-width="1"/>
+<text x="542.5" y="242.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">1.5</text>
+<line x1="640.0" y1="66" x2="640.0" y2="226" stroke="#e1e0d9" stroke-width="1"/>
+<text x="640.0" y="242.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">2.0</text>
+<text x="445.0" y="258.0" font-size="10" fill="#898781" text-anchor="middle" font-weight="normal">bits per byte</text>
+<text x="242.0" y="82.0" font-size="11" fill="#0b0b0b" text-anchor="end" font-weight="600">Full model</text>
+<path d="M250.0 70.0 h315.0 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-315.0 z" fill="#2a78d6"/>
+<text x="575.0" y="82.0" font-size="11" fill="#0b0b0b" text-anchor="start" font-weight="600">1.636</text>
+<text x="242.0" y="108.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">Without the word context</text>
+<path d="M250.0 96.0 h317.5 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-317.5 z" fill="#2a78d6"/>
+<text x="577.5" y="108.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">1.649  (+0.8%)</text>
+<text x="242.0" y="134.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">Without the x86 filter</text>
+<path d="M250.0 122.0 h320.5 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-320.5 z" fill="#2a78d6"/>
+<text x="580.5" y="134.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">1.664  (+1.7%)</text>
+<text x="242.0" y="160.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">Without the correction tables</text>
+<path d="M250.0 148.0 h317.4 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-317.4 z" fill="#2a78d6"/>
+<text x="577.4" y="160.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">1.648  (+0.7%)</text>
+<text x="242.0" y="186.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">Mixer learning switched off</text>
+<path d="M250.0 174.0 h365.4 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-365.4 z" fill="#2a78d6"/>
+<text x="625.4" y="186.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">1.895  (+15.8%)</text>
+<text x="242.0" y="212.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">Without the match model</text>
+<path d="M250.0 200.0 h320.5 a4.0 4.0 0 0 1 4.0 4.0 v6.0 a4.0 4.0 0 0 1 -4.0 4.0 h-320.5 z" fill="#2a78d6"/>
+<text x="580.5" y="212.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">1.664  (+1.7%)</text>
+</svg>

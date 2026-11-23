@@ -1,0 +1,100 @@
+{
+  "text_great_expectations.txt": {
+    "category": "English text",
+    "source": "Project Gutenberg #1400 (pglaf.org mirror)",
+    "bytes": 1038512,
+    "truncated_from": null,
+    "sha256": "48dd8f292e68ff2856675a60b48bcd80b1ebe6ed58ac3e6f91a2bb2400f1e345"
+  },
+  "text_tale_of_two_cities.txt": {
+    "category": "English text",
+    "source": "Project Gutenberg #98 (pglaf.org mirror)",
+    "bytes": 771600,
+    "truncated_from": null,
+    "sha256": "e3dfeb67feb904ac0f73a35204a175c58248422c2be8556802cb8820d958d67c"
+  },
+  "code_curl.c": {
+    "category": "Code",
+    "source": "curl 8.5.0, lib/*.c concatenated in name order",
+    "bytes": 2825331,
+    "truncated_from": null,
+    "sha256": "5d37331bfdc58aa6e08947cd30263f2b9ee1334de84ed5722d2b63824088dae1"
+  },
+  "code_requests.py": {
+    "category": "Code",
+    "source": "requests 2.31.0, all *.py concatenated in name order",
+    "bytes": 357835,
+    "truncated_from": null,
+    "sha256": "ace32a131486854e0b476212aafe8d52a91a470c21b323ece00bfa67b3678c9c"
+  },
+  "json_marine_ik.json": {
+    "category": "JSON",
+    "source": "simdjson-data jsonexamples/marine_ik.json",
+    "bytes": 2983466,
+    "truncated_from": null,
+    "sha256": "61590a397542ae274ccd8a47ba9f64e7c9216a223a5e7e702dea5b2375411d62"
+  },
+  "json_update_center.json": {
+    "category": "JSON",
+    "source": "simdjson-data jsonexamples/update-center.json",
+    "bytes": 533178,
+    "truncated_from": null,
+    "sha256": "e7b6a037bfdb5abdf122fa3445ddfacea78522a23df31c4799884c4ebf4c01fa"
+  },
+  "json_instruments.json": {
+    "category": "JSON",
+    "source": "simdjson-data jsonexamples/instruments.json",
+    "bytes": 220346,
+    "truncated_from": null,
+    "sha256": "f3069235d4e2695d36c0c7735a435a7abb279fc4d64bbcf4ed9f888b8da1fdb9"
+  },
+  "logs_zeek_conn.log": {
+    "category": "Logs",
+    "source": "brimdata zed-sample-data zeek-default/conn.log",
+    "bytes": 4194304,
+    "truncated_from": 121726587,
+    "sha256": "f9de0604e465411d3ced83777d2aa1d90d018ffea1dffd99a70b4a6e2d5b7283"
+  },
+  "logs_zeek_http.log": {
+    "category": "Logs",
+    "source": "brimdata zed-sample-data zeek-default/http.log",
+    "bytes": 4194304,
+    "truncated_from": 44507875,
+    "sha256": "e21fbff17f61287f4e76b1cefff4b803f73531831f0dbe6faf0130510e8a0cf7"
+  },
+  "exe_jq_linux_x64": {
+    "category": "Executables",
+    "source": "jq 1.7.1 Linux x86-64 binary",
+    "bytes": 2319424,
+    "truncated_from": null,
+    "sha256": "5942c9b0934e510ee61eb3e30273f1b3fe2590df93933a93d7c58b81d19c8ff5"
+  },
+  "exe_jq_windows_x64.exe": {
+    "category": "Executables",
+    "source": "jq 1.7.1 Windows x86-64 binary",
+    "bytes": 985088,
+    "truncated_from": null,
+    "sha256": "7451fbbf37feffb9bf262bd97c54f0da558c63f0748e64152dd87b0a07b6d6ab"
+  },
+  "compressed_jq.tar.gz": {
+    "category": "Compressed",
+    "source": "jq 1.7.1 source tarball (gzip)",
+    "bytes": 1950645,
+    "truncated_from": null,
+    "sha256": "478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2"
+  },
+  "compressed_bat.zip": {
+    "category": "Compressed",
+    "source": "bat 0.24.0 Windows release (zip)",
+    "bytes": 3150280,
+    "truncated_from": null,
+    "sha256": "1aa3733479d5980cb58c2b06aca06cf19ff377e85622f96549f8849f47f9f486"
+  },
+  "random_shake256_b.bin": {
+    "category": "Random",
+    "source": "SHAKE-256 output from a third fixed seed",
+    "bytes": 2097152,
+    "truncated_from": null,
+    "sha256": "4e07e7dec8da388d434be907952c09d2133308e27dc2df054dfd6e6589f1bf03"
+  }
+}

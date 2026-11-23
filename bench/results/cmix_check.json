@@ -1,0 +1,10 @@
+{
+ "tool": "cmix version 21 (Homebrew)",
+ "file": "json_apache_builds.json",
+ "original_bytes": 127275,
+ "compressed_bytes": 4397,
+ "cpu_seconds": 286.19,
+ "peak_rss_bytes": 9233793024,
+ "round_trip_verified": false,
+ "note": "compress only; machine under heavy load, wall time not meaningful"
+}

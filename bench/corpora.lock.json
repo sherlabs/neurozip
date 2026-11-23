@@ -1,0 +1,93 @@
+{
+  "text_war_and_peace.txt": {
+    "category": "English text",
+    "source": "Project Gutenberg #2600 (pglaf.org mirror), plain text",
+    "bytes": 3359405,
+    "truncated_from": null,
+    "sha256": "e4bcf9042609b62c7de72a6f1b311f54c412943a9d641b7efcf79a464b5f31c8"
+  },
+  "text_moby_dick.txt": {
+    "category": "English text",
+    "source": "Project Gutenberg #2701 (pglaf.org mirror), plain text",
+    "bytes": 1234646,
+    "truncated_from": null,
+    "sha256": "f12eb530502755ef2b8f535e2ecef3e95802eab584e60ac7992ccf856256fdbe"
+  },
+  "code_redis.c": {
+    "category": "Code",
+    "source": "redis 7.2.4, src/*.c concatenated in name order",
+    "bytes": 4194304,
+    "truncated_from": 5217457,
+    "sha256": "23a47b9738255ff73a6eb836bad95121bbd37e0b5c80866e71b0818f54408633"
+  },
+  "code_flask.py": {
+    "category": "Code",
+    "source": "flask 3.0.0, all *.py concatenated in name order",
+    "bytes": 553573,
+    "truncated_from": null,
+    "sha256": "2c5019072394b7ac81826c001edd74f7b62a58598e645887fe396c5467422d37"
+  },
+  "json_citm_catalog.json": {
+    "category": "JSON",
+    "source": "nativejson-benchmark data/citm_catalog.json",
+    "bytes": 1727204,
+    "truncated_from": null,
+    "sha256": "a73e7a883f6ea8de113dff59702975e60119b4b58d451d518a929f31c92e2059"
+  },
+  "json_twitter.json": {
+    "category": "JSON",
+    "source": "nativejson-benchmark data/twitter.json",
+    "bytes": 631514,
+    "truncated_from": null,
+    "sha256": "a08b769f32b95f426cbc3abafcec65c1a19d3eb544d4ddf320eae142c99efc5d"
+  },
+  "json_canada.json": {
+    "category": "JSON",
+    "source": "nativejson-benchmark data/canada.json",
+    "bytes": 2251051,
+    "truncated_from": null,
+    "sha256": "f83b3b354030d5dd58740c68ac4fecef64cb730a0d12a90362a7f23077f50d78"
+  },
+  "logs_loghub.log": {
+    "category": "Logs",
+    "source": "loghub 2k-line samples of 16 systems, concatenated",
+    "bytes": 4194304,
+    "truncated_from": 4458875,
+    "sha256": "62f9bd5ec4eb9fb68f6e64f1863bd78cba5c1e4045f370a7368e6de76830e196"
+  },
+  "exe_rg_linux_x64": {
+    "category": "Executables",
+    "source": "ripgrep 14.1.0 Linux x86-64 musl binary",
+    "bytes": 4194304,
+    "truncated_from": 6590000,
+    "sha256": "491e4eebd9f7d92e6082a8b453dafffa38b6c9a270c51502273e279cbf54be0b"
+  },
+  "exe_rg_windows_x64.exe": {
+    "category": "Executables",
+    "source": "ripgrep 14.1.0 Windows x86-64 binary",
+    "bytes": 4194304,
+    "truncated_from": 5332480,
+    "sha256": "fd53f5f2b2284d14e739d75ec0c82ece26afdaf5f9374b4aa8f4b3f3235ba768"
+  },
+  "compressed_redis.tar.gz": {
+    "category": "Compressed",
+    "source": "redis 7.2.4 source tarball (gzip)",
+    "bytes": 3424072,
+    "truncated_from": null,
+    "sha256": "0a62b9ae89b4be4e8d40c0035c83a72cb6776f4b62fe53553981a57f0f4ff73d"
+  },
+  "compressed_ripgrep.zip": {
+    "category": "Compressed",
+    "source": "ripgrep 14.1.0 Windows release (zip)",
+    "bytes": 2020417,
+    "truncated_from": null,
+    "sha256": "fe4f75edfaa50f0d4fecbf47696b7629f3449c9c2c5a4da828753139e5a2e203"
+  },
+  "random_shake256.bin": {
+    "category": "Random",
+    "source": "SHAKE-256 output from a fixed seed",
+    "bytes": 2097152,
+    "truncated_from": null,
+    "sha256": "8bc14723bdd9b4b097d51e265423e1be68bda5f1b2e3ffe65be872aedf0b76bf"
+  }
+}

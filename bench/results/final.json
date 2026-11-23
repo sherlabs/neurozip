@@ -1,0 +1,5905 @@
+{
+ "generated_utc": "2026-11-23T20:08:16Z",
+ "machine": {
+  "cpu": "Apple M5 Pro",
+  "logical_cpus": 18,
+  "memory_bytes": 51539607552,
+  "os": "Darwin 27.2.1",
+  "arch": "arm64"
+ },
+ "tools": {
+  "neurozip": "neurozip 0.1.0",
+  "neurozip_config": "mix model: hash bits 18, match window 2^22, block 256 KiB; ctx model: order 4, hash bits 20, block 256 KiB",
+  "zstd": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***",
+  "brotli": "brotli 1.2.1",
+  "xz": "xz (XZ Utils) 5.8.4",
+  "7zz": "7-Zip (z) 26.06 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-11-06",
+  "zpaq": "zpaq 7.15, method 5",
+  "lpaq1": "lpaq1 (Matt Mahoney, 2007), level 6, built from source with c++ -O2",
+  "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)"
+ },
+ "method": {
+  "repetitions": 3,
+  "timing": "median wall time of whole CLI process, file to file, one run at a time",
+  "memory": "peak resident set size of the process (wait4)",
+  "cpu": "user + system CPU time of the process (wait4)",
+  "power": "not measured (needs root-only powermetrics on macOS)",
+  "size": "size of the output file, all headers and checksums included"
+ },
+ "sets": {
+  "final": {
+   "corpora": {
+    "text_sherlock_holmes.txt": {
+     "category": "English text",
+     "source": "Project Gutenberg #1661 (pglaf.org mirror)",
+     "bytes": 607504,
+     "truncated_from": null,
+     "sha256": "b9c105a5c0cf9fcb37c7d0211658851ed56074519c9455d15e20f04c0c5a3174"
+    },
+    "text_frankenstein.txt": {
+     "category": "English text",
+     "source": "Project Gutenberg #84 (pglaf.org mirror)",
+     "bytes": 421633,
+     "truncated_from": null,
+     "sha256": "06c37d2c52d208d3d81eb12c3b10b5edbd7728b73554325ddceadbe2fb427e77"
+    },
+    "code_zlib.c": {
+     "category": "Code",
+     "source": "zlib 1.3.1, top-level *.c concatenated in name order",
+     "bytes": 332169,
+     "truncated_from": null,
+     "sha256": "1c78384ff74823a911bc2ac1d4b122e41d466b3dee5e884b28b80c98ff3c5059"
+    },
+    "code_click.py": {
+     "category": "Code",
+     "source": "click 8.1.7, all *.py concatenated in name order",
+     "bytes": 555457,
+     "truncated_from": null,
+     "sha256": "1ecda8ccc076ebb3bed67a55c84c6adee3fb9ee25e12fa8fcabbe1e1926ffb60"
+    },
+    "json_mesh.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/mesh.json",
+     "bytes": 723597,
+     "truncated_from": null,
+     "sha256": "45bc8bf429340a874a7af8ea7056d60497402f80f55dba1e6ecc4ca8f1e46aff"
+    },
+    "json_apache_builds.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/apache_builds.json",
+     "bytes": 127275,
+     "truncated_from": null,
+     "sha256": "f8e3422ac7d3c3550674afcb37e979e4e9bbeccffdb66933423495d55b6f5c74"
+    },
+    "json_random.json": {
+     "category": "JSON",
+     "source": "simdjson-data jsonexamples/random.json",
+     "bytes": 510476,
+     "truncated_from": null,
+     "sha256": "61a3544f2bc987b7378c66a9025b1f23eb5456d4f0443595c06d6fc20f3b0a68"
+    },
+    "logs_zeek_dns.log": {
+     "category": "Logs",
+     "source": "brimdata zed-sample-data zeek-default/dns.log",
+     "bytes": 4194304,
+     "truncated_from": 10100621,
+     "sha256": "8030ae88d80b4ecc65d69e0689af35b84a9187edca5e1c62adbc3aa6380c014b"
+    },
+    "logs_zeek_ssl.log": {
+     "category": "Logs",
+     "source": "brimdata zed-sample-data zeek-default/ssl.log",
+     "bytes": 4194304,
+     "truncated_from": 7157250,
+     "sha256": "72ba20cf95f142f05309f6436051383da83e61bc03fd5e156cf56ee7666570cc"
+    },
+    "exe_busybox_linux_x64": {
+     "category": "Executables",
+     "source": "busybox 1.35.0 Linux x86-64 musl binary",
+     "bytes": 1131168,
+     "truncated_from": null,
+     "sha256": "6e123e7f3202a8c1e9b1f94d8941580a25135382b99e8d3e34fb858bba311348"
+    },
+    "exe_bat_linux_x64": {
+     "category": "Executables",
+     "source": "bat 0.24.0 Linux x86-64 musl binary",
+     "bytes": 4194304,
+     "truncated_from": 5770456,
+     "sha256": "03921d1696902accb9563af71f0eb50e1d29dce8e16a3cf43e9b03d7a84443ae"
+    },
+    "compressed_zlib.tar.gz": {
+     "category": "Compressed",
+     "source": "zlib 1.3.1 source tarball (gzip)",
+     "bytes": 1572744,
+     "truncated_from": null,
+     "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c"
+    },
+    "compressed_click.tar.gz": {
+     "category": "Compressed",
+     "source": "click 8.1.7 source tarball (gzip)",
+     "bytes": 341625,
+     "truncated_from": null,
+     "sha256": "89251974dba8552b4e22990ca34adfb93a47ba7deb27fe7358a6661a09ca8793"
+    },
+    "random_shake256_c.bin": {
+     "category": "Random",
+     "source": "SHAKE-256 output from a fourth fixed seed",
+     "bytes": 2097152,
+     "truncated_from": null,
+     "sha256": "3f4627ef4196458d5b560c3a12cd385084483862a87f2efc31c33d3ce70b7c04"
+    }
+   },
+   "runs": [
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 607504,
+     "compressed_bytes": 150302,
+     "bits_per_byte": 1.979272564460481,
+     "encode": {
+      "wall_s": 0.04812904199999998,
+      "wall_s_min": 0.046773166000000005,
+      "wall_s_max": 0.048491,
+      "cpu_s": 0.04577,
+      "peak_rss_bytes": 19906560
+     },
+     "decode": {
+      "wall_s": 0.05043229199999999,
+      "wall_s_min": 0.04824579200000001,
+      "wall_s_max": 0.051760625000000005,
+      "cpu_s": 0.048635,
+      "peak_rss_bytes": 19316736
+     },
+     "encode_mb_s": 12.622399589836013,
+     "decode_mb_s": 12.045932792425935,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "lpaq1 6",
+     "original_bytes": 607504,
+     "compressed_bytes": 144376,
+     "bits_per_byte": 1.9012352182043246,
+     "encode": {
+      "wall_s": 0.24910933299999993,
+      "wall_s_min": 0.2426407909999999,
+      "wall_s_max": 0.254025458,
+      "cpu_s": 0.245329,
+      "peak_rss_bytes": 172179456
+     },
+     "decode": {
+      "wall_s": 0.2952240829999999,
+      "wall_s_min": 0.291722292,
+      "wall_s_max": 0.3062145829999998,
+      "cpu_s": 0.292036,
+      "peak_rss_bytes": 172179456
+     },
+     "encode_mb_s": 2.438704293748802,
+     "decode_mb_s": 2.057772502252129,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "zpaq -m5",
+     "original_bytes": 607504,
+     "compressed_bytes": 143509,
+     "bits_per_byte": 1.8898180094287444,
+     "encode": {
+      "wall_s": 0.9053883750000002,
+      "wall_s_min": 0.8848131669999999,
+      "wall_s_max": 0.9121406669999998,
+      "cpu_s": 0.9022969999999999,
+      "peak_rss_bytes": 94650368
+     },
+     "decode": {
+      "wall_s": 0.9608869169999998,
+      "wall_s_min": 0.9450313340000003,
+      "wall_s_max": 1.0003765839999996,
+      "cpu_s": 0.957718,
+      "peak_rss_bytes": 94863360
+     },
+     "encode_mb_s": 0.6709871882328949,
+     "decode_mb_s": 0.6322325647816059,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "neurozip",
+     "original_bytes": 607504,
+     "compressed_bytes": 144769,
+     "bits_per_byte": 1.906410492770418,
+     "encode": {
+      "wall_s": 0.6687154159999995,
+      "wall_s_min": 0.6624514999999995,
+      "wall_s_max": 0.7341161659999997,
+      "cpu_s": 0.663542,
+      "peak_rss_bytes": 186351616
+     },
+     "decode": {
+      "wall_s": 0.6902579170000003,
+      "wall_s_min": 0.6530267920000004,
+      "wall_s_max": 0.6987465000000004,
+      "cpu_s": 0.6869359999999999,
+      "peak_rss_bytes": 186466304
+     },
+     "encode_mb_s": 0.9084641769347224,
+     "decode_mb_s": 0.880111600371546,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "neurozip ctx",
+     "original_bytes": 607504,
+     "compressed_bytes": 170848,
+     "bits_per_byte": 2.2498353920303407,
+     "encode": {
+      "wall_s": 0.17312949999999994,
+      "wall_s_min": 0.17288095900000044,
+      "wall_s_max": 0.17342379199999947,
+      "cpu_s": 0.170568,
+      "peak_rss_bytes": 103464960
+     },
+     "decode": {
+      "wall_s": 0.1907449579999998,
+      "wall_s_min": 0.1899716250000001,
+      "wall_s_max": 0.1916155419999992,
+      "cpu_s": 0.188188,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 3.5089571679003306,
+     "decode_mb_s": 3.1849020093102576,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "zstd -3",
+     "original_bytes": 607504,
+     "compressed_bytes": 223164,
+     "bits_per_byte": 2.9387658352866812,
+     "encode": {
+      "wall_s": 0.005953125000001336,
+      "wall_s_min": 0.005912417000001113,
+      "wall_s_max": 0.006527124999999856,
+      "cpu_s": 0.004762,
+      "peak_rss_bytes": 5488640
+     },
+     "decode": {
+      "wall_s": 0.0042347080000002535,
+      "wall_s_min": 0.004157042000000999,
+      "wall_s_max": 0.004329541000000603,
+      "cpu_s": 0.002874,
+      "peak_rss_bytes": 4079616
+     },
+     "encode_mb_s": 102.0479160104758,
+     "decode_mb_s": 143.45829747882584,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "zstd -19",
+     "original_bytes": 607504,
+     "compressed_bytes": 190972,
+     "bits_per_byte": 2.514841054544497,
+     "encode": {
+      "wall_s": 0.08713587499999953,
+      "wall_s_min": 0.08658462500000041,
+      "wall_s_max": 0.08747224999999936,
+      "cpu_s": 0.085336,
+      "peak_rss_bytes": 22036480
+     },
+     "decode": {
+      "wall_s": 0.004314334000000031,
+      "wall_s_min": 0.004147334000000669,
+      "wall_s_max": 0.004855041999999088,
+      "cpu_s": 0.002985,
+      "peak_rss_bytes": 4030464
+     },
+     "encode_mb_s": 6.971915987531006,
+     "decode_mb_s": 140.81060947066123,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "brotli -q 11",
+     "original_bytes": 607504,
+     "compressed_bytes": 183982,
+     "bits_per_byte": 2.4227922779109274,
+     "encode": {
+      "wall_s": 0.5243420840000006,
+      "wall_s_min": 0.5224650410000002,
+      "wall_s_max": 0.5296307080000009,
+      "cpu_s": 0.521874,
+      "peak_rss_bytes": 22986752
+     },
+     "decode": {
+      "wall_s": 0.004847457999998639,
+      "wall_s_min": 0.004764208000000991,
+      "wall_s_max": 0.005434417000000025,
+      "cpu_s": 0.0034679999999999997,
+      "peak_rss_bytes": 3686400
+     },
+     "encode_mb_s": 1.1586024058293962,
+     "decode_mb_s": 125.32424210796063,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_sherlock_holmes.txt",
+     "category": "English text",
+     "compressor": "xz -9",
+     "original_bytes": 607504,
+     "compressed_bytes": 188884,
+     "bits_per_byte": 2.487344939292581,
+     "encode": {
+      "wall_s": 0.10515791599999957,
+      "wall_s_min": 0.10462645800000026,
+      "wall_s_max": 0.1072981670000015,
+      "cpu_s": 0.10287299999999999,
+      "peak_rss_bytes": 68435968
+     },
+     "decode": {
+      "wall_s": 0.008694165999999726,
+      "wall_s_min": 0.008629000000000886,
+      "wall_s_max": 0.009120333999998564,
+      "cpu_s": 0.007382,
+      "peak_rss_bytes": 2949120
+     },
+     "encode_mb_s": 5.777063896930047,
+     "decode_mb_s": 69.87490231955765,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 421633,
+     "compressed_bytes": 114068,
+     "bits_per_byte": 2.1643087708979136,
+     "encode": {
+      "wall_s": 0.029419125000000435,
+      "wall_s_min": 0.029397166999999058,
+      "wall_s_max": 0.02970258399999892,
+      "cpu_s": 0.027943,
+      "peak_rss_bytes": 12615680
+     },
+     "decode": {
+      "wall_s": 0.03267224999999918,
+      "wall_s_min": 0.03262574999999934,
+      "wall_s_max": 0.03270287500000002,
+      "cpu_s": 0.031034,
+      "peak_rss_bytes": 12255232
+     },
+     "encode_mb_s": 14.33193543315764,
+     "decode_mb_s": 12.904926964014127,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "lpaq1 6",
+     "original_bytes": 421633,
+     "compressed_bytes": 104472,
+     "bits_per_byte": 1.9822357358176423,
+     "encode": {
+      "wall_s": 0.17269908299999948,
+      "wall_s_min": 0.16962033399999932,
+      "wall_s_max": 0.17914845800000023,
+      "cpu_s": 0.170538,
+      "peak_rss_bytes": 171982848
+     },
+     "decode": {
+      "wall_s": 0.2282871249999996,
+      "wall_s_min": 0.22628320899999999,
+      "wall_s_max": 0.22930437499999812,
+      "cpu_s": 0.224883,
+      "peak_rss_bytes": 171982848
+     },
+     "encode_mb_s": 2.441431608528004,
+     "decode_mb_s": 1.8469416529732052,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "zpaq -m5",
+     "original_bytes": 421633,
+     "compressed_bytes": 103994,
+     "bits_per_byte": 1.9731662369880916,
+     "encode": {
+      "wall_s": 0.8266924580000001,
+      "wall_s_min": 0.782674833999998,
+      "wall_s_max": 0.8392317079999998,
+      "cpu_s": 0.821345,
+      "peak_rss_bytes": 94142464
+     },
+     "decode": {
+      "wall_s": 0.7653913750000001,
+      "wall_s_min": 0.6897887090000019,
+      "wall_s_max": 0.861290125,
+      "cpu_s": 0.76204,
+      "peak_rss_bytes": 93945856
+     },
+     "encode_mb_s": 0.5100240070171294,
+     "decode_mb_s": 0.5508724213151734,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "neurozip",
+     "original_bytes": 421633,
+     "compressed_bytes": 105157,
+     "bits_per_byte": 1.9952328209604087,
+     "encode": {
+      "wall_s": 0.385308000000002,
+      "wall_s_min": 0.3806128340000008,
+      "wall_s_max": 0.38863279099999914,
+      "cpu_s": 0.381419,
+      "peak_rss_bytes": 186155008
+     },
+     "decode": {
+      "wall_s": 0.4625462920000025,
+      "wall_s_min": 0.44611412500000114,
+      "wall_s_max": 0.4792824160000002,
+      "cpu_s": 0.460851,
+      "peak_rss_bytes": 186269696
+     },
+     "encode_mb_s": 1.09427522916731,
+     "decode_mb_s": 0.9115476813723926,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "neurozip ctx",
+     "original_bytes": 421633,
+     "compressed_bytes": 122218,
+     "bits_per_byte": 2.3189456233264476,
+     "encode": {
+      "wall_s": 0.11430041699999904,
+      "wall_s_min": 0.1138272090000001,
+      "wall_s_max": 0.11749183299999899,
+      "cpu_s": 0.111765,
+      "peak_rss_bytes": 103432192
+     },
+     "decode": {
+      "wall_s": 0.12391995800000188,
+      "wall_s_min": 0.11778229200000112,
+      "wall_s_max": 0.12408375000000049,
+      "cpu_s": 0.12140199999999998,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 3.6888141886656767,
+     "decode_mb_s": 3.402462418523363,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "zstd -3",
+     "original_bytes": 421633,
+     "compressed_bytes": 157568,
+     "bits_per_byte": 2.9896711120808854,
+     "encode": {
+      "wall_s": 0.005151458000000275,
+      "wall_s_min": 0.00510962499999934,
+      "wall_s_max": 0.005577374999997886,
+      "cpu_s": 0.003825,
+      "peak_rss_bytes": 4587520
+     },
+     "decode": {
+      "wall_s": 0.004170874999999796,
+      "wall_s_min": 0.0039207919999988405,
+      "wall_s_max": 0.004192333999998965,
+      "cpu_s": 0.002708,
+      "peak_rss_bytes": 3620864
+     },
+     "encode_mb_s": 81.84731390607813,
+     "decode_mb_s": 101.08981928252959,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "zstd -19",
+     "original_bytes": 421633,
+     "compressed_bytes": 137797,
+     "bits_per_byte": 2.614539184551494,
+     "encode": {
+      "wall_s": 0.057242374999997736,
+      "wall_s_min": 0.05620429100000024,
+      "wall_s_max": 0.06001645799999977,
+      "cpu_s": 0.05567299999999999,
+      "peak_rss_bytes": 12828672
+     },
+     "decode": {
+      "wall_s": 0.004584583999999836,
+      "wall_s_min": 0.004502833000000095,
+      "wall_s_max": 0.004837125000001663,
+      "cpu_s": 0.0030299999999999997,
+      "peak_rss_bytes": 3555328
+     },
+     "encode_mb_s": 7.365749586735642,
+     "decode_mb_s": 91.96755910678374,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "brotli -q 11",
+     "original_bytes": 421633,
+     "compressed_bytes": 132325,
+     "bits_per_byte": 2.510714294184753,
+     "encode": {
+      "wall_s": 0.3692922500000009,
+      "wall_s_min": 0.36145975000000163,
+      "wall_s_max": 0.39229866700000215,
+      "cpu_s": 0.367193,
+      "peak_rss_bytes": 19939328
+     },
+     "decode": {
+      "wall_s": 0.004361625000001368,
+      "wall_s_min": 0.00429175000000015,
+      "wall_s_max": 0.004852499999998372,
+      "cpu_s": 0.0030289999999999996,
+      "peak_rss_bytes": 3342336
+     },
+     "encode_mb_s": 1.141732597962722,
+     "decode_mb_s": 96.66878743584508,
+     "verified_sha256": true
+    },
+    {
+     "file": "text_frankenstein.txt",
+     "category": "English text",
+     "compressor": "xz -9",
+     "original_bytes": 421633,
+     "compressed_bytes": 135996,
+     "bits_per_byte": 2.5803672862418265,
+     "encode": {
+      "wall_s": 0.06785579199999958,
+      "wall_s_min": 0.06654812500000062,
+      "wall_s_max": 0.06912416699999824,
+      "cpu_s": 0.06581,
+      "peak_rss_bytes": 60801024
+     },
+     "decode": {
+      "wall_s": 0.00665458399999963,
+      "wall_s_min": 0.006448499999997637,
+      "wall_s_max": 0.00686529100000044,
+      "cpu_s": 0.005301,
+      "peak_rss_bytes": 2752512
+     },
+     "encode_mb_s": 6.213662645039978,
+     "decode_mb_s": 63.35978327120424,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 332169,
+     "compressed_bytes": 56193,
+     "bits_per_byte": 1.3533592839789383,
+     "encode": {
+      "wall_s": 0.01891054200000042,
+      "wall_s_min": 0.018661292000000884,
+      "wall_s_max": 0.01910512499999939,
+      "cpu_s": 0.017395,
+      "peak_rss_bytes": 12484608
+     },
+     "decode": {
+      "wall_s": 0.021068875000000986,
+      "wall_s_min": 0.020839000000002272,
+      "wall_s_max": 0.02116012500000153,
+      "cpu_s": 0.019441999999999997,
+      "peak_rss_bytes": 12189696
+     },
+     "encode_mb_s": 17.565281841207547,
+     "decode_mb_s": 15.765863151211654,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "lpaq1 6",
+     "original_bytes": 332169,
+     "compressed_bytes": 49214,
+     "bits_per_byte": 1.1852761696606247,
+     "encode": {
+      "wall_s": 0.11183995799999735,
+      "wall_s_min": 0.10735566700000021,
+      "wall_s_max": 0.11270595799999938,
+      "cpu_s": 0.11041899999999999,
+      "peak_rss_bytes": 171900928
+     },
+     "decode": {
+      "wall_s": 0.1546712079999999,
+      "wall_s_min": 0.14139316599999674,
+      "wall_s_max": 0.15742212500000008,
+      "cpu_s": 0.151249,
+      "peak_rss_bytes": 171900928
+     },
+     "encode_mb_s": 2.970038669006008,
+     "decode_mb_s": 2.1475813391203373,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "zpaq -m5",
+     "original_bytes": 332169,
+     "compressed_bytes": 49569,
+     "bits_per_byte": 1.1938260343379425,
+     "encode": {
+      "wall_s": 0.47900366700000063,
+      "wall_s_min": 0.46883762499999904,
+      "wall_s_max": 0.496263416999998,
+      "cpu_s": 0.47572,
+      "peak_rss_bytes": 93798400
+     },
+     "decode": {
+      "wall_s": 0.5197029579999999,
+      "wall_s_min": 0.5066143340000018,
+      "wall_s_max": 0.6168371669999999,
+      "cpu_s": 0.516655,
+      "peak_rss_bytes": 93782016
+     },
+     "encode_mb_s": 0.6934581567618762,
+     "decode_mb_s": 0.6391516440050743,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "neurozip",
+     "original_bytes": 332169,
+     "compressed_bytes": 49125,
+     "bits_per_byte": 1.1831326824598323,
+     "encode": {
+      "wall_s": 0.5285294999999977,
+      "wall_s_min": 0.4862020419999986,
+      "wall_s_max": 0.5499877499999997,
+      "cpu_s": 0.523825,
+      "peak_rss_bytes": 186040320
+     },
+     "decode": {
+      "wall_s": 0.871952125,
+      "wall_s_min": 0.7328961670000034,
+      "wall_s_max": 1.1022229160000023,
+      "cpu_s": 0.866822,
+      "peak_rss_bytes": 186253312
+     },
+     "encode_mb_s": 0.6284776914060644,
+     "decode_mb_s": 0.38094866733652377,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "neurozip ctx",
+     "original_bytes": 332169,
+     "compressed_bytes": 70805,
+     "bits_per_byte": 1.7052765309225124,
+     "encode": {
+      "wall_s": 0.1907642080000045,
+      "wall_s_min": 0.1886643329999984,
+      "wall_s_max": 0.22148220799999763,
+      "cpu_s": 0.186602,
+      "peak_rss_bytes": 103399424
+     },
+     "decode": {
+      "wall_s": 0.19696195800000282,
+      "wall_s_min": 0.175556291999996,
+      "wall_s_max": 0.20292841700000253,
+      "cpu_s": 0.193046,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 1.7412543132828784,
+     "decode_mb_s": 1.6864627229182765,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "zstd -3",
+     "original_bytes": 332169,
+     "compressed_bytes": 79795,
+     "bits_per_byte": 1.921792822328393,
+     "encode": {
+      "wall_s": 0.007766666999998506,
+      "wall_s_min": 0.007708499999999674,
+      "wall_s_max": 0.007884583999995698,
+      "cpu_s": 0.005882999999999999,
+      "peak_rss_bytes": 4177920
+     },
+     "decode": {
+      "wall_s": 0.007137624999998593,
+      "wall_s_min": 0.006697834000000569,
+      "wall_s_max": 0.0073643749999945385,
+      "cpu_s": 0.005056,
+      "peak_rss_bytes": 3293184
+     },
+     "encode_mb_s": 42.768538936980804,
+     "decode_mb_s": 46.537748901079205,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "zstd -19",
+     "original_bytes": 332169,
+     "compressed_bytes": 64753,
+     "bits_per_byte": 1.5595194012686313,
+     "encode": {
+      "wall_s": 0.09860833300000138,
+      "wall_s_min": 0.09524574999999658,
+      "wall_s_max": 0.09919666599999744,
+      "cpu_s": 0.09623699999999999,
+      "peak_rss_bytes": 12419072
+     },
+     "decode": {
+      "wall_s": 0.006824874999999508,
+      "wall_s_min": 0.006633999999998252,
+      "wall_s_max": 0.007247333000002243,
+      "cpu_s": 0.004796999999999999,
+      "peak_rss_bytes": 3276800
+     },
+     "encode_mb_s": 3.3685692668589717,
+     "decode_mb_s": 48.67034194765822,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "brotli -q 11",
+     "original_bytes": 332169,
+     "compressed_bytes": 61478,
+     "bits_per_byte": 1.4806438891046425,
+     "encode": {
+      "wall_s": 0.4365075420000011,
+      "wall_s_min": 0.433807250000001,
+      "wall_s_max": 0.454964750000002,
+      "cpu_s": 0.433643,
+      "peak_rss_bytes": 18464768
+     },
+     "decode": {
+      "wall_s": 0.005839250000001073,
+      "wall_s_min": 0.005347874999998226,
+      "wall_s_max": 0.00614391700000283,
+      "cpu_s": 0.004085999999999999,
+      "peak_rss_bytes": 3112960
+     },
+     "encode_mb_s": 0.7609696695687315,
+     "decode_mb_s": 56.88555893307171,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_zlib.c",
+     "category": "Code",
+     "compressor": "xz -9",
+     "original_bytes": 332169,
+     "compressed_bytes": 63508,
+     "bits_per_byte": 1.5295346645833898,
+     "encode": {
+      "wall_s": 0.07718558300000211,
+      "wall_s_min": 0.0759549160000006,
+      "wall_s_max": 0.07780062500000184,
+      "cpu_s": 0.074674,
+      "peak_rss_bytes": 68780032
+     },
+     "decode": {
+      "wall_s": 0.00871695800000083,
+      "wall_s_min": 0.008393499999996834,
+      "wall_s_max": 0.008784499999997308,
+      "cpu_s": 0.006685999999999999,
+      "peak_rss_bytes": 2670592
+     },
+     "encode_mb_s": 4.303510928977383,
+     "decode_mb_s": 38.106068653762975,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 555457,
+     "compressed_bytes": 90217,
+     "bits_per_byte": 1.299355305631219,
+     "encode": {
+      "wall_s": 0.053363832999998806,
+      "wall_s_min": 0.05213625000000377,
+      "wall_s_max": 0.05396799999999757,
+      "cpu_s": 0.051100999999999994,
+      "peak_rss_bytes": 21102592
+     },
+     "decode": {
+      "wall_s": 0.05725437499999941,
+      "wall_s_min": 0.05714425000000034,
+      "wall_s_max": 0.05835570800000056,
+      "cpu_s": 0.055094,
+      "peak_rss_bytes": 20627456
+     },
+     "encode_mb_s": 10.408866244671975,
+     "decode_mb_s": 9.701564290938565,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "lpaq1 6",
+     "original_bytes": 555457,
+     "compressed_bytes": 83013,
+     "bits_per_byte": 1.1955992993156985,
+     "encode": {
+      "wall_s": 0.28914141599999965,
+      "wall_s_min": 0.28883554200000106,
+      "wall_s_max": 0.2947050420000039,
+      "cpu_s": 0.284783,
+      "peak_rss_bytes": 172113920
+     },
+     "decode": {
+      "wall_s": 0.37315258299999954,
+      "wall_s_min": 0.37245808300000505,
+      "wall_s_max": 0.3749357080000024,
+      "cpu_s": 0.368135,
+      "peak_rss_bytes": 172113920
+     },
+     "encode_mb_s": 1.9210565116690188,
+     "decode_mb_s": 1.488551936407206,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "zpaq -m5",
+     "original_bytes": 555457,
+     "compressed_bytes": 82771,
+     "bits_per_byte": 1.1921138810024898,
+     "encode": {
+      "wall_s": 1.4677245419999991,
+      "wall_s_min": 1.3385695419999948,
+      "wall_s_max": 1.7936731669999944,
+      "cpu_s": 1.462977,
+      "peak_rss_bytes": 91750400
+     },
+     "decode": {
+      "wall_s": 1.3965397500000023,
+      "wall_s_min": 1.3740488330000034,
+      "wall_s_max": 1.5551910840000005,
+      "cpu_s": 1.392665,
+      "peak_rss_bytes": 92110848
+     },
+     "encode_mb_s": 0.3784477155659637,
+     "decode_mb_s": 0.3977380522108297,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "neurozip",
+     "original_bytes": 555457,
+     "compressed_bytes": 82532,
+     "bits_per_byte": 1.1886716703543208,
+     "encode": {
+      "wall_s": 0.7979230409999971,
+      "wall_s_min": 0.7795912079999994,
+      "wall_s_max": 1.0755216669999967,
+      "cpu_s": 0.774826,
+      "peak_rss_bytes": 186302464
+     },
+     "decode": {
+      "wall_s": 1.086403500000003,
+      "wall_s_min": 0.947483584000004,
+      "wall_s_max": 1.5145604579999983,
+      "cpu_s": 1.080959,
+      "peak_rss_bytes": 186679296
+     },
+     "encode_mb_s": 0.6961285380403021,
+     "decode_mb_s": 0.5112805693280613,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "neurozip ctx",
+     "original_bytes": 555457,
+     "compressed_bytes": 119890,
+     "bits_per_byte": 1.7267223205396638,
+     "encode": {
+      "wall_s": 0.3398017909999993,
+      "wall_s_min": 0.31636708300000294,
+      "wall_s_max": 0.37584245800000105,
+      "cpu_s": 0.335694,
+      "peak_rss_bytes": 103530496
+     },
+     "decode": {
+      "wall_s": 0.3386195839999999,
+      "wall_s_min": 0.3307994999999977,
+      "wall_s_max": 0.3443104579999954,
+      "cpu_s": 0.334232,
+      "peak_rss_bytes": 103546880
+     },
+     "encode_mb_s": 1.634650006891815,
+     "decode_mb_s": 1.640356985377432,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "zstd -3",
+     "original_bytes": 555457,
+     "compressed_bytes": 133571,
+     "bits_per_byte": 1.923763675676065,
+     "encode": {
+      "wall_s": 0.010135666000003596,
+      "wall_s_min": 0.010049666000000457,
+      "wall_s_max": 0.010695542000000557,
+      "cpu_s": 0.007841,
+      "peak_rss_bytes": 5013504
+     },
+     "decode": {
+      "wall_s": 0.0077046249999952465,
+      "wall_s_min": 0.007491958999999326,
+      "wall_s_max": 0.007880540999998686,
+      "cpu_s": 0.005674,
+      "peak_rss_bytes": 3817472
+     },
+     "encode_mb_s": 54.802220199422806,
+     "decode_mb_s": 72.0939695313325,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "zstd -19",
+     "original_bytes": 555457,
+     "compressed_bytes": 107004,
+     "bits_per_byte": 1.5411309966388038,
+     "encode": {
+      "wall_s": 0.18182250000000266,
+      "wall_s_min": 0.1791107919999959,
+      "wall_s_max": 0.1823738339999963,
+      "cpu_s": 0.17926899999999998,
+      "peak_rss_bytes": 21577728
+     },
+     "decode": {
+      "wall_s": 0.00824370899999849,
+      "wall_s_min": 0.00780912499999431,
+      "wall_s_max": 0.008817084000000364,
+      "cpu_s": 0.005837,
+      "peak_rss_bytes": 3751936
+     },
+     "encode_mb_s": 3.0549409451525076,
+     "decode_mb_s": 67.3795011444608,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "brotli -q 11",
+     "original_bytes": 555457,
+     "compressed_bytes": 102867,
+     "bits_per_byte": 1.4815476265489498,
+     "encode": {
+      "wall_s": 0.8844104579999978,
+      "wall_s_min": 0.8550334999999976,
+      "wall_s_max": 0.975642999999998,
+      "cpu_s": 0.881442,
+      "peak_rss_bytes": 21135360
+     },
+     "decode": {
+      "wall_s": 0.006813542000003281,
+      "wall_s_min": 0.006661083000004453,
+      "wall_s_max": 0.007075167000003546,
+      "cpu_s": 0.004905,
+      "peak_rss_bytes": 3555328
+     },
+     "encode_mb_s": 0.6280534054924092,
+     "decode_mb_s": 81.52250327358847,
+     "verified_sha256": true
+    },
+    {
+     "file": "code_click.py",
+     "category": "Code",
+     "compressor": "xz -9",
+     "original_bytes": 555457,
+     "compressed_bytes": 105648,
+     "bits_per_byte": 1.521601132040824,
+     "encode": {
+      "wall_s": 0.15098679199999765,
+      "wall_s_min": 0.14913933300000082,
+      "wall_s_max": 0.1517740829999994,
+      "cpu_s": 0.147461,
+      "peak_rss_bytes": 72744960
+     },
+     "decode": {
+      "wall_s": 0.01233666699999958,
+      "wall_s_min": 0.01190975000000094,
+      "wall_s_max": 0.012842875000004028,
+      "cpu_s": 0.010316,
+      "peak_rss_bytes": 2883584
+     },
+     "encode_mb_s": 3.678844968108261,
+     "decode_mb_s": 45.024883949612885,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 723597,
+     "compressed_bytes": 161548,
+     "bits_per_byte": 1.7860549449486385,
+     "encode": {
+      "wall_s": 0.06423487500000391,
+      "wall_s_min": 0.06394000000000233,
+      "wall_s_max": 0.07087683399999634,
+      "cpu_s": 0.061640999999999994,
+      "peak_rss_bytes": 20643840
+     },
+     "decode": {
+      "wall_s": 0.08077083399999907,
+      "wall_s_min": 0.07951762500000115,
+      "wall_s_max": 0.08152079100000265,
+      "cpu_s": 0.07832199999999999,
+      "peak_rss_bytes": 19972096
+     },
+     "encode_mb_s": 11.264861961667334,
+     "decode_mb_s": 8.958642175218946,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 723597,
+     "compressed_bytes": 127848,
+     "bits_per_byte": 1.4134718634820211,
+     "encode": {
+      "wall_s": 0.4265523330000036,
+      "wall_s_min": 0.4176691250000033,
+      "wall_s_max": 0.4267263750000012,
+      "cpu_s": 0.422532,
+      "peak_rss_bytes": 172277760
+     },
+     "decode": {
+      "wall_s": 0.5227774589999967,
+      "wall_s_min": 0.5218370839999977,
+      "wall_s_max": 0.5321015419999924,
+      "cpu_s": 0.519471,
+      "peak_rss_bytes": 172294144
+     },
+     "encode_mb_s": 1.6963850482561864,
+     "decode_mb_s": 1.3841396325391386,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 723597,
+     "compressed_bytes": 122024,
+     "bits_per_byte": 1.3490824312428051,
+     "encode": {
+      "wall_s": 2.5301230000000032,
+      "wall_s_min": 2.4736005000000034,
+      "wall_s_max": 2.780379332999999,
+      "cpu_s": 2.518681,
+      "peak_rss_bytes": 98484224
+     },
+     "decode": {
+      "wall_s": 2.537759792000003,
+      "wall_s_min": 2.4212407499999955,
+      "wall_s_max": 2.6360255000000024,
+      "cpu_s": 2.531777,
+      "peak_rss_bytes": 98729984
+     },
+     "encode_mb_s": 0.28599281536905485,
+     "decode_mb_s": 0.28513218716801203,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 723597,
+     "compressed_bytes": 121497,
+     "bits_per_byte": 1.3432559836483569,
+     "encode": {
+      "wall_s": 1.2925972919999964,
+      "wall_s_min": 1.1724504999999965,
+      "wall_s_max": 1.3178445000000067,
+      "cpu_s": 1.290056,
+      "peak_rss_bytes": 186449920
+     },
+     "decode": {
+      "wall_s": 1.3085115840000014,
+      "wall_s_min": 1.2039614579999949,
+      "wall_s_max": 1.400948041999996,
+      "cpu_s": 1.303515,
+      "peak_rss_bytes": 186597376
+     },
+     "encode_mb_s": 0.559800801439403,
+     "decode_mb_s": 0.5529924296031293,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 723597,
+     "compressed_bytes": 205913,
+     "bits_per_byte": 2.276548963027763,
+     "encode": {
+      "wall_s": 0.3777182919999973,
+      "wall_s_min": 0.341855833000011,
+      "wall_s_max": 0.3853159169999998,
+      "cpu_s": 0.37438,
+      "peak_rss_bytes": 103366656
+     },
+     "decode": {
+      "wall_s": 0.3940218329999965,
+      "wall_s_min": 0.39337145799999007,
+      "wall_s_max": 0.3947524169999923,
+      "cpu_s": 0.389912,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 1.9157054750210647,
+     "decode_mb_s": 1.8364388452555787,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 723597,
+     "compressed_bytes": 183229,
+     "bits_per_byte": 2.0257574312773547,
+     "encode": {
+      "wall_s": 0.01106637499999863,
+      "wall_s_min": 0.010798540999999773,
+      "wall_s_max": 0.01143424999999354,
+      "cpu_s": 0.008968,
+      "peak_rss_bytes": 5652480
+     },
+     "decode": {
+      "wall_s": 0.008688417000001891,
+      "wall_s_min": 0.00807291599998905,
+      "wall_s_max": 0.00902516700000433,
+      "cpu_s": 0.006220999999999999,
+      "peak_rss_bytes": 4308992
+     },
+     "encode_mb_s": 65.38699438615532,
+     "decode_mb_s": 83.28295016224965,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 723597,
+     "compressed_bytes": 144611,
+     "bits_per_byte": 1.5988015428477453,
+     "encode": {
+      "wall_s": 0.14633562500000608,
+      "wall_s_min": 0.1405450419999994,
+      "wall_s_max": 0.14657154200000377,
+      "cpu_s": 0.143583,
+      "peak_rss_bytes": 22183936
+     },
+     "decode": {
+      "wall_s": 0.009070749999992245,
+      "wall_s_min": 0.008704041999990864,
+      "wall_s_max": 0.009214374999999109,
+      "cpu_s": 0.006654,
+      "peak_rss_bytes": 4210688
+     },
+     "encode_mb_s": 4.94477677598992,
+     "decode_mb_s": 79.77256566442892,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 723597,
+     "compressed_bytes": 142764,
+     "bits_per_byte": 1.5783813365727055,
+     "encode": {
+      "wall_s": 0.908943832999995,
+      "wall_s_min": 0.8920571669999902,
+      "wall_s_max": 0.9684038340000001,
+      "cpu_s": 0.89701,
+      "peak_rss_bytes": 22691840
+     },
+     "decode": {
+      "wall_s": 0.009827915999991887,
+      "wall_s_min": 0.009802166000000057,
+      "wall_s_max": 0.010002624999998488,
+      "cpu_s": 0.007534,
+      "peak_rss_bytes": 3686400
+     },
+     "encode_mb_s": 0.7960854936566845,
+     "decode_mb_s": 73.62669766414338,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_mesh.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 723597,
+     "compressed_bytes": 141740,
+     "bits_per_byte": 1.5670601177174588,
+     "encode": {
+      "wall_s": 0.1579579170000045,
+      "wall_s_min": 0.14737895800000445,
+      "wall_s_max": 0.1702636670000004,
+      "cpu_s": 0.15521799999999997,
+      "peak_rss_bytes": 17498112
+     },
+     "decode": {
+      "wall_s": 0.018750707999998895,
+      "wall_s_min": 0.018053291999990506,
+      "wall_s_max": 0.01883308300000408,
+      "cpu_s": 0.016505,
+      "peak_rss_bytes": 3063808
+     },
+     "encode_mb_s": 4.5809479748962465,
+     "decode_mb_s": 38.590382827146726,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 127275,
+     "compressed_bytes": 8429,
+     "bits_per_byte": 0.5298133961893537,
+     "encode": {
+      "wall_s": 0.012491874999994934,
+      "wall_s_min": 0.012071000000005938,
+      "wall_s_max": 0.012692208999993682,
+      "cpu_s": 0.009877,
+      "peak_rss_bytes": 5931008
+     },
+     "decode": {
+      "wall_s": 0.011797749999999496,
+      "wall_s_min": 0.01156566699999928,
+      "wall_s_max": 0.012186749999997915,
+      "cpu_s": 0.009727,
+      "peak_rss_bytes": 5849088
+     },
+     "encode_mb_s": 10.188622604697182,
+     "decode_mb_s": 10.788073997160936,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 127275,
+     "compressed_bytes": 6321,
+     "bits_per_byte": 0.39731290512669415,
+     "encode": {
+      "wall_s": 0.07401008400000819,
+      "wall_s_min": 0.07320133300000009,
+      "wall_s_max": 0.0750557500000042,
+      "cpu_s": 0.070703,
+      "peak_rss_bytes": 171507712
+     },
+     "decode": {
+      "wall_s": 0.09414841699999954,
+      "wall_s_min": 0.0913971250000003,
+      "wall_s_max": 0.10482029199999943,
+      "cpu_s": 0.091838,
+      "peak_rss_bytes": 171507712
+     },
+     "encode_mb_s": 1.7196980887089104,
+     "decode_mb_s": 1.3518549122286423,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 127275,
+     "compressed_bytes": 7591,
+     "bits_per_byte": 0.4771400510705166,
+     "encode": {
+      "wall_s": 0.3533932919999927,
+      "wall_s_min": 0.324085457999999,
+      "wall_s_max": 0.3688369999999992,
+      "cpu_s": 0.34898,
+      "peak_rss_bytes": 90554368
+     },
+     "decode": {
+      "wall_s": 0.362402000000003,
+      "wall_s_min": 0.3610211670000041,
+      "wall_s_max": 0.381958417000007,
+      "cpu_s": 0.357795,
+      "peak_rss_bytes": 90390528
+     },
+     "encode_mb_s": 0.3601511485396351,
+     "decode_mb_s": 0.3511983929448484,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 127275,
+     "compressed_bytes": 5952,
+     "bits_per_byte": 0.3741190335886859,
+     "encode": {
+      "wall_s": 0.2613009999999889,
+      "wall_s_min": 0.2577326249999885,
+      "wall_s_max": 0.26512529199999335,
+      "cpu_s": 0.256221,
+      "peak_rss_bytes": 185663488
+     },
+     "decode": {
+      "wall_s": 0.2750004589999975,
+      "wall_s_min": 0.26973429199999543,
+      "wall_s_max": 0.2822071670000099,
+      "cpu_s": 0.26804599999999995,
+      "peak_rss_bytes": 185696256
+     },
+     "encode_mb_s": 0.4870819476389505,
+     "decode_mb_s": 0.46281740933385557,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 127275,
+     "compressed_bytes": 12969,
+     "bits_per_byte": 0.815179728933412,
+     "encode": {
+      "wall_s": 0.08058608300000003,
+      "wall_s_min": 0.07931437499999561,
+      "wall_s_max": 0.08174470800000222,
+      "cpu_s": 0.075838,
+      "peak_rss_bytes": 103186432
+     },
+     "decode": {
+      "wall_s": 0.08568449999999928,
+      "wall_s_min": 0.08453970799999411,
+      "wall_s_max": 0.08988095800000906,
+      "cpu_s": 0.08159399999999999,
+      "peak_rss_bytes": 103219200
+     },
+     "encode_mb_s": 1.5793669981453242,
+     "decode_mb_s": 1.4853911734327805,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 127275,
+     "compressed_bytes": 12283,
+     "bits_per_byte": 0.7720604989196621,
+     "encode": {
+      "wall_s": 0.008374083000006749,
+      "wall_s_min": 0.008302999999997951,
+      "wall_s_max": 0.008713291000006507,
+      "cpu_s": 0.0057929999999999995,
+      "peak_rss_bytes": 3047424
+     },
+     "decode": {
+      "wall_s": 0.008434042000004638,
+      "wall_s_min": 0.00825012500000355,
+      "wall_s_max": 0.008832333000000858,
+      "cpu_s": 0.005620999999999999,
+      "peak_rss_bytes": 2670592
+     },
+     "encode_mb_s": 15.198679067295776,
+     "decode_mb_s": 15.090629143171212,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 127275,
+     "compressed_bytes": 9874,
+     "bits_per_byte": 0.6206403457081123,
+     "encode": {
+      "wall_s": 0.07432083300000158,
+      "wall_s_min": 0.07290445800001066,
+      "wall_s_max": 0.07516304099999616,
+      "cpu_s": 0.07156,
+      "peak_rss_bytes": 4866048
+     },
+     "decode": {
+      "wall_s": 0.0071504999999945085,
+      "wall_s_min": 0.006795000000010987,
+      "wall_s_max": 0.016240833999987103,
+      "cpu_s": 0.004923,
+      "peak_rss_bytes": 2654208
+     },
+     "encode_mb_s": 1.7125077163760702,
+     "decode_mb_s": 17.799454583609222,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 127275,
+     "compressed_bytes": 9303,
+     "bits_per_byte": 0.5847495580436064,
+     "encode": {
+      "wall_s": 0.1892525419999913,
+      "wall_s_min": 0.18758120799999745,
+      "wall_s_max": 0.19643216700001176,
+      "cpu_s": 0.186944,
+      "peak_rss_bytes": 9666560
+     },
+     "decode": {
+      "wall_s": 0.00681154199999412,
+      "wall_s_min": 0.0065812080000000606,
+      "wall_s_max": 0.0068191249999927095,
+      "cpu_s": 0.004571,
+      "peak_rss_bytes": 2605056
+     },
+     "encode_mb_s": 0.6725140843815236,
+     "decode_mb_s": 18.68519639167018,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_apache_builds.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 127275,
+     "compressed_bytes": 9908,
+     "bits_per_byte": 0.6227774504026714,
+     "encode": {
+      "wall_s": 0.03794941699999299,
+      "wall_s_min": 0.03756049999999789,
+      "wall_s_max": 0.038598749999991355,
+      "cpu_s": 0.034756999999999996,
+      "peak_rss_bytes": 46252032
+     },
+     "decode": {
+      "wall_s": 0.007013791000005654,
+      "wall_s_min": 0.006602874999998676,
+      "wall_s_max": 0.007441415999991818,
+      "cpu_s": 0.005048,
+      "peak_rss_bytes": 2457600
+     },
+     "encode_mb_s": 3.3538064629562956,
+     "decode_mb_s": 18.146391872797096,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 510476,
+     "compressed_bytes": 37756,
+     "bits_per_byte": 0.5916987282457942,
+     "encode": {
+      "wall_s": 0.03607595900000149,
+      "wall_s_min": 0.035659624999993866,
+      "wall_s_max": 0.03669504199999096,
+      "cpu_s": 0.033415,
+      "peak_rss_bytes": 12664832
+     },
+     "decode": {
+      "wall_s": 0.037913374999988037,
+      "wall_s_min": 0.03705424999999707,
+      "wall_s_max": 0.03865795800000171,
+      "cpu_s": 0.035512999999999996,
+      "peak_rss_bytes": 12173312
+     },
+     "encode_mb_s": 14.150032712920506,
+     "decode_mb_s": 13.464272173083012,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "lpaq1 6",
+     "original_bytes": 510476,
+     "compressed_bytes": 32844,
+     "bits_per_byte": 0.5147195950446251,
+     "encode": {
+      "wall_s": 0.2898890000000023,
+      "wall_s_min": 0.28706004200000734,
+      "wall_s_max": 0.306044459000006,
+      "cpu_s": 0.284516,
+      "peak_rss_bytes": 172081152
+     },
+     "decode": {
+      "wall_s": 0.3410759580000047,
+      "wall_s_min": 0.336312250000006,
+      "wall_s_max": 0.3694726250000002,
+      "cpu_s": 0.337816,
+      "peak_rss_bytes": 172081152
+     },
+     "encode_mb_s": 1.7609360824315377,
+     "decode_mb_s": 1.4966636845156733,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "zpaq -m5",
+     "original_bytes": 510476,
+     "compressed_bytes": 31777,
+     "bits_per_byte": 0.49799794701415934,
+     "encode": {
+      "wall_s": 1.310383416999997,
+      "wall_s_min": 1.2098537090000008,
+      "wall_s_max": 1.3320843330000116,
+      "cpu_s": 1.306181,
+      "peak_rss_bytes": 91455488
+     },
+     "decode": {
+      "wall_s": 1.443047957999994,
+      "wall_s_min": 1.439442416999995,
+      "wall_s_max": 1.446654332999998,
+      "cpu_s": 1.438072,
+      "peak_rss_bytes": 91373568
+     },
+     "encode_mb_s": 0.38956231693521287,
+     "decode_mb_s": 0.353748464955731,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "neurozip",
+     "original_bytes": 510476,
+     "compressed_bytes": 29281,
+     "bits_per_byte": 0.4588815145080278,
+     "encode": {
+      "wall_s": 0.9357126250000078,
+      "wall_s_min": 0.9190024170000015,
+      "wall_s_max": 0.9605742090000007,
+      "cpu_s": 0.930088,
+      "peak_rss_bytes": 186204160
+     },
+     "decode": {
+      "wall_s": 1.0270094999999912,
+      "wall_s_min": 1.008389292000004,
+      "wall_s_max": 1.0414028750000028,
+      "cpu_s": 1.024355,
+      "peak_rss_bytes": 186269696
+     },
+     "encode_mb_s": 0.5455478384723043,
+     "decode_mb_s": 0.49705090361871473,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "neurozip ctx",
+     "original_bytes": 510476,
+     "compressed_bytes": 57438,
+     "bits_per_byte": 0.9001480970701855,
+     "encode": {
+      "wall_s": 0.26537050000000306,
+      "wall_s_min": 0.2645767089999964,
+      "wall_s_max": 0.26994570899999815,
+      "cpu_s": 0.26278399999999996,
+      "peak_rss_bytes": 103366656
+     },
+     "decode": {
+      "wall_s": 0.2922092080000027,
+      "wall_s_min": 0.2890466669999938,
+      "wall_s_max": 0.2938145000000105,
+      "cpu_s": 0.28845699999999996,
+      "peak_rss_bytes": 103448576
+     },
+     "encode_mb_s": 1.9236350687058061,
+     "decode_mb_s": 1.7469538468479586,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "zstd -3",
+     "original_bytes": 510476,
+     "compressed_bytes": 65894,
+     "bits_per_byte": 1.032667549502817,
+     "encode": {
+      "wall_s": 0.008897500000003333,
+      "wall_s_min": 0.008404583000000798,
+      "wall_s_max": 0.009018457999999896,
+      "cpu_s": 0.006638,
+      "peak_rss_bytes": 4505600
+     },
+     "decode": {
+      "wall_s": 0.0076825419999977385,
+      "wall_s_min": 0.007296499999995376,
+      "wall_s_max": 0.008266667000000893,
+      "cpu_s": 0.00546,
+      "peak_rss_bytes": 3653632
+     },
+     "encode_mb_s": 57.372969935353616,
+     "decode_mb_s": 66.44623615466733,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "zstd -19",
+     "original_bytes": 510476,
+     "compressed_bytes": 47344,
+     "bits_per_byte": 0.7419584858054051,
+     "encode": {
+      "wall_s": 0.19217012500000408,
+      "wall_s_min": 0.19115841699999692,
+      "wall_s_max": 0.19277145799999573,
+      "cpu_s": 0.189571,
+      "peak_rss_bytes": 12730368
+     },
+     "decode": {
+      "wall_s": 0.006539625000002047,
+      "wall_s_min": 0.006533958999995093,
+      "wall_s_max": 0.007002209000006587,
+      "cpu_s": 0.0047409999999999996,
+      "peak_rss_bytes": 3620864
+     },
+     "encode_mb_s": 2.6563754381696385,
+     "decode_mb_s": 78.05891010567736,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "brotli -q 11",
+     "original_bytes": 510476,
+     "compressed_bytes": 44430,
+     "bits_per_byte": 0.6962913045863077,
+     "encode": {
+      "wall_s": 0.7143453749999935,
+      "wall_s_min": 0.7127369589999972,
+      "wall_s_max": 0.723518833,
+      "cpu_s": 0.711488,
+      "peak_rss_bytes": 22151168
+     },
+     "decode": {
+      "wall_s": 0.006738166000005208,
+      "wall_s_min": 0.006597374999998351,
+      "wall_s_max": 0.007154291999995621,
+      "cpu_s": 0.004737,
+      "peak_rss_bytes": 3424256
+     },
+     "encode_mb_s": 0.7146067124743471,
+     "decode_mb_s": 75.75889344364705,
+     "verified_sha256": true
+    },
+    {
+     "file": "json_random.json",
+     "category": "JSON",
+     "compressor": "xz -9",
+     "original_bytes": 510476,
+     "compressed_bytes": 44368,
+     "bits_per_byte": 0.6953196624327098,
+     "encode": {
+      "wall_s": 0.1099805420000024,
+      "wall_s_min": 0.10947845800001232,
+      "wall_s_max": 0.11644083400000227,
+      "cpu_s": 0.10706899999999998,
+      "peak_rss_bytes": 35061760
+     },
+     "decode": {
+      "wall_s": 0.009720874999999296,
+      "wall_s_min": 0.009469124999995415,
+      "wall_s_max": 0.009817916000002924,
+      "cpu_s": 0.007696,
+      "peak_rss_bytes": 2850816
+     },
+     "encode_mb_s": 4.641511950359264,
+     "decode_mb_s": 52.51337971119236,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 4194304,
+     "compressed_bytes": 361343,
+     "bits_per_byte": 0.6892070770263672,
+     "encode": {
+      "wall_s": 0.345717417000003,
+      "wall_s_min": 0.33873287499999094,
+      "wall_s_max": 0.3558917910000048,
+      "cpu_s": 0.342265,
+      "peak_rss_bytes": 72220672
+     },
+     "decode": {
+      "wall_s": 0.3889161249999944,
+      "wall_s_min": 0.35974183299998685,
+      "wall_s_max": 0.41416679099999953,
+      "cpu_s": 0.38480000000000003,
+      "peak_rss_bytes": 71237632
+     },
+     "encode_mb_s": 12.13217441110282,
+     "decode_mb_s": 10.78459783584458,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "lpaq1 6",
+     "original_bytes": 4194304,
+     "compressed_bytes": 299846,
+     "bits_per_byte": 0.5719108581542969,
+     "encode": {
+      "wall_s": 1.9123411659999903,
+      "wall_s_min": 1.806070874999989,
+      "wall_s_max": 2.071550375000001,
+      "cpu_s": 1.906569,
+      "peak_rss_bytes": 175734784
+     },
+     "decode": {
+      "wall_s": 2.645365541000018,
+      "wall_s_min": 2.282458042000002,
+      "wall_s_max": 2.8517347499999914,
+      "cpu_s": 2.638585,
+      "peak_rss_bytes": 175734784
+     },
+     "encode_mb_s": 2.1932822838160986,
+     "decode_mb_s": 1.585529082840643,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "zpaq -m5",
+     "original_bytes": 4194304,
+     "compressed_bytes": 295965,
+     "bits_per_byte": 0.5645084381103516,
+     "encode": {
+      "wall_s": 10.606219541999991,
+      "wall_s_min": 9.63363074999998,
+      "wall_s_max": 10.775417125000018,
+      "cpu_s": 10.593534,
+      "peak_rss_bytes": 187629568
+     },
+     "decode": {
+      "wall_s": 10.749929041000001,
+      "wall_s_min": 10.475129833000011,
+      "wall_s_max": 10.860408542000016,
+      "cpu_s": 10.736699,
+      "peak_rss_bytes": 189972480
+     },
+     "encode_mb_s": 0.3954570224942835,
+     "decode_mb_s": 0.39017038940471266,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "neurozip",
+     "original_bytes": 4194304,
+     "compressed_bytes": 282477,
+     "bits_per_byte": 0.5387821197509766,
+     "encode": {
+      "wall_s": 5.751724875000008,
+      "wall_s_min": 4.7019144580000045,
+      "wall_s_max": 6.354560333999984,
+      "cpu_s": 5.739868,
+      "peak_rss_bytes": 189923328
+     },
+     "decode": {
+      "wall_s": 8.065637167000006,
+      "wall_s_min": 8.044416167000008,
+      "wall_s_max": 8.257269917000002,
+      "cpu_s": 8.055671,
+      "peak_rss_bytes": 190480384
+     },
+     "encode_mb_s": 0.7292254221391273,
+     "decode_mb_s": 0.5200214084958723,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "neurozip ctx",
+     "original_bytes": 4194304,
+     "compressed_bytes": 626907,
+     "bits_per_byte": 1.195730209350586,
+     "encode": {
+      "wall_s": 2.1615891670000167,
+      "wall_s_min": 2.133320291999979,
+      "wall_s_max": 2.4324776250000184,
+      "cpu_s": 2.152794,
+      "peak_rss_bytes": 103399424
+     },
+     "decode": {
+      "wall_s": 2.437545875000012,
+      "wall_s_min": 2.4083459999999945,
+      "wall_s_max": 2.706803165999986,
+      "cpu_s": 2.429786,
+      "peak_rss_bytes": 103727104
+     },
+     "encode_mb_s": 1.9403798205655827,
+     "decode_mb_s": 1.7207077179624277,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "zstd -3",
+     "original_bytes": 4194304,
+     "compressed_bytes": 473514,
+     "bits_per_byte": 0.9031562805175781,
+     "encode": {
+      "wall_s": 0.016786083999988932,
+      "wall_s_min": 0.01570708399998466,
+      "wall_s_max": 0.01705833400001211,
+      "cpu_s": 0.014813,
+      "peak_rss_bytes": 10158080
+     },
+     "decode": {
+      "wall_s": 0.010963500000002568,
+      "wall_s_min": 0.010813792000021749,
+      "wall_s_max": 0.011254792000016778,
+      "cpu_s": 0.009309999999999999,
+      "peak_rss_bytes": 6766592
+     },
+     "encode_mb_s": 249.86792631341325,
+     "decode_mb_s": 382.56979979012334,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "zstd -19",
+     "original_bytes": 4194304,
+     "compressed_bytes": 361682,
+     "bits_per_byte": 0.6898536682128906,
+     "encode": {
+      "wall_s": 1.7586302500000102,
+      "wall_s_min": 1.658952666999994,
+      "wall_s_max": 1.7841558329999998,
+      "cpu_s": 1.751164,
+      "peak_rss_bytes": 60178432
+     },
+     "decode": {
+      "wall_s": 0.01158250000003136,
+      "wall_s_min": 0.011540666000030342,
+      "wall_s_max": 0.013051249999989523,
+      "cpu_s": 0.008941,
+      "peak_rss_bytes": 8208384
+     },
+     "encode_mb_s": 2.38498342673224,
+     "decode_mb_s": 362.1242391529155,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "brotli -q 11",
+     "original_bytes": 4194304,
+     "compressed_bytes": 321650,
+     "bits_per_byte": 0.6134986877441406,
+     "encode": {
+      "wall_s": 8.999318709000022,
+      "wall_s_min": 8.60473991699996,
+      "wall_s_max": 9.11107687499998,
+      "cpu_s": 8.989716,
+      "peak_rss_bytes": 61702144
+     },
+     "decode": {
+      "wall_s": 0.013990333000037936,
+      "wall_s_min": 0.013942750000012438,
+      "wall_s_max": 0.01472779100004118,
+      "cpu_s": 0.01165,
+      "peak_rss_bytes": 7421952
+     },
+     "encode_mb_s": 0.46606905873945415,
+     "decode_mb_s": 299.8001548632636,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_dns.log",
+     "category": "Logs",
+     "compressor": "xz -9",
+     "original_bytes": 4194304,
+     "compressed_bytes": 355520,
+     "bits_per_byte": 0.6781005859375,
+     "encode": {
+      "wall_s": 0.8899747079999543,
+      "wall_s_min": 0.8375466250000159,
+      "wall_s_max": 0.9667510000000448,
+      "cpu_s": 0.857044,
+      "peak_rss_bytes": 107675648
+     },
+     "decode": {
+      "wall_s": 0.047575790999985657,
+      "wall_s_min": 0.04237724999995862,
+      "wall_s_max": 0.04933375000001661,
+      "cpu_s": 0.039651,
+      "peak_rss_bytes": 6537216
+     },
+     "encode_mb_s": 4.712835052836373,
+     "decode_mb_s": 88.16046799939205,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 4194304,
+     "compressed_bytes": 628116,
+     "bits_per_byte": 1.1980361938476562,
+     "encode": {
+      "wall_s": 0.4646673330000226,
+      "wall_s_min": 0.44553179199999704,
+      "wall_s_max": 0.4652725839999903,
+      "cpu_s": 0.443249,
+      "peak_rss_bytes": 66322432
+     },
+     "decode": {
+      "wall_s": 0.3800625830000399,
+      "wall_s_min": 0.37712762499995733,
+      "wall_s_max": 0.4364561660000277,
+      "cpu_s": 0.376681,
+      "peak_rss_bytes": 65306624
+     },
+     "encode_mb_s": 9.026466252577725,
+     "decode_mb_s": 11.035824592076613,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "lpaq1 6",
+     "original_bytes": 4194304,
+     "compressed_bytes": 554428,
+     "bits_per_byte": 1.0574874877929688,
+     "encode": {
+      "wall_s": 1.7429638339999656,
+      "wall_s_min": 1.4228553329999727,
+      "wall_s_max": 2.1780942080000045,
+      "cpu_s": 1.737805,
+      "peak_rss_bytes": 175751168
+     },
+     "decode": {
+      "wall_s": 1.8858752090000053,
+      "wall_s_min": 1.7418986670000436,
+      "wall_s_max": 1.9559404159999758,
+      "cpu_s": 1.883872,
+      "peak_rss_bytes": 175751168
+     },
+     "encode_mb_s": 2.4064205568594046,
+     "decode_mb_s": 2.2240623239456285,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "zpaq -m5",
+     "original_bytes": 4194304,
+     "compressed_bytes": 544877,
+     "bits_per_byte": 1.0392704010009766,
+     "encode": {
+      "wall_s": 7.49281879199998,
+      "wall_s_min": 7.182418750000011,
+      "wall_s_max": 7.508532083000034,
+      "cpu_s": 7.4839269999999996,
+      "peak_rss_bytes": 188039168
+     },
+     "decode": {
+      "wall_s": 6.2895203329999845,
+      "wall_s_min": 5.523011166999993,
+      "wall_s_max": 10.402573958000005,
+      "cpu_s": 6.282987,
+      "peak_rss_bytes": 189972480
+     },
+     "encode_mb_s": 0.5597765162128602,
+     "decode_mb_s": 0.666871840447552,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "neurozip",
+     "original_bytes": 4194304,
+     "compressed_bytes": 546130,
+     "bits_per_byte": 1.0416603088378906,
+     "encode": {
+      "wall_s": 4.264478166999993,
+      "wall_s_min": 3.6398659590000193,
+      "wall_s_max": 4.710876041999995,
+      "cpu_s": 4.2580279999999995,
+      "peak_rss_bytes": 189890560
+     },
+     "decode": {
+      "wall_s": 4.127638708000006,
+      "wall_s_min": 3.7522742079999603,
+      "wall_s_max": 4.19968775000001,
+      "cpu_s": 4.121754,
+      "peak_rss_bytes": 189988864
+     },
+     "encode_mb_s": 0.9835444890905938,
+     "decode_mb_s": 1.0161509513588933,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "neurozip ctx",
+     "original_bytes": 4194304,
+     "compressed_bytes": 893478,
+     "bits_per_byte": 1.7041740417480469,
+     "encode": {
+      "wall_s": 1.2062019159999977,
+      "wall_s_min": 1.05395383299998,
+      "wall_s_max": 1.6631793340000058,
+      "cpu_s": 1.1976660000000001,
+      "peak_rss_bytes": 103366656
+     },
+     "decode": {
+      "wall_s": 2.143720583000004,
+      "wall_s_min": 1.4453256250000095,
+      "wall_s_max": 2.601361958000041,
+      "cpu_s": 2.139222,
+      "peak_rss_bytes": 103743488
+     },
+     "encode_mb_s": 3.4772818251766133,
+     "decode_mb_s": 1.9565534954794956,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "zstd -3",
+     "original_bytes": 4194304,
+     "compressed_bytes": 814283,
+     "bits_per_byte": 1.553121566772461,
+     "encode": {
+      "wall_s": 0.009114042000021527,
+      "wall_s_min": 0.009071208000023034,
+      "wall_s_max": 0.009679457999993701,
+      "cpu_s": 0.008180999999999999,
+      "peak_rss_bytes": 10829824
+     },
+     "decode": {
+      "wall_s": 0.005551084000046558,
+      "wall_s_min": 0.005408916000021691,
+      "wall_s_max": 0.005580375000022286,
+      "cpu_s": 0.004573,
+      "peak_rss_bytes": 7176192
+     },
+     "encode_mb_s": 460.2023997684115,
+     "decode_mb_s": 755.5828735369203,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "zstd -19",
+     "original_bytes": 4194304,
+     "compressed_bytes": 678530,
+     "bits_per_byte": 1.2941932678222656,
+     "encode": {
+      "wall_s": 0.8048483750000059,
+      "wall_s_min": 0.7836952079999833,
+      "wall_s_max": 0.8113977499999692,
+      "cpu_s": 0.802037,
+      "peak_rss_bytes": 60719104
+     },
+     "decode": {
+      "wall_s": 0.0057380840000291755,
+      "wall_s_min": 0.00567645800003902,
+      "wall_s_max": 0.006073249999985819,
+      "cpu_s": 0.004763999999999999,
+      "peak_rss_bytes": 8863744
+     },
+     "encode_mb_s": 5.211297096797852,
+     "decode_mb_s": 730.9589751524505,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "brotli -q 11",
+     "original_bytes": 4194304,
+     "compressed_bytes": 612602,
+     "bits_per_byte": 1.1684455871582031,
+     "encode": {
+      "wall_s": 3.9725634999999784,
+      "wall_s_min": 3.7813708329999827,
+      "wall_s_max": 5.534062750000032,
+      "cpu_s": 3.96809,
+      "peak_rss_bytes": 67747840
+     },
+     "decode": {
+      "wall_s": 0.008672208000007231,
+      "wall_s_min": 0.008408666999969228,
+      "wall_s_max": 0.00980816600002754,
+      "cpu_s": 0.007037,
+      "peak_rss_bytes": 7618560
+     },
+     "encode_mb_s": 1.0558179875538862,
+     "decode_mb_s": 483.64891616950405,
+     "verified_sha256": true
+    },
+    {
+     "file": "logs_zeek_ssl.log",
+     "category": "Logs",
+     "compressor": "xz -9",
+     "original_bytes": 4194304,
+     "compressed_bytes": 652604,
+     "bits_per_byte": 1.2447433471679688,
+     "encode": {
+      "wall_s": 0.4092518750000522,
+      "wall_s_min": 0.4082087499999716,
+      "wall_s_max": 0.4141414579999605,
+      "cpu_s": 0.40647599999999995,
+      "peak_rss_bytes": 107659264
+     },
+     "decode": {
+      "wall_s": 0.028937583000015366,
+      "wall_s_min": 0.028920416999994814,
+      "wall_s_max": 0.030186791999994966,
+      "cpu_s": 0.027656,
+      "peak_rss_bytes": 6537216
+     },
+     "encode_mb_s": 10.248710528203357,
+     "decode_mb_s": 144.94313502263725,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 1131168,
+     "compressed_bytes": 615279,
+     "bits_per_byte": 4.351459730119664,
+     "encode": {
+      "wall_s": 0.10843029199998,
+      "wall_s_min": 0.10797399999995605,
+      "wall_s_max": 0.10957162500000095,
+      "cpu_s": 0.10661999999999999,
+      "peak_rss_bytes": 26525696
+     },
+     "decode": {
+      "wall_s": 0.12295054200001232,
+      "wall_s_min": 0.12243704200000138,
+      "wall_s_max": 0.12373841700002686,
+      "cpu_s": 0.12129299999999998,
+      "peak_rss_bytes": 25542656
+     },
+     "encode_mb_s": 10.432213905687984,
+     "decode_mb_s": 9.2001871777018,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "lpaq1 6",
+     "original_bytes": 1131168,
+     "compressed_bytes": 572469,
+     "bits_per_byte": 4.04869303233472,
+     "encode": {
+      "wall_s": 0.5448746669999878,
+      "wall_s_min": 0.5355360419999897,
+      "wall_s_max": 0.5497933749999788,
+      "cpu_s": 0.5407879999999999,
+      "peak_rss_bytes": 172720128
+     },
+     "decode": {
+      "wall_s": 0.7467614579999804,
+      "wall_s_min": 0.7379277079999724,
+      "wall_s_max": 0.8107341660000316,
+      "cpu_s": 0.742641,
+      "peak_rss_bytes": 172720128
+     },
+     "encode_mb_s": 2.076015033380191,
+     "decode_mb_s": 1.5147648394034146,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "zpaq -m5",
+     "original_bytes": 1131168,
+     "compressed_bytes": 542748,
+     "bits_per_byte": 3.8384961385046252,
+     "encode": {
+      "wall_s": 9.577913082999999,
+      "wall_s_min": 4.3174849999999765,
+      "wall_s_max": 9.993696375000013,
+      "cpu_s": 9.570438999999999,
+      "peak_rss_bytes": 106201088
+     },
+     "decode": {
+      "wall_s": 10.290462999999988,
+      "wall_s_min": 10.008072292000008,
+      "wall_s_max": 10.54339141700001,
+      "cpu_s": 10.257469,
+      "peak_rss_bytes": 106266624
+     },
+     "encode_mb_s": 0.11810171904856073,
+     "decode_mb_s": 0.10992391693162895,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip",
+     "original_bytes": 1131168,
+     "compressed_bytes": 513838,
+     "bits_per_byte": 3.634034909049761,
+     "encode": {
+      "wall_s": 6.254214791999971,
+      "wall_s_min": 6.241566999999975,
+      "wall_s_max": 6.326285709000047,
+      "cpu_s": 6.24031,
+      "peak_rss_bytes": 187187200
+     },
+     "decode": {
+      "wall_s": 6.684231417000035,
+      "wall_s_min": 6.5698605410000255,
+      "wall_s_max": 6.701975833000006,
+      "cpu_s": 6.669765,
+      "peak_rss_bytes": 187039744
+     },
+     "encode_mb_s": 0.18086491072339322,
+     "decode_mb_s": 0.1692293293621007,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip ctx",
+     "original_bytes": 1131168,
+     "compressed_bytes": 732145,
+     "bits_per_byte": 5.177975331692552,
+     "encode": {
+      "wall_s": 1.8611275410000303,
+      "wall_s_min": 1.8463183750000098,
+      "wall_s_max": 1.898341749999986,
+      "cpu_s": 1.8552389999999999,
+      "peak_rss_bytes": 103546880
+     },
+     "decode": {
+      "wall_s": 2.090237541000022,
+      "wall_s_min": 2.061420082999973,
+      "wall_s_max": 2.159166500000026,
+      "cpu_s": 2.080372,
+      "peak_rss_bytes": 103661568
+     },
+     "encode_mb_s": 0.6077863956557191,
+     "decode_mb_s": 0.5411672012448983,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -3",
+     "original_bytes": 1131168,
+     "compressed_bytes": 737764,
+     "bits_per_byte": 5.217714786839798,
+     "encode": {
+      "wall_s": 0.04033416599997963,
+      "wall_s_min": 0.04027345800000148,
+      "wall_s_max": 0.04097166699995114,
+      "cpu_s": 0.035554999999999996,
+      "peak_rss_bytes": 7798784
+     },
+     "decode": {
+      "wall_s": 0.026705042000003232,
+      "wall_s_min": 0.026357000000018616,
+      "wall_s_max": 0.027477207999993425,
+      "cpu_s": 0.022251,
+      "peak_rss_bytes": 5963776
+     },
+     "encode_mb_s": 28.044908626611274,
+     "decode_mb_s": 42.3578438858049,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -19",
+     "original_bytes": 1131168,
+     "compressed_bytes": 647919,
+     "bits_per_byte": 4.5823007722990745,
+     "encode": {
+      "wall_s": 0.5803140410000083,
+      "wall_s_min": 0.5730084170000396,
+      "wall_s_max": 0.6242127500000265,
+      "cpu_s": 0.57387,
+      "peak_rss_bytes": 41009152
+     },
+     "decode": {
+      "wall_s": 0.02914529100002028,
+      "wall_s_min": 0.029022166999993715,
+      "wall_s_max": 0.029356042000017624,
+      "cpu_s": 0.024445,
+      "peak_rss_bytes": 5685248
+     },
+     "encode_mb_s": 1.949234242291897,
+     "decode_mb_s": 38.81134691704443,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "brotli -q 11",
+     "original_bytes": 1131168,
+     "compressed_bytes": 633519,
+     "bits_per_byte": 4.480459136043453,
+     "encode": {
+      "wall_s": 8.868400291999933,
+      "wall_s_min": 3.6125218749999704,
+      "wall_s_max": 9.191003459000058,
+      "cpu_s": 8.854009,
+      "peak_rss_bytes": 30883840
+     },
+     "decode": {
+      "wall_s": 0.007647709000025316,
+      "wall_s_min": 0.007530416999998124,
+      "wall_s_max": 0.008087958000032813,
+      "cpu_s": 0.00622,
+      "peak_rss_bytes": 4653056
+     },
+     "encode_mb_s": 0.1275503994807735,
+     "decode_mb_s": 147.9093935185368,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_busybox_linux_x64",
+     "category": "Executables",
+     "compressor": "xz -9",
+     "original_bytes": 1131168,
+     "compressed_bytes": 624368,
+     "bits_per_byte": 4.415740190670174,
+     "encode": {
+      "wall_s": 0.1522040410000045,
+      "wall_s_min": 0.14485391699997763,
+      "wall_s_max": 0.15246400000000904,
+      "cpu_s": 0.15053499999999997,
+      "peak_rss_bytes": 80134144
+     },
+     "decode": {
+      "wall_s": 0.023167041999954563,
+      "wall_s_min": 0.022498999999925218,
+      "wall_s_max": 0.024024415999974735,
+      "cpu_s": 0.021925,
+      "peak_rss_bytes": 3473408
+     },
+     "encode_mb_s": 7.4319183154931245,
+     "decode_mb_s": 48.82660462230001,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 4194304,
+     "compressed_bytes": 2031447,
+     "bits_per_byte": 3.8746776580810547,
+     "encode": {
+      "wall_s": 0.4875753329999952,
+      "wall_s_min": 0.46187124999994467,
+      "wall_s_max": 0.5499280830000544,
+      "cpu_s": 0.48456299999999997,
+      "peak_rss_bytes": 72908800
+     },
+     "decode": {
+      "wall_s": 0.6803037920000179,
+      "wall_s_min": 0.5864227920000076,
+      "wall_s_max": 0.6982205410000688,
+      "cpu_s": 0.676863,
+      "peak_rss_bytes": 71892992
+     },
+     "encode_mb_s": 8.602371195017039,
+     "decode_mb_s": 6.165339733987385,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "lpaq1 6",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1859404,
+     "bits_per_byte": 3.5465316772460938,
+     "encode": {
+      "wall_s": 1.8598819999999705,
+      "wall_s_min": 1.7926029999999855,
+      "wall_s_max": 1.8677142090000416,
+      "cpu_s": 1.8555789999999999,
+      "peak_rss_bytes": 175767552
+     },
+     "decode": {
+      "wall_s": 2.3360027080000236,
+      "wall_s_min": 2.2655865000000404,
+      "wall_s_max": 2.4870925409999245,
+      "cpu_s": 2.330179,
+      "peak_rss_bytes": 175767552
+     },
+     "encode_mb_s": 2.2551452188902665,
+     "decode_mb_s": 1.795504767882297,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "zpaq -m5",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1755591,
+     "bits_per_byte": 3.3485240936279297,
+     "encode": {
+      "wall_s": 7.209481249999953,
+      "wall_s_min": 7.1369640000000345,
+      "wall_s_max": 8.05929270799993,
+      "cpu_s": 7.195111000000001,
+      "peak_rss_bytes": 190070784
+     },
+     "decode": {
+      "wall_s": 7.058827457999996,
+      "wall_s_min": 6.999162583000043,
+      "wall_s_max": 7.20471454199992,
+      "cpu_s": 7.0510150000000005,
+      "peak_rss_bytes": 189972480
+     },
+     "encode_mb_s": 0.581776116000028,
+     "decode_mb_s": 0.5941927359686998,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1708902,
+     "bits_per_byte": 3.259471893310547,
+     "encode": {
+      "wall_s": 5.212003125000024,
+      "wall_s_min": 4.9255803330000845,
+      "wall_s_max": 5.386459790999993,
+      "cpu_s": 4.921669,
+      "peak_rss_bytes": 190201856
+     },
+     "decode": {
+      "wall_s": 6.382212750000008,
+      "wall_s_min": 5.7659468749999405,
+      "wall_s_max": 6.699829375000036,
+      "cpu_s": 6.377816,
+      "peak_rss_bytes": 190201856
+     },
+     "encode_mb_s": 0.804739348654934,
+     "decode_mb_s": 0.6571864906885146,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "neurozip ctx",
+     "original_bytes": 4194304,
+     "compressed_bytes": 2479479,
+     "bits_per_byte": 4.729230880737305,
+     "encode": {
+      "wall_s": 1.689646625000023,
+      "wall_s_min": 1.5438514579999492,
+      "wall_s_max": 1.7542555410000205,
+      "cpu_s": 1.686244,
+      "peak_rss_bytes": 103628800
+     },
+     "decode": {
+      "wall_s": 1.5726827920000233,
+      "wall_s_min": 1.537105333999989,
+      "wall_s_max": 1.655913499999997,
+      "cpu_s": 1.568629,
+      "peak_rss_bytes": 104267776
+     },
+     "encode_mb_s": 2.4823557411005646,
+     "decode_mb_s": 2.666973925915467,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -3",
+     "original_bytes": 4194304,
+     "compressed_bytes": 2296793,
+     "bits_per_byte": 4.38078498840332,
+     "encode": {
+      "wall_s": 0.022584124999980304,
+      "wall_s_min": 0.022047000000043226,
+      "wall_s_max": 0.02565624999999727,
+      "cpu_s": 0.021152999999999998,
+      "peak_rss_bytes": 12992512
+     },
+     "decode": {
+      "wall_s": 0.011023999999906664,
+      "wall_s_min": 0.010813583999947696,
+      "wall_s_max": 0.011356334000083734,
+      "cpu_s": 0.009932999999999999,
+      "peak_rss_bytes": 7847936
+     },
+     "encode_mb_s": 185.71912792741173,
+     "decode_mb_s": 380.47024673761894,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "zstd -19",
+     "original_bytes": 4194304,
+     "compressed_bytes": 2025537,
+     "bits_per_byte": 3.863405227661133,
+     "encode": {
+      "wall_s": 0.802367041000025,
+      "wall_s_min": 0.7424155830000245,
+      "wall_s_max": 1.389125583000009,
+      "cpu_s": 0.797881,
+      "peak_rss_bytes": 63094784
+     },
+     "decode": {
+      "wall_s": 0.044017124999982116,
+      "wall_s_min": 0.032445166000002246,
+      "wall_s_max": 0.05921000000000731,
+      "cpu_s": 0.021167,
+      "peak_rss_bytes": 10485760
+     },
+     "encode_mb_s": 5.227413123515712,
+     "decode_mb_s": 95.28800438469582,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "brotli -q 11",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1963615,
+     "bits_per_byte": 3.745298385620117,
+     "encode": {
+      "wall_s": 10.930915208999977,
+      "wall_s_min": 8.589564999999993,
+      "wall_s_max": 11.384505083000022,
+      "cpu_s": 9.898667,
+      "peak_rss_bytes": 91553792
+     },
+     "decode": {
+      "wall_s": 0.04298941700005798,
+      "wall_s_min": 0.03787741600001482,
+      "wall_s_max": 0.06129358399994089,
+      "cpu_s": 0.032983,
+      "peak_rss_bytes": 7847936
+     },
+     "encode_mb_s": 0.38371023101035645,
+     "decode_mb_s": 97.56596606077125,
+     "verified_sha256": true
+    },
+    {
+     "file": "exe_bat_linux_x64",
+     "category": "Executables",
+     "compressor": "xz -9",
+     "original_bytes": 4194304,
+     "compressed_bytes": 1945636,
+     "bits_per_byte": 3.7110061645507812,
+     "encode": {
+      "wall_s": 2.226345374999937,
+      "wall_s_min": 2.14183416700007,
+      "wall_s_max": 2.347253667000018,
+      "cpu_s": 1.947289,
+      "peak_rss_bytes": 107839488
+     },
+     "decode": {
+      "wall_s": 0.1619042500000205,
+      "wall_s_min": 0.14792087499995432,
+      "wall_s_max": 0.16583624999998392,
+      "cpu_s": 0.122007,
+      "peak_rss_bytes": 6553600
+     },
+     "encode_mb_s": 1.8839412999881557,
+     "decode_mb_s": 25.906077203034933,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1604733,
+     "bits_per_byte": 8.162716882086341,
+     "encode": {
+      "wall_s": 1.0172912909999923,
+      "wall_s_min": 0.8307974169999852,
+      "wall_s_max": 1.0563670419999198,
+      "cpu_s": 0.8574359999999999,
+      "peak_rss_bytes": 30556160
+     },
+     "decode": {
+      "wall_s": 0.8633179170000176,
+      "wall_s_min": 0.7867500419999942,
+      "wall_s_max": 1.0876455000000078,
+      "cpu_s": 0.845633,
+      "peak_rss_bytes": 29507584
+     },
+     "encode_mb_s": 1.5460114658545836,
+     "decode_mb_s": 1.8217437273457722,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "lpaq1 6",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1571154,
+     "bits_per_byte": 7.991912224748592,
+     "encode": {
+      "wall_s": 1.217027041999927,
+      "wall_s_min": 1.1841733750000003,
+      "wall_s_max": 1.4245082090000096,
+      "cpu_s": 1.213047,
+      "peak_rss_bytes": 173146112
+     },
+     "decode": {
+      "wall_s": 1.5483593330000076,
+      "wall_s_min": 1.545886583999959,
+      "wall_s_max": 1.615374832999919,
+      "cpu_s": 1.54291,
+      "peak_rss_bytes": 173162496
+     },
+     "encode_mb_s": 1.292283528405028,
+     "decode_mb_s": 1.0157487131573948,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "zpaq -m5",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1569200,
+     "bits_per_byte": 7.981972908496234,
+     "encode": {
+      "wall_s": 4.164570333000029,
+      "wall_s_min": 3.995903791999922,
+      "wall_s_max": 4.620325500000035,
+      "cpu_s": 4.1582989999999995,
+      "peak_rss_bytes": 109117440
+     },
+     "decode": {
+      "wall_s": 4.11395600000003,
+      "wall_s_min": 4.1033087499999965,
+      "wall_s_max": 4.85361745900002,
+      "cpu_s": 4.108828,
+      "peak_rss_bytes": 107118592
+     },
+     "encode_mb_s": 0.377648562575012,
+     "decode_mb_s": 0.3822948033474321,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1568140,
+     "bits_per_byte": 7.9765810583286285,
+     "encode": {
+      "wall_s": 2.5095421250000527,
+      "wall_s_min": 2.499832291000075,
+      "wall_s_max": 2.716113249999921,
+      "cpu_s": 2.502872,
+      "peak_rss_bytes": 187482112
+     },
+     "decode": {
+      "wall_s": 2.6882796670000744,
+      "wall_s_min": 2.5789569170000277,
+      "wall_s_max": 2.708539999999971,
+      "cpu_s": 2.6809879999999997,
+      "peak_rss_bytes": 187564032
+     },
+     "encode_mb_s": 0.6267055588875469,
+     "decode_mb_s": 0.5850373453722798,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip ctx",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1572882,
+     "bits_per_byte": 8.000701957852009,
+     "encode": {
+      "wall_s": 0.5407209579999517,
+      "wall_s_min": 0.5355506250000417,
+      "wall_s_max": 0.5473303329999908,
+      "cpu_s": 0.536693,
+      "peak_rss_bytes": 103628800
+     },
+     "decode": {
+      "wall_s": 0.11260504100005164,
+      "wall_s_min": 0.10942791599995871,
+      "wall_s_max": 0.11656112499997562,
+      "cpu_s": 0.108159,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 2.9086055880233523,
+     "decode_mb_s": 13.96690579775446,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -3",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1572793,
+     "bits_per_byte": 8.000249245903975,
+     "encode": {
+      "wall_s": 0.005060249999928601,
+      "wall_s_min": 0.004961582999953862,
+      "wall_s_max": 0.007334415999935118,
+      "cpu_s": 0.0037679999999999996,
+      "peak_rss_bytes": 9682944
+     },
+     "decode": {
+      "wall_s": 0.004589624999994157,
+      "wall_s_min": 0.004241790999913064,
+      "wall_s_max": 0.004629000000022643,
+      "cpu_s": 0.0032370000000000003,
+      "peak_rss_bytes": 6995968
+     },
+     "encode_mb_s": 310.8036164264989,
+     "decode_mb_s": 342.6737478556531,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -19",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1569544,
+     "bits_per_byte": 7.983722716475154,
+     "encode": {
+      "wall_s": 0.051934291999941706,
+      "wall_s_min": 0.05117437499995958,
+      "wall_s_max": 0.058104041999968103,
+      "cpu_s": 0.050032,
+      "peak_rss_bytes": 43024384
+     },
+     "decode": {
+      "wall_s": 0.004061082999896826,
+      "wall_s_min": 0.0038620000000264554,
+      "wall_s_max": 0.004391749999967942,
+      "cpu_s": 0.003159,
+      "peak_rss_bytes": 7127040
+     },
+     "encode_mb_s": 30.283343421756193,
+     "decode_mb_s": 387.27206512153447,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "brotli -q 11",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1572752,
+     "bits_per_byte": 8.000040693208812,
+     "encode": {
+      "wall_s": 0.5650572920000059,
+      "wall_s_min": 0.5633283749999691,
+      "wall_s_max": 0.5823328750000201,
+      "cpu_s": 0.5630879999999999,
+      "peak_rss_bytes": 27181056
+     },
+     "decode": {
+      "wall_s": 0.0035949589999972886,
+      "wall_s_min": 0.003313291999916146,
+      "wall_s_max": 0.003969832999928258,
+      "cpu_s": 0.002315,
+      "peak_rss_bytes": 5619712
+     },
+     "encode_mb_s": 2.783335463972711,
+     "decode_mb_s": 437.48593516676715,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_zlib.tar.gz",
+     "category": "Compressed",
+     "compressor": "xz -9",
+     "original_bytes": 1572744,
+     "compressed_bytes": 1570608,
+     "bits_per_byte": 7.989134913247166,
+     "encode": {
+      "wall_s": 0.16102679099992656,
+      "wall_s_min": 0.15277866600001744,
+      "wall_s_max": 0.16217125000002852,
+      "cpu_s": 0.15718999999999997,
+      "peak_rss_bytes": 84033536
+     },
+     "decode": {
+      "wall_s": 0.00890174999994997,
+      "wall_s_min": 0.008555709000006573,
+      "wall_s_max": 0.009032832999992024,
+      "cpu_s": 0.007391999999999999,
+      "peak_rss_bytes": 3915776
+     },
+     "encode_mb_s": 9.76697101292118,
+     "decode_mb_s": 176.67806892002574,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 341625,
+     "compressed_bytes": 352037,
+     "bits_per_byte": 8.243822905232346,
+     "encode": {
+      "wall_s": 0.06164287499996135,
+      "wall_s_min": 0.060806416999980684,
+      "wall_s_max": 0.06525170800000524,
+      "cpu_s": 0.059918,
+      "peak_rss_bytes": 11141120
+     },
+     "decode": {
+      "wall_s": 0.07226362500000505,
+      "wall_s_min": 0.0715180000000828,
+      "wall_s_max": 0.07310495799993078,
+      "cpu_s": 0.070855,
+      "peak_rss_bytes": 10862592
+     },
+     "encode_mb_s": 5.542003029550686,
+     "decode_mb_s": 4.727482187614808,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "lpaq1 6",
+     "original_bytes": 341625,
+     "compressed_bytes": 341890,
+     "bits_per_byte": 8.006205634833517,
+     "encode": {
+      "wall_s": 0.19317608400001518,
+      "wall_s_min": 0.1880884160000278,
+      "wall_s_max": 0.19812675000002855,
+      "cpu_s": 0.189499,
+      "peak_rss_bytes": 171900928
+     },
+     "decode": {
+      "wall_s": 0.23883591699996032,
+      "wall_s_min": 0.23548362499991526,
+      "wall_s_max": 0.23982554099995923,
+      "cpu_s": 0.23523099999999997,
+      "peak_rss_bytes": 171900928
+     },
+     "encode_mb_s": 1.7684642577182235,
+     "decode_mb_s": 1.4303753149492033,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "zpaq -m5",
+     "original_bytes": 341625,
+     "compressed_bytes": 341606,
+     "bits_per_byte": 7.9995550676911815,
+     "encode": {
+      "wall_s": 0.7554471249999324,
+      "wall_s_min": 0.727910583000039,
+      "wall_s_max": 0.7650104580000061,
+      "cpu_s": 0.751524,
+      "peak_rss_bytes": 91783168
+     },
+     "decode": {
+      "wall_s": 0.783141416000035,
+      "wall_s_min": 0.7723771250000482,
+      "wall_s_max": 0.786972459000026,
+      "cpu_s": 0.77986,
+      "peak_rss_bytes": 91160576
+     },
+     "encode_mb_s": 0.45221563322519837,
+     "decode_mb_s": 0.4362238965024738,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip",
+     "original_bytes": 341625,
+     "compressed_bytes": 340698,
+     "bits_per_byte": 7.978291986827662,
+     "encode": {
+      "wall_s": 0.6076698340000348,
+      "wall_s_min": 0.6057110000000421,
+      "wall_s_max": 0.627921166999954,
+      "cpu_s": 0.60069,
+      "peak_rss_bytes": 186253312
+     },
+     "decode": {
+      "wall_s": 0.6429531659999839,
+      "wall_s_min": 0.6410210840000445,
+      "wall_s_max": 0.656480292000083,
+      "cpu_s": 0.64064,
+      "peak_rss_bytes": 186368000
+     },
+     "encode_mb_s": 0.5621885123887529,
+     "decode_mb_s": 0.5313373011682294,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "neurozip ctx",
+     "original_bytes": 341625,
+     "compressed_bytes": 341711,
+     "bits_per_byte": 8.002013904134651,
+     "encode": {
+      "wall_s": 0.12544845800005078,
+      "wall_s_min": 0.12528612500000236,
+      "wall_s_max": 0.12976545799995165,
+      "cpu_s": 0.122083,
+      "peak_rss_bytes": 103612416
+     },
+     "decode": {
+      "wall_s": 0.02780975000007402,
+      "wall_s_min": 0.027515917000073387,
+      "wall_s_max": 0.029882166999982473,
+      "cpu_s": 0.024957999999999998,
+      "peak_rss_bytes": 103464960
+     },
+     "encode_mb_s": 2.7232299658865613,
+     "decode_mb_s": 12.284360700800645,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -3",
+     "original_bytes": 341625,
+     "compressed_bytes": 341647,
+     "bits_per_byte": 8.000515184778632,
+     "encode": {
+      "wall_s": 0.004683333000002676,
+      "wall_s_min": 0.004424749999998312,
+      "wall_s_max": 0.007566792000034184,
+      "cpu_s": 0.003282,
+      "peak_rss_bytes": 4554752
+     },
+     "decode": {
+      "wall_s": 0.00423549999993611,
+      "wall_s_min": 0.004065250000053311,
+      "wall_s_max": 0.004253334000054565,
+      "cpu_s": 0.00285,
+      "peak_rss_bytes": 3555328
+     },
+     "encode_mb_s": 72.94484504941349,
+     "decode_mb_s": 80.65753748203358,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "zstd -19",
+     "original_bytes": 341625,
+     "compressed_bytes": 341647,
+     "bits_per_byte": 8.000515184778632,
+     "encode": {
+      "wall_s": 0.012867583999991439,
+      "wall_s_min": 0.012367625000024418,
+      "wall_s_max": 0.013278832999958468,
+      "cpu_s": 0.011352999999999999,
+      "peak_rss_bytes": 12746752
+     },
+     "decode": {
+      "wall_s": 0.004402249999998276,
+      "wall_s_min": 0.00437495799997123,
+      "wall_s_max": 0.004756083999950533,
+      "cpu_s": 0.003042,
+      "peak_rss_bytes": 3555328
+     },
+     "encode_mb_s": 26.54927296376906,
+     "decode_mb_s": 77.6023624283341,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "brotli -q 11",
+     "original_bytes": 341625,
+     "compressed_bytes": 341633,
+     "bits_per_byte": 8.000187339919503,
+     "encode": {
+      "wall_s": 0.12443454199990356,
+      "wall_s_min": 0.12171870800000306,
+      "wall_s_max": 0.13177783399999043,
+      "cpu_s": 0.12272799999999999,
+      "peak_rss_bytes": 13926400
+     },
+     "decode": {
+      "wall_s": 0.0043435000000044965,
+      "wall_s_min": 0.0038497499999721185,
+      "wall_s_max": 0.005293749999964348,
+      "cpu_s": 0.002897,
+      "peak_rss_bytes": 3473408
+     },
+     "encode_mb_s": 2.7454193547018866,
+     "decode_mb_s": 78.65200874862354,
+     "verified_sha256": true
+    },
+    {
+     "file": "compressed_click.tar.gz",
+     "category": "Compressed",
+     "compressor": "xz -9",
+     "original_bytes": 341625,
+     "compressed_bytes": 341700,
+     "bits_per_byte": 8.001756311745336,
+     "encode": {
+      "wall_s": 0.04416262500001267,
+      "wall_s_min": 0.044098000000076354,
+      "wall_s_max": 0.04552599999999529,
+      "cpu_s": 0.041757,
+      "peak_rss_bytes": 72957952
+     },
+     "decode": {
+      "wall_s": 0.00460004100000333,
+      "wall_s_min": 0.004304666999928486,
+      "wall_s_max": 0.004868750000014188,
+      "cpu_s": 0.0031729999999999996,
+      "peak_rss_bytes": 2654208
+     },
+     "encode_mb_s": 7.735613541991719,
+     "decode_mb_s": 74.26564241487254,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "ppmd (7z)",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2141903,
+     "bits_per_byte": 8.170711517333984,
+     "encode": {
+      "wall_s": 0.4503280840000343,
+      "wall_s_min": 0.43414450000000215,
+      "wall_s_max": 0.484122333000073,
+      "cpu_s": 0.447398,
+      "peak_rss_bytes": 37240832
+     },
+     "decode": {
+      "wall_s": 0.48918462500000714,
+      "wall_s_min": 0.486179542000059,
+      "wall_s_max": 0.5215719999999919,
+      "cpu_s": 0.48738999999999993,
+      "peak_rss_bytes": 36241408
+     },
+     "encode_mb_s": 4.656942514826235,
+     "decode_mb_s": 4.287035799622625,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "lpaq1 6",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2100070,
+     "bits_per_byte": 8.011131286621094,
+     "encode": {
+      "wall_s": 1.2272427920000837,
+      "wall_s_min": 1.2160548749999407,
+      "wall_s_max": 1.3029102080000712,
+      "cpu_s": 1.223334,
+      "peak_rss_bytes": 173670400
+     },
+     "decode": {
+      "wall_s": 1.5561371660000987,
+      "wall_s_min": 1.545098707999955,
+      "wall_s_max": 1.7486787909999748,
+      "cpu_s": 1.552636,
+      "peak_rss_bytes": 173670400
+     },
+     "encode_mb_s": 1.7088321998470999,
+     "decode_mb_s": 1.3476652610197133,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "zpaq -m5",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2099604,
+     "bits_per_byte": 8.009353637695312,
+     "encode": {
+      "wall_s": 5.723321749999968,
+      "wall_s_min": 5.337985666999998,
+      "wall_s_max": 5.85118824999995,
+      "cpu_s": 5.544746,
+      "peak_rss_bytes": 138002432
+     },
+     "decode": {
+      "wall_s": 5.541519333999986,
+      "wall_s_min": 5.286104832999968,
+      "wall_s_max": 5.829742834000058,
+      "cpu_s": 5.523808,
+      "peak_rss_bytes": 135430144
+     },
+     "encode_mb_s": 0.36642217432560237,
+     "decode_mb_s": 0.3784435050389387,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "neurozip",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097316,
+     "bits_per_byte": 8.000625610351562,
+     "encode": {
+      "wall_s": 3.489281291999987,
+      "wall_s_min": 3.4036977920000027,
+      "wall_s_max": 3.9185460410000132,
+      "cpu_s": 3.480593,
+      "peak_rss_bytes": 188006400
+     },
+     "decode": {
+      "wall_s": 3.3408173750000287,
+      "wall_s_min": 3.310664750000001,
+      "wall_s_max": 3.689644499999986,
+      "cpu_s": 3.3293809999999997,
+      "peak_rss_bytes": 187858944
+     },
+     "encode_mb_s": 0.6010269234550459,
+     "decode_mb_s": 0.6277361988396573,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "neurozip ctx",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097316,
+     "bits_per_byte": 8.000625610351562,
+     "encode": {
+      "wall_s": 0.695317624999916,
+      "wall_s_min": 0.6777770420000024,
+      "wall_s_max": 0.7156802920000018,
+      "cpu_s": 0.693124,
+      "peak_rss_bytes": 103612416
+     },
+     "decode": {
+      "wall_s": 0.14356516600003033,
+      "wall_s_min": 0.13959795799996755,
+      "wall_s_max": 0.14932899999996607,
+      "cpu_s": 0.140729,
+      "peak_rss_bytes": 103448576
+     },
+     "encode_mb_s": 3.0161064880244526,
+     "decode_mb_s": 14.6076660406575,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "zstd -3",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097213,
+     "bits_per_byte": 8.000232696533203,
+     "encode": {
+      "wall_s": 0.005145541999922898,
+      "wall_s_min": 0.005010541000046942,
+      "wall_s_max": 0.008252250000055028,
+      "cpu_s": 0.004132,
+      "peak_rss_bytes": 10731520
+     },
+     "decode": {
+      "wall_s": 0.004294250000043576,
+      "wall_s_min": 0.003911375000029693,
+      "wall_s_max": 0.004411333000007289,
+      "cpu_s": 0.003248,
+      "peak_rss_bytes": 7782400
+     },
+     "encode_mb_s": 407.5667830583103,
+     "decode_mb_s": 488.3628107303299,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "zstd -19",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097213,
+     "bits_per_byte": 8.000232696533203,
+     "encode": {
+      "wall_s": 0.06373433299995668,
+      "wall_s_min": 0.06182054199996401,
+      "wall_s_max": 0.06505429200001345,
+      "cpu_s": 0.061475999999999996,
+      "peak_rss_bytes": 44105728
+     },
+     "decode": {
+      "wall_s": 0.0042745420000755985,
+      "wall_s_min": 0.003975332999971215,
+      "wall_s_max": 0.004727500000058171,
+      "cpu_s": 0.003345,
+      "peak_rss_bytes": 7782400
+     },
+     "encode_mb_s": 32.90458848924371,
+     "decode_mb_s": 490.61443306976753,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "brotli -q 11",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097160,
+     "bits_per_byte": 8.000030517578125,
+     "encode": {
+      "wall_s": 0.48624674999996387,
+      "wall_s_min": 0.4854830829999628,
+      "wall_s_max": 0.4932133339999609,
+      "cpu_s": 0.48351900000000003,
+      "peak_rss_bytes": 33980416
+     },
+     "decode": {
+      "wall_s": 0.004349375000060718,
+      "wall_s_min": 0.004072749999977532,
+      "wall_s_max": 0.00440066700002717,
+      "cpu_s": 0.002789,
+      "peak_rss_bytes": 5308416
+     },
+     "encode_mb_s": 4.312937824263413,
+     "decode_mb_s": 482.1731857958266,
+     "verified_sha256": true
+    },
+    {
+     "file": "random_shake256_c.bin",
+     "category": "Random",
+     "compressor": "xz -9",
+     "original_bytes": 2097152,
+     "compressed_bytes": 2097320,
+     "bits_per_byte": 8.000640869140625,
+     "encode": {
+      "wall_s": 0.2092653340000652,
+      "wall_s_min": 0.2091835840000158,
+      "wall_s_max": 0.21595424999998158,
+      "cpu_s": 0.207152,
+      "peak_rss_bytes": 88784896
+     },
+     "decode": {
+      "wall_s": 0.006416166999997586,
+      "wall_s_min": 0.006058292000034271,
+      "wall_s_max": 0.006665666999992936,
+      "cpu_s": 0.0048839999999999995,
+      "peak_rss_bytes": 4423680
+     },
+     "encode_mb_s": 10.021497397172082,
+     "decode_mb_s": 326.854335306545,
+     "verified_sha256": true
+    }
+   ]
+  }
+ },
+ "ablations": [
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 144769,
+   "bits_per_byte": 1.90641,
+   "variant": "mix_full",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 145347,
+   "bits_per_byte": 1.914022,
+   "variant": "mix_no_match",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 146051,
+   "bits_per_byte": 1.923293,
+   "variant": "mix_no_apm",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 146984,
+   "bits_per_byte": 1.935579,
+   "variant": "mix_no_word",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 144769,
+   "bits_per_byte": 1.90641,
+   "variant": "mix_no_x86",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 163136,
+   "bits_per_byte": 2.148279,
+   "variant": "mix_frozen_mixer",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 144769,
+   "bits_per_byte": 1.90641,
+   "variant": "mix_no_fallback",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 156721,
+   "bits_per_byte": 2.063802,
+   "variant": "mix_independent_blocks",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 352244,
+   "bits_per_byte": 4.638574,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 257907,
+   "bits_per_byte": 3.396284,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 221849,
+   "bits_per_byte": 2.921449,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 185244,
+   "bits_per_byte": 2.439411,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 170848,
+   "bits_per_byte": 2.249835,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 170187,
+   "bits_per_byte": 2.241131,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 175290,
+   "bits_per_byte": 2.30833,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 60750,
+   "original_bytes": 607504,
+   "archive_bytes": 199166,
+   "bits_per_byte": 2.622745,
+   "variant": "ctx_freeze_10",
+   "category": "English text"
+  },
+  {
+   "file": "text_sherlock_holmes.txt",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 607504,
+   "archive_bytes": 607603,
+   "bits_per_byte": 8.001304,
+   "variant": "stored_only",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 105157,
+   "bits_per_byte": 1.995233,
+   "variant": "mix_full",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 105455,
+   "bits_per_byte": 2.000887,
+   "variant": "mix_no_match",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 106092,
+   "bits_per_byte": 2.012973,
+   "variant": "mix_no_apm",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 107397,
+   "bits_per_byte": 2.037734,
+   "variant": "mix_no_word",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 105157,
+   "bits_per_byte": 1.995233,
+   "variant": "mix_no_x86",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 119186,
+   "bits_per_byte": 2.261417,
+   "variant": "mix_frozen_mixer",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 105157,
+   "bits_per_byte": 1.995233,
+   "variant": "mix_no_fallback",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 111328,
+   "bits_per_byte": 2.11232,
+   "variant": "mix_independent_blocks",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 234004,
+   "bits_per_byte": 4.439956,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 183593,
+   "bits_per_byte": 3.483465,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 157047,
+   "bits_per_byte": 2.979786,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 131702,
+   "bits_per_byte": 2.498894,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 122218,
+   "bits_per_byte": 2.318946,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 123227,
+   "bits_per_byte": 2.33809,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 127664,
+   "bits_per_byte": 2.422277,
+   "variant": "ctx_orders",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 42163,
+   "original_bytes": 421633,
+   "archive_bytes": 144906,
+   "bits_per_byte": 2.749424,
+   "variant": "ctx_freeze_10",
+   "category": "English text"
+  },
+  {
+   "file": "text_frankenstein.txt",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 421633,
+   "archive_bytes": 421719,
+   "bits_per_byte": 8.001632,
+   "variant": "stored_only",
+   "category": "English text"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 49125,
+   "bits_per_byte": 1.183133,
+   "variant": "mix_full",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 51932,
+   "bits_per_byte": 1.250737,
+   "variant": "mix_no_match",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 49571,
+   "bits_per_byte": 1.193874,
+   "variant": "mix_no_apm",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 49917,
+   "bits_per_byte": 1.202207,
+   "variant": "mix_no_word",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 49125,
+   "bits_per_byte": 1.183133,
+   "variant": "mix_no_x86",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 60609,
+   "bits_per_byte": 1.459715,
+   "variant": "mix_frozen_mixer",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 49125,
+   "bits_per_byte": 1.183133,
+   "variant": "mix_no_fallback",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 51969,
+   "bits_per_byte": 1.251628,
+   "variant": "mix_independent_blocks",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 193723,
+   "bits_per_byte": 4.665649,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 136815,
+   "bits_per_byte": 3.29507,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 99450,
+   "bits_per_byte": 2.395166,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 77282,
+   "bits_per_byte": 1.861269,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 70805,
+   "bits_per_byte": 1.705277,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 68894,
+   "bits_per_byte": 1.659252,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 68625,
+   "bits_per_byte": 1.652773,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 33216,
+   "original_bytes": 332169,
+   "archive_bytes": 135327,
+   "bits_per_byte": 3.259232,
+   "variant": "ctx_freeze_10",
+   "category": "Code"
+  },
+  {
+   "file": "code_zlib.c",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 332169,
+   "archive_bytes": 332255,
+   "bits_per_byte": 8.002071,
+   "variant": "stored_only",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 82532,
+   "bits_per_byte": 1.188672,
+   "variant": "mix_full",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 86220,
+   "bits_per_byte": 1.241788,
+   "variant": "mix_no_match",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 83377,
+   "bits_per_byte": 1.200842,
+   "variant": "mix_no_apm",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 84396,
+   "bits_per_byte": 1.215518,
+   "variant": "mix_no_word",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 82532,
+   "bits_per_byte": 1.188672,
+   "variant": "mix_no_x86",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 102242,
+   "bits_per_byte": 1.472546,
+   "variant": "mix_frozen_mixer",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 82532,
+   "bits_per_byte": 1.188672,
+   "variant": "mix_no_fallback",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 89432,
+   "bits_per_byte": 1.288049,
+   "variant": "mix_independent_blocks",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 319204,
+   "bits_per_byte": 4.597353,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 243623,
+   "bits_per_byte": 3.508794,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 174370,
+   "bits_per_byte": 2.511374,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 133090,
+   "bits_per_byte": 1.916836,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 119890,
+   "bits_per_byte": 1.726722,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 115952,
+   "bits_per_byte": 1.670005,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 114671,
+   "bits_per_byte": 1.651555,
+   "variant": "ctx_orders",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 55545,
+   "original_bytes": 555457,
+   "archive_bytes": 203462,
+   "bits_per_byte": 2.930373,
+   "variant": "ctx_freeze_10",
+   "category": "Code"
+  },
+  {
+   "file": "code_click.py",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 555457,
+   "archive_bytes": 555556,
+   "bits_per_byte": 8.001426,
+   "variant": "stored_only",
+   "category": "Code"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 121497,
+   "bits_per_byte": 1.343256,
+   "variant": "mix_full",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 123204,
+   "bits_per_byte": 1.362128,
+   "variant": "mix_no_match",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 121940,
+   "bits_per_byte": 1.348154,
+   "variant": "mix_no_apm",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 121396,
+   "bits_per_byte": 1.342139,
+   "variant": "mix_no_word",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 121497,
+   "bits_per_byte": 1.343256,
+   "variant": "mix_no_x86",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 143446,
+   "bits_per_byte": 1.585921,
+   "variant": "mix_frozen_mixer",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 121497,
+   "bits_per_byte": 1.343256,
+   "variant": "mix_no_fallback",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 119236,
+   "bits_per_byte": 1.318259,
+   "variant": "mix_independent_blocks",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 322461,
+   "bits_per_byte": 3.565089,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 252231,
+   "bits_per_byte": 2.788635,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 192467,
+   "bits_per_byte": 2.127892,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 190671,
+   "bits_per_byte": 2.108035,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 205913,
+   "bits_per_byte": 2.276549,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 207702,
+   "bits_per_byte": 2.296328,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 194305,
+   "bits_per_byte": 2.148212,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 72359,
+   "original_bytes": 723597,
+   "archive_bytes": 383821,
+   "bits_per_byte": 4.243478,
+   "variant": "ctx_freeze_10",
+   "category": "JSON"
+  },
+  {
+   "file": "json_mesh.json",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 723597,
+   "archive_bytes": 723696,
+   "bits_per_byte": 8.001095,
+   "variant": "stored_only",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 5952,
+   "bits_per_byte": 0.374119,
+   "variant": "mix_full",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 6108,
+   "bits_per_byte": 0.383925,
+   "variant": "mix_no_match",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 5991,
+   "bits_per_byte": 0.37657,
+   "variant": "mix_no_apm",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 6135,
+   "bits_per_byte": 0.385622,
+   "variant": "mix_no_word",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 5952,
+   "bits_per_byte": 0.374119,
+   "variant": "mix_no_x86",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 7950,
+   "bits_per_byte": 0.499705,
+   "variant": "mix_frozen_mixer",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 5952,
+   "bits_per_byte": 0.374119,
+   "variant": "mix_no_fallback",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 5952,
+   "bits_per_byte": 0.374119,
+   "variant": "mix_independent_blocks",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 74655,
+   "bits_per_byte": 4.692516,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 40763,
+   "bits_per_byte": 2.5622,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 19309,
+   "bits_per_byte": 1.213687,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 14166,
+   "bits_per_byte": 0.890418,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 12969,
+   "bits_per_byte": 0.81518,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 12317,
+   "bits_per_byte": 0.774198,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 10845,
+   "bits_per_byte": 0.681674,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 12727,
+   "original_bytes": 127275,
+   "archive_bytes": 30972,
+   "bits_per_byte": 1.946777,
+   "variant": "ctx_freeze_10",
+   "category": "JSON"
+  },
+  {
+   "file": "json_apache_builds.json",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 127275,
+   "archive_bytes": 127348,
+   "bits_per_byte": 8.004588,
+   "variant": "stored_only",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29281,
+   "bits_per_byte": 0.458882,
+   "variant": "mix_full",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29427,
+   "bits_per_byte": 0.46117,
+   "variant": "mix_no_match",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29681,
+   "bits_per_byte": 0.46515,
+   "variant": "mix_no_apm",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29338,
+   "bits_per_byte": 0.459775,
+   "variant": "mix_no_word",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29281,
+   "bits_per_byte": 0.458882,
+   "variant": "mix_no_x86",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 38754,
+   "bits_per_byte": 0.607339,
+   "variant": "mix_frozen_mixer",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 29281,
+   "bits_per_byte": 0.458882,
+   "variant": "mix_no_fallback",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 32271,
+   "bits_per_byte": 0.50574,
+   "variant": "mix_independent_blocks",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 342843,
+   "bits_per_byte": 5.372915,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 159187,
+   "bits_per_byte": 2.494723,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 87844,
+   "bits_per_byte": 1.37666,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 69468,
+   "bits_per_byte": 1.088678,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 57438,
+   "bits_per_byte": 0.900148,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 48472,
+   "bits_per_byte": 0.759636,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 44878,
+   "bits_per_byte": 0.703312,
+   "variant": "ctx_orders",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 51047,
+   "original_bytes": 510476,
+   "archive_bytes": 65124,
+   "bits_per_byte": 1.0206,
+   "variant": "ctx_freeze_10",
+   "category": "JSON"
+  },
+  {
+   "file": "json_random.json",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 510476,
+   "archive_bytes": 510562,
+   "bits_per_byte": 8.001348,
+   "variant": "stored_only",
+   "category": "JSON"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 282477,
+   "bits_per_byte": 0.538782,
+   "variant": "mix_full",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 293694,
+   "bits_per_byte": 0.560177,
+   "variant": "mix_no_match",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 288074,
+   "bits_per_byte": 0.549458,
+   "variant": "mix_no_apm",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 282626,
+   "bits_per_byte": 0.539066,
+   "variant": "mix_no_word",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 282477,
+   "bits_per_byte": 0.538782,
+   "variant": "mix_no_x86",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 369323,
+   "bits_per_byte": 0.704428,
+   "variant": "mix_frozen_mixer",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 282477,
+   "bits_per_byte": 0.538782,
+   "variant": "mix_no_fallback",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 327553,
+   "bits_per_byte": 0.624758,
+   "variant": "mix_independent_blocks",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2586597,
+   "bits_per_byte": 4.933542,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1755911,
+   "bits_per_byte": 3.349134,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1127538,
+   "bits_per_byte": 2.150608,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 783055,
+   "bits_per_byte": 1.493559,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 626907,
+   "bits_per_byte": 1.19573,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 570663,
+   "bits_per_byte": 1.088453,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 540909,
+   "bits_per_byte": 1.031702,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 419430,
+   "original_bytes": 4194304,
+   "archive_bytes": 1205092,
+   "bits_per_byte": 2.298531,
+   "variant": "ctx_freeze_10",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_dns.log",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 4194572,
+   "bits_per_byte": 8.000511,
+   "variant": "stored_only",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 546130,
+   "bits_per_byte": 1.04166,
+   "variant": "mix_full",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 557710,
+   "bits_per_byte": 1.063747,
+   "variant": "mix_no_match",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 551298,
+   "bits_per_byte": 1.051517,
+   "variant": "mix_no_apm",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 546009,
+   "bits_per_byte": 1.04143,
+   "variant": "mix_no_word",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 546130,
+   "bits_per_byte": 1.04166,
+   "variant": "mix_no_x86",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 647749,
+   "bits_per_byte": 1.235483,
+   "variant": "mix_frozen_mixer",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 546130,
+   "bits_per_byte": 1.04166,
+   "variant": "mix_no_fallback",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 602447,
+   "bits_per_byte": 1.149076,
+   "variant": "mix_independent_blocks",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2613075,
+   "bits_per_byte": 4.984045,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1777731,
+   "bits_per_byte": 3.390753,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1207127,
+   "bits_per_byte": 2.302412,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 978672,
+   "bits_per_byte": 1.866669,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 893478,
+   "bits_per_byte": 1.704174,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 881623,
+   "bits_per_byte": 1.681562,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 874696,
+   "bits_per_byte": 1.66835,
+   "variant": "ctx_orders",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 419430,
+   "original_bytes": 4194304,
+   "archive_bytes": 1357916,
+   "bits_per_byte": 2.590019,
+   "variant": "ctx_freeze_10",
+   "category": "Logs"
+  },
+  {
+   "file": "logs_zeek_ssl.log",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 4194572,
+   "bits_per_byte": 8.000511,
+   "variant": "stored_only",
+   "category": "Logs"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 513838,
+   "bits_per_byte": 3.634035,
+   "variant": "mix_full",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 515573,
+   "bits_per_byte": 3.646305,
+   "variant": "mix_no_match",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 516292,
+   "bits_per_byte": 3.65139,
+   "variant": "mix_no_apm",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 515174,
+   "bits_per_byte": 3.643484,
+   "variant": "mix_no_word",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 545634,
+   "bits_per_byte": 3.858907,
+   "variant": "mix_no_x86",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 572290,
+   "bits_per_byte": 4.047427,
+   "variant": "mix_frozen_mixer",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 513838,
+   "bits_per_byte": 3.634035,
+   "variant": "mix_no_fallback",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 535113,
+   "bits_per_byte": 3.784499,
+   "variant": "mix_independent_blocks",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 895789,
+   "bits_per_byte": 6.335321,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 749866,
+   "bits_per_byte": 5.303304,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 727575,
+   "bits_per_byte": 5.145655,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 726601,
+   "bits_per_byte": 5.138766,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 732145,
+   "bits_per_byte": 5.177975,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 737868,
+   "bits_per_byte": 5.21845,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 741860,
+   "bits_per_byte": 5.246683,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 113116,
+   "original_bytes": 1131168,
+   "archive_bytes": 898422,
+   "bits_per_byte": 6.353942,
+   "variant": "ctx_freeze_10",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_busybox_linux_x64",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1131168,
+   "archive_bytes": 1131293,
+   "bits_per_byte": 8.000884,
+   "variant": "stored_only",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1708902,
+   "bits_per_byte": 3.259472,
+   "variant": "mix_full",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1734568,
+   "bits_per_byte": 3.308426,
+   "variant": "mix_no_match",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1717373,
+   "bits_per_byte": 3.275629,
+   "variant": "mix_no_apm",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1710687,
+   "bits_per_byte": 3.262877,
+   "variant": "mix_no_word",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1770577,
+   "bits_per_byte": 3.377108,
+   "variant": "mix_no_x86",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1906144,
+   "bits_per_byte": 3.635681,
+   "variant": "mix_frozen_mixer",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1708902,
+   "bits_per_byte": 3.259472,
+   "variant": "mix_no_fallback",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 1809013,
+   "bits_per_byte": 3.450418,
+   "variant": "mix_independent_blocks",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 3293458,
+   "bits_per_byte": 6.281773,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2737269,
+   "bits_per_byte": 5.220926,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2605435,
+   "bits_per_byte": 4.969473,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2525189,
+   "bits_per_byte": 4.816416,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2479479,
+   "bits_per_byte": 4.729231,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2459101,
+   "bits_per_byte": 4.690363,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 2449977,
+   "bits_per_byte": 4.67296,
+   "variant": "ctx_orders",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 419430,
+   "original_bytes": 4194304,
+   "archive_bytes": 3063997,
+   "bits_per_byte": 5.84411,
+   "variant": "ctx_freeze_10",
+   "category": "Executables"
+  },
+  {
+   "file": "exe_bat_linux_x64",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 4194304,
+   "archive_bytes": 4194572,
+   "bits_per_byte": 8.000511,
+   "variant": "stored_only",
+   "category": "Executables"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1568140,
+   "bits_per_byte": 7.976581,
+   "variant": "mix_full",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1568187,
+   "bits_per_byte": 7.97682,
+   "variant": "mix_no_match",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1566677,
+   "bits_per_byte": 7.969139,
+   "variant": "mix_no_apm",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1568088,
+   "bits_per_byte": 7.976317,
+   "variant": "mix_no_word",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1568140,
+   "bits_per_byte": 7.976581,
+   "variant": "mix_no_x86",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "mix_frozen_mixer",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1568378,
+   "bits_per_byte": 7.977792,
+   "variant": "mix_no_fallback",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1567940,
+   "bits_per_byte": 7.975564,
+   "variant": "mix_independent_blocks",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572607,
+   "bits_per_byte": 7.999303,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 157274,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "ctx_freeze_10",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_zlib.tar.gz",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 1572744,
+   "archive_bytes": 1572882,
+   "bits_per_byte": 8.000702,
+   "variant": "stored_only",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340698,
+   "bits_per_byte": 7.978292,
+   "variant": "mix_full",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340698,
+   "bits_per_byte": 7.978292,
+   "variant": "mix_no_match",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340543,
+   "bits_per_byte": 7.974662,
+   "variant": "mix_no_apm",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340659,
+   "bits_per_byte": 7.977379,
+   "variant": "mix_no_word",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340698,
+   "bits_per_byte": 7.978292,
+   "variant": "mix_no_x86",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "mix_frozen_mixer",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340711,
+   "bits_per_byte": 7.978596,
+   "variant": "mix_no_fallback",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 340698,
+   "bits_per_byte": 7.978292,
+   "variant": "mix_independent_blocks",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341569,
+   "bits_per_byte": 7.998689,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_orders",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 34162,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "ctx_freeze_10",
+   "category": "Compressed"
+  },
+  {
+   "file": "compressed_click.tar.gz",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 341625,
+   "archive_bytes": 341711,
+   "bits_per_byte": 8.002014,
+   "variant": "stored_only",
+   "category": "Compressed"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_full",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22-nomatch",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_no_match",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22-noapm",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_no_apm",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22-noword",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_no_word",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22-nox86",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_no_x86",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22-nomixer",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_frozen_mixer",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22",
+   "fallback": false,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2100904,
+   "bits_per_byte": 8.014313,
+   "variant": "mix_no_fallback",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "mix-h18-m22",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "mix_independent_blocks",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o0-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o1-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o2-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o3-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o5-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o6-h20",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_orders",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "ctx-o4-h20",
+   "fallback": true,
+   "freeze_after_bytes": 209715,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "ctx_freeze_10",
+   "category": "Random"
+  },
+  {
+   "file": "random_shake256_c.bin",
+   "config": "stored",
+   "fallback": true,
+   "freeze_after_bytes": null,
+   "original_bytes": 2097152,
+   "archive_bytes": 2097316,
+   "bits_per_byte": 8.000626,
+   "variant": "stored_only",
+   "category": "Random"
+  }
+ ]
+}

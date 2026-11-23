@@ -192,4 +192,12 @@ used to choose a constant.
 
 ## Licence
 
-MIT or Apache-2.0, at your option.
+MIT or Apache-2.0, at your option: see `LICENSE-MIT` and
+`LICENSE-APACHE`. Contributions are accepted under the same terms.
+
+Third-party notes: the benchmark downloads test files (books, source
+code, JSON, logs, binaries) from their original sources at run time and
+does not redistribute them; each keeps its own licence. Comparison tools
+(zstd, Brotli, xz, 7-Zip, zpaq, lpaq1, cmix) are used as external programs
+and none of their code is included. No PAQ code was copied (see
+`docs/PRIOR_ART.md`, which also has patent notes; not legal advice).
